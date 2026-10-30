@@ -2,7 +2,14 @@
  * Cenzia Decants — badge "Original"
  * CSS puro (sin JS) para pegar en Diseño > Personalizar tema > CSS personalizado.
  * Agrega una etiqueta visual "Original" sobre la imagen de cada producto,
- * en grillas/listados y en la página de producto, excepto en los combos.
+ * en grillas/listados y en la página de producto.
+ *
+ * Criterio: todo lo que haya hoy en el catálogo es un decant/perfume
+ * original. Cuando se sumen esencias NO originales (inspiradas), hay que
+ * agregar sus IDs de producto a la lista de exclusión más abajo para que
+ * no lleven el badge — Tienda Nube no expone la categoría del producto en
+ * el HTML de las tarjetas, así que esto no se puede resolver con CSS "en
+ * vivo" contra la categoría, requiere esta lista fija.
  */
 
 /* Grillas / listados de productos */
@@ -59,46 +66,15 @@
   white-space: nowrap;
 }
 
-/* Combos: excluidos (no son una fragancia individual) */
-.js-item-product[data-product-id="304416283"] .item-image::after,
-.js-item-product[data-product-id="304599497"] .item-image::after,
-.js-item-product[data-product-id="304722332"] .item-image::after,
-.js-item-product[data-product-id="307532394"] .item-image::after,
-.js-item-product[data-product-id="307538717"] .item-image::after,
-.js-item-product[data-product-id="307541520"] .item-image::after,
-.js-item-product[data-product-id="311869307"] .item-image::after,
-.js-item-product[data-product-id="312465816"] .item-image::after,
-.js-item-product[data-product-id="315713389"] .item-image::after,
-.js-item-product[data-product-id="315713873"] .item-image::after,
-.js-item-product[data-product-id="315792900"] .item-image::after,
-.js-item-product[data-product-id="316502354"] .item-image::after,
-.js-item-product[data-product-id="324920787"] .item-image::after,
-.js-item-product[data-product-id="331559864"] .item-image::after,
-.js-item-product[data-product-id="331767446"] .item-image::after,
-.js-item-product[data-product-id="335852683"] .item-image::after,
-.js-item-product[data-product-id="349989590"] .item-image::after,
-.js-item-product[data-product-id="350227303"] .item-image::after,
-.row[data-store="product-image-304416283"]::after,
-.row[data-store="product-image-304599497"]::after,
-.row[data-store="product-image-304722332"]::after,
-.row[data-store="product-image-307532394"]::after,
-.row[data-store="product-image-307538717"]::after,
-.row[data-store="product-image-307541520"]::after,
-.row[data-store="product-image-311869307"]::after,
-.row[data-store="product-image-312465816"]::after,
-.row[data-store="product-image-315713389"]::after,
-.row[data-store="product-image-315713873"]::after,
-.row[data-store="product-image-315792900"]::after,
-.row[data-store="product-image-316502354"]::after,
-.row[data-store="product-image-324920787"]::after,
-.row[data-store="product-image-331559864"]::after,
-.row[data-store="product-image-331767446"]::after,
-.row[data-store="product-image-335852683"]::after,
-.row[data-store="product-image-349989590"]::after,
-.row[data-store="product-image-350227303"]::after {
+/* Esencias NO originales: excluidas acá a medida que se agreguen.
+   Formato por cada producto a excluir (reemplazar 000000000 por su ID real):
+
+.js-item-product[data-product-id="000000000"] .item-image::after,
+.row[data-store="product-image-000000000"]::after {
   content: none;
   display: none;
 }
+*/
 
 @media (max-width: 576px) {
   .js-item-product .item-image::after,
