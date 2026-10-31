@@ -461,9 +461,10 @@
 	font-weight: 700;
 }
 
-/* Calificación, beneficios y precio con transferencia — SOLO Extractos de
-   Perfume (precio fijo $35.000). Si cambia el precio de algún extracto hay
-   que actualizar el "$31.500,00" a mano, no se calcula en vivo. */
+/* Calificación y beneficios — SOLO Extractos de Perfume. El precio con
+   transferencia ya no va acá: lo calcula en vivo scripts/transfer-discount.js
+   (instalado vía Scripts API), que funciona para cualquier precio real,
+   incluidos combos futuros. */
 [data-store="product-name-378156477"]::after,
 [data-store="product-name-378156482"]::after,
 [data-store="product-name-378156485"]::after,
@@ -492,21 +493,4 @@
 	color: #0d161f;
 	line-height: 2;
 	margin-bottom: 16px;
-}
-
-[data-store="product-price-378156477"]::after,
-[data-store="product-price-378156482"]::after,
-[data-store="product-price-378156485"]::after,
-[data-store="product-price-378156488"]::after,
-[data-store="product-price-378156494"]::after,
-[data-store="product-price-378201974"]::after {
-	content: "−10% OFF   $31.500,00 con Transferencia o depósito bancario";
-	display: block;
-	margin-top: 14px;
-	padding: 12px 14px;
-	background: #F6F7F8;
-	border-radius: 12px;
-	font-size: 13px;
-	font-weight: 700;
-	color: #0d161f;
 }
