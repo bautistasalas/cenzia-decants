@@ -3,8 +3,7 @@
  * Pegar ESTE archivo entero en Diseño > Personalizar tema > CSS personalizado,
  * reemplazando todo lo que haya ahí. Es la unión de:
  *  1) El CSS base de precios/cuotas/tarjetas de producto (ya existía).
- *  2) El fix del bug "$0,00 con transferencia" (contenedor que el tema trae
- *     oculto por defecto y estaba siendo forzado a mostrarse).
+ *  2) El descuento por transferencia, al 10% OFF.
  *  3) El sistema de badges "Original" / "60ML Extracto".
  *  4) El fix del botón "Comprar" directo (productos de una sola variante).
  */
@@ -37,11 +36,7 @@
 	vertical-align: middle;
 }
 
-/* Fix bug "$0,00 con transferencia": este contenedor viene de Tienda Nube con
-   style="display:none" porque nunca lo completa con datos reales en tarjetas
-   de listado/producto — antes lo forzábamos a mostrarse con display:flex
-   !important y terminaba mostrando el placeholder vacío ("$0,00"). Se saca
-   ese forzado para que se quede oculto como corresponde. */
+/* Descuento por transferencia: 10% OFF. */
 [data-store^="product-price-"] .payment-discount-price-product-container {
 	align-items: center;
 	flex-wrap: wrap;
@@ -55,7 +50,7 @@
 }
 
 [data-store^="product-price-"] .payment-discount-price-product-container::before {
-	content: "−15% OFF";
+	content: "−10% OFF";
 	background: #0d161f;
 	color: #fff;
 	font-size: .72rem;
@@ -192,8 +187,7 @@
 	letter-spacing: -.01em;
 }
 
-/* Fix bug "$0,00 con transferencia" (versión grilla/listado) — mismo motivo
-   que arriba, se saca el display:flex!important. */
+/* Descuento por transferencia: 10% OFF (versión grilla/listado). */
 .js-item-product .payment-discount-price-product-container {
 	align-items: center !important;
 	flex-wrap: wrap !important;
@@ -206,7 +200,7 @@
 }
 
 .js-item-product .payment-discount-price-product-container::before {
-	content: "−15%";
+	content: "−10%";
 	background: #0d161f;
 	color: #fff;
 	font-size: .55rem;
