@@ -348,11 +348,13 @@
 .js-item-product[data-product-id="378156485"] .item-image::after,
 .js-item-product[data-product-id="378156488"] .item-image::after,
 .js-item-product[data-product-id="378156494"] .item-image::after,
+.js-item-product[data-product-id="378201974"] .item-image::after,
 .row[data-store="product-image-378156477"]::after,
 .row[data-store="product-image-378156482"]::after,
 .row[data-store="product-image-378156485"]::after,
 .row[data-store="product-image-378156488"]::after,
-.row[data-store="product-image-378156494"]::after {
+.row[data-store="product-image-378156494"]::after,
+.row[data-store="product-image-378201974"]::after {
 	content: "60ML Extracto";
 }
 
