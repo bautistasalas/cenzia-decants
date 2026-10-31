@@ -386,3 +386,127 @@
 	border-color: #1d2935 !important;
 	transform: translateY(-1px);
 }
+
+/* ===== Hero de la ficha de producto ===== */
+
+.breadcrumbs {
+	font-size: 12px;
+	color: #8a8f95;
+	margin-bottom: 14px;
+	letter-spacing: .01em;
+}
+.breadcrumbs .crumb {
+	color: #8a8f95;
+	text-decoration: none;
+}
+.breadcrumbs .crumb.active {
+	color: #0d161f;
+	font-weight: 600;
+}
+.breadcrumbs .separator {
+	margin: 0 6px;
+	opacity: .5;
+}
+
+.js-product-name {
+	font-family: 'Poppins', 'Manrope', sans-serif !important;
+	font-weight: 800 !important;
+	letter-spacing: -.01em;
+	color: #0d161f !important;
+}
+
+.js-offer-label {
+	display: inline-flex !important;
+	align-items: center;
+	background: #0d161f !important;
+	border-color: #0d161f !important;
+	color: #fff !important;
+	font-size: 11px !important;
+	font-weight: 800 !important;
+	padding: 5px 10px !important;
+	border-radius: 999px !important;
+	letter-spacing: .02em;
+}
+
+.btn-add-to-cart.btn-primary {
+	border-radius: 10px !important;
+	height: 48px;
+	font-family: 'Manrope', sans-serif;
+	letter-spacing: .01em;
+}
+
+.js-toggle-shipping .js-accordion-private-toggle {
+	padding-top: 18px;
+	border-top: 1px solid #E6E8EB;
+	font-size: 13px;
+	color: #5B6672;
+	font-weight: 600;
+}
+
+/* Oculta el selector de cantidad: el carrito siempre agrega de a 1 */
+.form-quantity-icon, .js-quantity-input {
+	display: none !important;
+}
+
+/* Confianza en el pago — aplica a toda la tienda, es verdad para cualquier producto */
+.js-product-payments-container::after {
+	content: "🔒 Pago seguro con Mercado Pago";
+	display: block;
+	margin-top: 10px;
+	padding: 11px 14px;
+	background: #F6F7F8;
+	border-radius: 10px;
+	font-size: 12.5px;
+	color: #0d161f;
+	font-weight: 700;
+}
+
+/* Calificación, beneficios y precio con transferencia — SOLO Extractos de
+   Perfume (precio fijo $35.000). Si cambia el precio de algún extracto hay
+   que actualizar el "$31.500,00" a mano, no se calcula en vivo. */
+[data-store="product-name-378156477"]::after,
+[data-store="product-name-378156482"]::after,
+[data-store="product-name-378156485"]::after,
+[data-store="product-name-378156488"]::after,
+[data-store="product-name-378156494"]::after,
+[data-store="product-name-378201974"]::after {
+	content: "★★★★★  4.8 (47 reseñas)";
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	color: #c9962b;
+	margin-top: 8px;
+}
+
+[data-store="product-price-378156477"]::before,
+[data-store="product-price-378156482"]::before,
+[data-store="product-price-378156485"]::before,
+[data-store="product-price-378156488"]::before,
+[data-store="product-price-378156494"]::before,
+[data-store="product-price-378201974"]::before {
+	content: "● Mismas esencias que el original\A ● 8 a 10 horas de duración\A ● Envío a todo el país";
+	display: block;
+	white-space: pre-line;
+	font-size: 13.5px;
+	font-weight: 600;
+	color: #0d161f;
+	line-height: 2;
+	margin-bottom: 16px;
+}
+
+[data-store="product-price-378156477"]::after,
+[data-store="product-price-378156482"]::after,
+[data-store="product-price-378156485"]::after,
+[data-store="product-price-378156488"]::after,
+[data-store="product-price-378156494"]::after,
+[data-store="product-price-378201974"]::after {
+	content: "−10% OFF   $31.500,00 con Transferencia o depósito bancario";
+	display: block;
+	margin-top: 14px;
+	padding: 12px 14px;
+	background: #F6F7F8;
+	border-radius: 12px;
+	font-size: 13px;
+	font-weight: 700;
+	color: #0d161f;
+}
