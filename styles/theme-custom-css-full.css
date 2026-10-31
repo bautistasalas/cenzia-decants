@@ -1,0 +1,392 @@
+/**
+ * Cenzia Decants — CSS personalizado completo del tema (recife)
+ * Pegar ESTE archivo entero en Diseño > Personalizar tema > CSS personalizado,
+ * reemplazando todo lo que haya ahí. Es la unión de:
+ *  1) El CSS base de precios/cuotas/tarjetas de producto (ya existía).
+ *  2) El fix del bug "$0,00 con transferencia" (contenedor que el tema trae
+ *     oculto por defecto y estaba siendo forzado a mostrarse).
+ *  3) El sistema de badges "Original" / "60ML Extracto".
+ *  4) El fix del botón "Comprar" directo (productos de una sola variante).
+ */
+
+[data-store^="product-price-"] {
+	margin-bottom: 24px !important;
+}
+
+[data-store^="product-price-"] .js-price-display {
+	font-family: inherit;
+	font-size: 2.1rem;
+	font-weight: 700;
+	line-height: 1.1;
+	letter-spacing: -.015em;
+	margin-bottom: 6px;
+	color: #0d161f;
+}
+
+[data-store^="product-price-"] .js-compare-price-display:empty {
+	display: none !important;
+}
+
+[data-store^="product-price-"] .js-compare-price-display:not(:empty) {
+	display: inline-block !important;
+	text-decoration: line-through;
+	color: #a8b0b8;
+	font-size: 1rem;
+	font-weight: 500;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+/* Fix bug "$0,00 con transferencia": este contenedor viene de Tienda Nube con
+   style="display:none" porque nunca lo completa con datos reales en tarjetas
+   de listado/producto — antes lo forzábamos a mostrarse con display:flex
+   !important y terminaba mostrando el placeholder vacío ("$0,00"). Se saca
+   ese forzado para que se quede oculto como corresponde. */
+[data-store^="product-price-"] .payment-discount-price-product-container {
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 14px !important;
+	padding-top: 12px;
+	border-top: 1px solid #ececec;
+	font-family: inherit;
+	font-size: .95rem;
+	color: #0d161f;
+}
+
+[data-store^="product-price-"] .payment-discount-price-product-container::before {
+	content: "−15% OFF";
+	background: #0d161f;
+	color: #fff;
+	font-size: .72rem;
+	font-weight: 700;
+	letter-spacing: .05em;
+	padding: 4px 9px;
+	border-radius: 3px;
+	line-height: 1.2;
+	white-space: nowrap;
+	align-self: center;
+}
+
+[data-store^="product-price-"] .js-payment-discount-price-product {
+	font-family: inherit;
+	font-size: 1.3rem !important;
+	font-weight: 700 !important;
+	letter-spacing: -.01em;
+	color: #0d161f !important;
+}
+
+[data-store^="product-price-"] .payment-discount-price-product-container>span:not([class]) {
+	font-weight: 500;
+	color: #0d161f;
+}
+
+[data-store^="product-price-"] .js-payment-discount-name-product {
+	font-weight: 500;
+	color: #0d161f;
+}
+
+.js-max-installments-container, .js-max-installments, .product-installments {
+	font-family: inherit !important;
+	font-size: .92rem !important;
+	font-weight: 500 !important;
+	color: #7a8694 !important;
+	letter-spacing: .005em;
+	margin-top: 10px !important;
+	margin-bottom: 6px !important;
+}
+
+.product-installment-amount, .product-installment-value, .js-installment-amount, .js-installment-price {
+	font-weight: 700 !important;
+	color: #7a8694 !important;
+}
+
+.js-product-payments-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.js-max-installments-container {
+	order: -1;
+}
+
+.js-product-discount-container {
+	display: none !important;
+}
+
+@media (max-width:576px) {
+	[data-store^="product-price-"] .js-price-display {
+		font-size: 1.75rem;
+	}
+
+	[data-store^="product-price-"] .js-payment-discount-price-product {
+		font-size: 1.15rem !important;
+	}
+
+	[data-store^="product-price-"] .payment-discount-price-product-container::before {
+		font-size: .68rem;
+		padding: 3px 7px;
+	}
+
+	.js-max-installments-container, .js-max-installments, .product-installments {
+		font-size: .88rem !important;
+	}
+}
+
+.js-item-product .item {
+	position: relative;
+	transition: transform .2s ease;
+}
+
+.js-item-product:hover .item {
+	transform: translateY(-3px);
+}
+
+.js-item-product .item-image {
+	background-color: #f6f7f8;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.js-item-product .js-stock-label.label-default {
+	position: absolute !important;
+	top: 12px !important;
+	left: 12px !important;
+	background: rgba(13, 22, 31, .9) !important;
+	color: #fff !important;
+	padding: 5px 10px !important;
+	border-radius: 4px !important;
+	font-size: .65rem !important;
+	font-weight: 700 !important;
+	letter-spacing: .08em !important;
+	text-transform: uppercase !important;
+	z-index: 5;
+}
+
+.js-item-product .item-name {
+	font-family: inherit;
+	font-size: .92rem !important;
+	font-weight: 600 !important;
+	color: #0d161f !important;
+	opacity: 1 !important;
+	letter-spacing: .005em;
+	line-height: 1.35;
+	margin-bottom: 8px !important;
+}
+
+.js-item-product .item-price-container {
+	margin-bottom: 14px !important;
+}
+
+.js-item-product .item-price-container>.d-block {
+	margin-bottom: 4px !important;
+}
+
+.js-item-product .js-price-display.item-price {
+	font-family: inherit;
+	font-size: 1.1rem !important;
+	font-weight: 700 !important;
+	color: #0d161f !important;
+	line-height: 1.2;
+	display: inline-block;
+	letter-spacing: -.01em;
+}
+
+/* Fix bug "$0,00 con transferencia" (versión grilla/listado) — mismo motivo
+   que arriba, se saca el display:flex!important. */
+.js-item-product .payment-discount-price-product-container {
+	align-items: center !important;
+	flex-wrap: wrap !important;
+	gap: 4px !important;
+	margin-top: 8px !important;
+	font-size: .75rem !important;
+	font-weight: 500 !important;
+	color: #7a8694 !important;
+	line-height: 1.3;
+}
+
+.js-item-product .payment-discount-price-product-container::before {
+	content: "−15%";
+	background: #0d161f;
+	color: #fff;
+	font-size: .55rem;
+	font-weight: 700;
+	letter-spacing: .05em;
+	padding: 2px 5px;
+	border-radius: 3px;
+	line-height: 1.2;
+	white-space: nowrap;
+	margin-right: 2px;
+}
+
+.js-item-product .js-payment-discount-price-product {
+	font-size: .9rem !important;
+	font-weight: 700 !important;
+	color: #0d161f !important;
+}
+
+.js-item-product .payment-discount-price-product-container>span:not([class]), .js-item-product .js-payment-discount-name-product {
+	color: #7a8694 !important;
+	font-weight: 500 !important;
+	font-size: .72rem !important;
+}
+
+.js-item-product .js-quickshop-modal-open.btn-primary {
+	background: #0d161f !important;
+	border-color: #0d161f !important;
+	color: #fff !important;
+	font-weight: 600 !important;
+	font-size: .82rem !important;
+	letter-spacing: .02em !important;
+	padding: 8px 22px !important;
+	border-radius: 6px !important;
+	transition: all .2s ease !important;
+}
+
+.js-item-product .js-quickshop-modal-open.btn-primary:hover {
+	background: #1d2935 !important;
+	border-color: #1d2935 !important;
+	transform: translateY(-1px);
+}
+
+.js-item-product .item-description {
+	padding-top: 14px !important;
+}
+
+.js-products-new-title.section-title {
+	font-weight: 700 !important;
+	color: #0d161f !important;
+	letter-spacing: -.005em;
+	margin-bottom: 28px !important;
+}
+
+.js-swiper-new-prev, .js-swiper-new-next {
+	color: #0d161f !important;
+}
+
+@media (max-width:576px) {
+	.js-item-product .item-name {
+		font-size: .85rem !important;
+	}
+}
+
+#nubesdk-runtime>div[style*="translateX"]:not([style*="bottom"]) {
+	position: relative !important;
+	top: auto !important;
+	left: auto !important;
+	transform: none !important;
+	width: 100% !important;
+	max-width: 100% !important;
+	max-height: none !important;
+	z-index: 1 !important;
+}
+
+#nube-sdk-slot-edge_top_center iframe {
+	display: block !important;
+	width: 100% !important;
+	max-height: 45vh !important;
+}
+
+#nube-sdk-slot-edge_top_center iframe:not([style*="height"]) {
+	height: 0 !important;
+}
+
+#nube-sdk-slot-edge_top_center iframe[style*="height"] {
+	margin-bottom: -45px !important;
+}
+
+/* ===== Badge "Original" / "60ML Extracto" ===== */
+
+.js-item-product .item-image {
+	position: relative;
+}
+.js-item-product .item-image::after {
+	content: "Original";
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 6;
+	display: inline-flex;
+	align-items: center;
+	padding: 4px 10px;
+	border-radius: 999px;
+	background: rgba(13, 22, 31, 0.92);
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	color: #fff;
+	font-family: inherit;
+	font-size: 0.62rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	box-shadow: 0 2px 6px rgba(13, 22, 31, 0.25);
+	pointer-events: none;
+	white-space: nowrap;
+}
+
+.row[data-store^="product-image-"] {
+	position: relative;
+}
+.row[data-store^="product-image-"]::after {
+	content: "Original";
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 6;
+	display: inline-flex;
+	align-items: center;
+	padding: 4px 10px;
+	border-radius: 999px;
+	background: rgba(13, 22, 31, 0.92);
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	color: #fff;
+	font-family: inherit;
+	font-size: 0.62rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	box-shadow: 0 2px 6px rgba(13, 22, 31, 0.25);
+	pointer-events: none;
+	white-space: nowrap;
+}
+
+.js-item-product[data-product-id="378156477"] .item-image::after,
+.js-item-product[data-product-id="378156482"] .item-image::after,
+.js-item-product[data-product-id="378156485"] .item-image::after,
+.js-item-product[data-product-id="378156488"] .item-image::after,
+.js-item-product[data-product-id="378156494"] .item-image::after,
+.row[data-store="product-image-378156477"]::after,
+.row[data-store="product-image-378156482"]::after,
+.row[data-store="product-image-378156485"]::after,
+.row[data-store="product-image-378156488"]::after,
+.row[data-store="product-image-378156494"]::after {
+	content: "60ML Extracto";
+}
+
+@media (max-width: 576px) {
+	.js-item-product .item-image::after,
+	.row[data-store^="product-image-"]::after {
+		font-size: 0.56rem;
+		padding: 3px 8px;
+		top: 8px;
+		right: 8px;
+	}
+}
+
+/* ===== Botón "Comprar" directo (productos de una sola variante, ej. Extractos) ===== */
+
+.js-item-product .js-addtocart.btn-primary {
+	background: #0d161f !important;
+	border-color: #0d161f !important;
+	color: #fff !important;
+	font-weight: 600 !important;
+	font-size: .82rem !important;
+	letter-spacing: .02em !important;
+	padding: 8px 22px !important;
+	border-radius: 6px !important;
+	transition: all .2s ease !important;
+}
+.js-item-product .js-addtocart.btn-primary:hover {
+	background: #1d2935 !important;
+	border-color: #1d2935 !important;
+	transform: translateY(-1px);
+}
