@@ -76,6 +76,22 @@
 }
 */
 
+/* Extractos 60ml (categoría "Extractos de Perfume"): llevan "60ML Extracto"
+   en vez de "Original". Se listan por ID porque el tema no expone la
+   categoría del producto en el HTML de las tarjetas. */
+.js-item-product[data-product-id="378156477"] .item-image::after,
+.js-item-product[data-product-id="378156482"] .item-image::after,
+.js-item-product[data-product-id="378156485"] .item-image::after,
+.js-item-product[data-product-id="378156488"] .item-image::after,
+.js-item-product[data-product-id="378156494"] .item-image::after,
+.row[data-store="product-image-378156477"]::after,
+.row[data-store="product-image-378156482"]::after,
+.row[data-store="product-image-378156485"]::after,
+.row[data-store="product-image-378156488"]::after,
+.row[data-store="product-image-378156494"]::after {
+  content: "60ML Extracto";
+}
+
 @media (max-width: 576px) {
   .js-item-product .item-image::after,
   .row[data-store^="product-image-"]::after {
