@@ -65,7 +65,7 @@ COMBOS = [
         "id": 379559578,
         "slug": "caballero",
         "name": "Caballero",
-        "price": 69900,
+        "price": 79900,
         "frags": [378156488, 379371166, 378156482],
     },
     {
@@ -100,7 +100,7 @@ COMBOS = [
         "id": 379562943,
         "slug": "intenso",
         "name": "Intenso",
-        "price": 69900,
+        "price": 59900,
         "frags": [378156485, 378156488, 378156482],
     },
     {
