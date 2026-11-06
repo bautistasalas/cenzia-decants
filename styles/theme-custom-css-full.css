@@ -384,7 +384,9 @@
 .row[data-store="product-image-379562941"]::after,
 .row[data-store="product-image-379562943"]::after,
 .row[data-store="product-image-379562948"]::after {
-	content: "Combo Extracto";
+	/* Sin badge: la propia foto del combo ya dice "EXTRACTO" en el diseño,
+	   y la pill tapaba el nombre del combo en las tarjetas chicas. */
+	display: none !important;
 }
 
 @media (max-width: 576px) {
