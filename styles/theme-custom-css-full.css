@@ -9,7 +9,7 @@
  */
 
 [data-store^="product-price-"] {
-	margin-bottom: 24px !important;
+	margin-bottom: 10px !important;
 }
 
 [data-store^="product-price-"] .js-price-display {
@@ -399,23 +399,9 @@
 
 /* ===== Hero de la ficha de producto ===== */
 
+/* Nadie usa el breadcrumb, se saca */
 .breadcrumbs {
-	font-size: 12px;
-	color: #8a8f95;
-	margin-bottom: 14px;
-	letter-spacing: .01em;
-}
-.breadcrumbs .crumb {
-	color: #8a8f95;
-	text-decoration: none;
-}
-.breadcrumbs .crumb.active {
-	color: #0d161f;
-	font-weight: 600;
-}
-.breadcrumbs .separator {
-	margin: 0 6px;
-	opacity: .5;
+	display: none !important;
 }
 
 .js-product-name {
@@ -423,6 +409,12 @@
 	font-weight: 800 !important;
 	letter-spacing: -.01em;
 	color: #0d161f !important;
+	margin-bottom: 2px !important;
+}
+
+/* Saca el título "Descripción" que Tienda Nube pone arriba de la descripción */
+[data-store^="product-description-"] > h6.font-body {
+	display: none !important;
 }
 
 .js-offer-label {
@@ -438,11 +430,31 @@
 	letter-spacing: .02em;
 }
 
-.btn-add-to-cart.btn-primary {
+input.btn-add-to-cart.btn.btn-primary.btn-big {
 	border-radius: 10px !important;
 	height: 48px;
 	font-family: 'Manrope', sans-serif;
 	letter-spacing: .01em;
+}
+
+/* Aviso de Mercado Pago, versión con mayor especificidad por si algo más pisa esto */
+div.js-product-payments-container::after {
+	content: "🔒 Trabajamos con Mercado Pago — pago 100% seguro" !important;
+	display: block !important;
+	margin-top: 10px;
+	padding: 11px 14px;
+	background: #F6F7F8;
+	border-radius: 10px;
+	font-size: 12.5px;
+	color: #0d161f;
+	font-weight: 700;
+}
+
+/* "O en 6 cuotas sin interés" como chip, igual que "Ver más detalles" */
+.js-max-installments-container {
+	background: #F6F7F8;
+	border-radius: 12px;
+	padding: 10px 14px !important;
 }
 
 .js-toggle-shipping .js-accordion-private-toggle {
@@ -453,6 +465,20 @@
 	font-size: 13px;
 	color: #5B6672;
 	font-weight: 600;
+}
+
+/* Medios de pago aceptados, debajo del botón de comprar */
+.row.no-gutters.mb-4 > .col-8.col-md-9::after {
+	content: "💳 Visa  ·  Mastercard  ·  American Express  ·  Mercado Pago";
+	display: block;
+	margin-top: 10px;
+	padding: 10px 14px;
+	background: #F6F7F8;
+	border-radius: 10px;
+	font-size: 11.5px;
+	font-weight: 600;
+	color: #5B6672;
+	text-align: center;
 }
 
 /* Oculta el selector de cantidad (columna entera, no solo los íconos) y
@@ -491,19 +517,6 @@
 	text-decoration: none !important;
 }
 
-/* Confianza en el pago — aplica a toda la tienda, es verdad para cualquier producto */
-.js-product-payments-container::after {
-	content: "🔒 Pago seguro con Mercado Pago";
-	display: block;
-	margin-top: 10px;
-	padding: 11px 14px;
-	background: #F6F7F8;
-	border-radius: 10px;
-	font-size: 12.5px;
-	color: #0d161f;
-	font-weight: 700;
-}
-
 /* Calificación y beneficios — SOLO Extractos de Perfume. El precio con
    transferencia ya no va acá: lo calcula en vivo scripts/transfer-discount.js
    (instalado vía Scripts API), que funciona para cualquier precio real,
@@ -519,12 +532,12 @@
 [data-store="product-name-379371171"]::after,
 [data-store="product-name-379371172"]::after,
 [data-store="product-name-379371173"]::after {
-	content: "★★★★★  4.8 (47 reseñas)";
+	content: "★★★★★  4.8 (47 reseñas)  ·  +2000 pedidos enviados";
 	display: block;
-	font-size: 13px;
+	font-size: 12.5px;
 	font-weight: 700;
 	color: #c9962b;
-	margin-top: 8px;
+	margin-top: 4px;
 }
 
 [data-store="product-price-378156477"]::before,
@@ -532,13 +545,18 @@
 [data-store="product-price-378156485"]::before,
 [data-store="product-price-378156488"]::before,
 [data-store="product-price-378156494"]::before,
-[data-store="product-price-378201974"]::before {
+[data-store="product-price-378201974"]::before,
+[data-store="product-price-379371165"]::before,
+[data-store="product-price-379371166"]::before,
+[data-store="product-price-379371171"]::before,
+[data-store="product-price-379371172"]::before,
+[data-store="product-price-379371173"]::before {
 	content: "● Mismas esencias que el original\A ● 8 a 10 horas de duración\A ● Envío a todo el país";
 	display: block;
 	white-space: pre-line;
 	font-size: 13.5px;
 	font-weight: 600;
 	color: #0d161f;
-	line-height: 2;
-	margin-bottom: 16px;
+	line-height: 1.8;
+	margin: 6px 0 10px;
 }
