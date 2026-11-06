@@ -20,6 +20,17 @@ DISPLAY = {
     379371172: ("Ombré Leather", "Tom Ford"),
 }
 
+# reseña breve en tono humano (mood/ocasión), no la "tag" técnica de olf_data
+BLURB = {
+    378156477: "Fresca y alegre, perfecta para el día a día y el buen clima.",
+    378156482: "Amaderada con carácter, para quien quiere destacar sin esfuerzo.",
+    378156485: "Intensa y seductora, ideal para la noche y salidas especiales.",
+    378156488: "Oriental potente y magnética, para quien busca dejar huella.",
+    378156494: "Fresca y versátil, el clásico infalible para cualquier ocasión.",
+    379371166: "Cálida y seductora, especial para citas y noches de frío.",
+    379371172: "Cuero floral elegante y distinto, para looks sofisticados.",
+}
+
 def notes_for(pid):
     p = BY_ID[pid]
     salida = [n.strip() for n in p["salida"].split("·")]
