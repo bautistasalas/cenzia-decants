@@ -368,6 +368,17 @@
 	content: "60ML Extracto";
 }
 
+.js-item-product[data-product-id="379559574"] .item-image::after,
+.js-item-product[data-product-id="379559578"] .item-image::after,
+.js-item-product[data-product-id="379559585"] .item-image::after,
+.js-item-product[data-product-id="379559587"] .item-image::after,
+.row[data-store="product-image-379559574"]::after,
+.row[data-store="product-image-379559578"]::after,
+.row[data-store="product-image-379559585"]::after,
+.row[data-store="product-image-379559587"]::after {
+	content: "Combo Extracto";
+}
+
 @media (max-width: 576px) {
 	.js-item-product .item-image::after,
 	.row[data-store^="product-image-"]::after {
@@ -540,7 +551,11 @@ div.js-product-payments-container::after {
 [data-store="product-name-379371166"]::after,
 [data-store="product-name-379371171"]::after,
 [data-store="product-name-379371172"]::after,
-[data-store="product-name-379371173"]::after {
+[data-store="product-name-379371173"]::after,
+[data-store="product-name-379559574"]::after,
+[data-store="product-name-379559578"]::after,
+[data-store="product-name-379559585"]::after,
+[data-store="product-name-379559587"]::after {
 	content: "★★★★★  4.8 (47 reseñas)  ·  +2000 pedidos enviados";
 	display: block;
 	font-size: 12.5px;
@@ -561,6 +576,19 @@ div.js-product-payments-container::after {
 [data-store="product-price-379371172"]::before,
 [data-store="product-price-379371173"]::before {
 	content: "● Mismas esencias que el original\A ● 8 a 10 horas de duración\A ● Envío a todo el país";
+	display: block;
+	white-space: pre-line;
+	font-size: 13.5px;
+	font-weight: 600;
+	color: #0d161f;
+	line-height: 1.8;
+}
+
+[data-store="product-price-379559574"]::before,
+[data-store="product-price-379559578"]::before,
+[data-store="product-price-379559585"]::before,
+[data-store="product-price-379559587"]::before {
+	content: "● Mismas esencias que los originales\A ● 8 a 10 horas de duración\A ● Envío gratis siempre";
 	display: block;
 	white-space: pre-line;
 	font-size: 13.5px;

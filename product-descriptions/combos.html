@@ -1,0 +1,590 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+.cz-desc{--ink:#0D161F;--ink-soft:#5B6672;--paper:#fff;--white:#fff;--line:#E6E8EB;--gold:#0D161F;--gold-deep:#0A1118;--gold-tint:rgba(13,22,31,.06);--pain:#3E6690;--pain-txt:#3E6690;--relief:#3DDC84;--relief-txt:#2E7D52;--shadow:0 10px 40px -12px rgba(13,22,31,.18);font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.55;background:var(--white)}
+.cz-desc *{box-sizing:border-box}
+.cz-desc h2,.cz-desc h3{margin:0;letter-spacing:-.01em;font-weight:800;font-family:"Poppins","Manrope",system-ui,sans-serif}
+.cz-desc p{margin:0}
+.cz-desc .sec{padding:40px 20px;max-width:600px;margin:0 auto}
+.cz-desc .center{text-align:center}
+.cz-desc .eyebrow{font-size:12px;font-weight:700;color:var(--gold-deep);margin-bottom:8px;letter-spacing:.04em;text-transform:uppercase}
+.cz-desc .h-sec{font-size:clamp(22px,5vw,30px);font-weight:800;line-height:1.15}
+.cz-desc .h-sec em{font-style:italic;font-weight:400;color:var(--pain-txt)}
+.cz-desc .lead{font-size:15px;color:var(--ink-soft);margin-top:12px}
+
+/* Recorrido olfativo — carrusel (un mini-card por fragancia del combo) */
+.cz-desc .olf-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:4px 2px 10px;margin:20px 0 0;scrollbar-width:none}
+.cz-desc .olf-track::-webkit-scrollbar{display:none}
+.cz-desc .olf-mini{flex:0 0 auto;width:220px;scroll-snap-align:start;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px 16px;box-shadow:var(--shadow);text-align:left}
+.cz-desc .olf-mini .n{font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-deep);opacity:.55;margin-bottom:4px}
+.cz-desc .olf-mini h4{margin:0 0 6px;font-size:15px;font-weight:800;font-family:"Poppins","Manrope",sans-serif;line-height:1.25}
+.cz-desc .olf-mini .tag{font-size:12px;font-style:italic;color:var(--ink-soft);margin-bottom:12px;display:block}
+.cz-desc .olf-mini .notes{display:flex;flex-wrap:wrap;gap:6px}
+.cz-desc .olf-mini .notes span{font-size:10.5px;font-weight:700;background:var(--gold-tint);color:var(--ink);padding:4px 9px;border-radius:999px}
+.cz-desc .olf-dots{display:flex;justify-content:center;gap:5px;margin-top:14px}
+.cz-desc .olf-dots span{width:5px;height:5px;border-radius:50%;background:var(--line)}
+.cz-desc .olf-dots span:first-child{background:var(--ink)}
+.cz-desc .swipe-hint{text-align:center;font-size:11px;color:var(--ink-soft);margin-top:10px;opacity:.75}
+.cz-desc .olf-faq{margin-top:20px}
+
+/* Bloque de dolor: imagen oscura con etiquetas */
+.cz-desc .pain{position:relative;width:100%;max-width:460px;margin:24px auto 0;aspect-ratio:4/5;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);background:#0f0f0f}
+.cz-desc .pain img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.72) saturate(1.05)}
+.cz-desc .pain::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 28%,rgba(0,0,0,0) 62%,rgba(0,0,0,.6) 100%)}
+.cz-desc .pain-title{position:absolute;top:0;left:0;right:0;padding:22px 20px 0;z-index:3;color:#fff;font-size:clamp(19px,4.6vw,24px);font-weight:800;line-height:1.2;font-family:"Poppins","Manrope",system-ui,sans-serif}
+.cz-desc .pain-title em{font-style:italic;font-weight:400;color:#8CAED9}
+.cz-desc .tag{position:absolute;display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;letter-spacing:.02em;padding:7px 13px;border-radius:999px;z-index:3;background:rgba(10,10,10,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1.5px solid #8CAED9;color:#8CAED9;opacity:0;transform:translateY(6px);transition:opacity .5s ease,transform .5s ease}
+.cz-desc .pain.is-in .tag{opacity:1;transform:translateY(0)}
+.cz-desc .tag-1{top:58%;left:8%;transition-delay:.1s}
+.cz-desc .tag-2{top:70%;right:8%;transition-delay:.35s}
+.cz-desc .tag-3{bottom:13%;left:8%;transition-delay:.6s}
+.cz-desc .pain-foot{position:absolute;left:0;right:0;bottom:0;padding:0 20px 20px;z-index:3;color:#F1E4E6;font-size:13.5px;line-height:1.45}
+.cz-desc .pain-foot b{color:#fff}
+
+/* Antes/después */
+.cz-desc .bawrap{max-width:460px;margin:22px auto 0}
+.cz-desc .ba{position:relative;width:100%;aspect-ratio:4/5;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);user-select:none;touch-action:pan-y;background:var(--paper)}
+.cz-desc .ba .before,.cz-desc .ba .after{position:absolute;inset:0}
+.cz-desc .ba .after{clip-path:inset(0 0 0 50%)}
+.cz-desc .ba .before{clip-path:inset(0 50% 0 0)}
+.cz-desc .ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none;display:block}
+.cz-desc .ba .tag{position:absolute;top:14px;font-size:11px;font-weight:800;letter-spacing:.02em;padding:7px 14px;border-radius:999px;z-index:3;background:rgba(255,255,255,.95);color:var(--ink)}
+.cz-desc .ba .tag-a{left:12px}.cz-desc .ba .tag-a::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--pain-txt);margin-right:6px}
+.cz-desc .ba .tag-b{right:12px}.cz-desc .ba .tag-b::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--relief-txt);margin-right:6px}
+.cz-desc .ba .lbl{position:absolute;bottom:14px;max-width:46%;font-size:10.5px;font-weight:700;line-height:1.35;color:var(--ink);background:rgba(255,255,255,.95);border-radius:10px;padding:9px 11px;z-index:2}
+.cz-desc .ba .lbl-a{left:12px;border-left:3px solid var(--pain-txt)}
+.cz-desc .ba .lbl-b{right:12px;text-align:right;border-right:3px solid var(--relief-txt)}
+.cz-desc .ba .handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%);z-index:4;box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+.cz-desc .ba .knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;color:var(--gold-deep);font-weight:800;font-size:15px;z-index:5;cursor:ew-resize}
+.cz-desc .ba-meter{margin:14px 0 0;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-align:left}
+.cz-desc .ba-meter-lb{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13px;font-weight:800;margin-bottom:8px}
+.cz-desc .ba-meter-bar{height:8px;border-radius:999px;background:linear-gradient(90deg,var(--relief),var(--pain));position:relative}
+.cz-desc .ba-meter-bar i{position:absolute;top:50%;left:50%;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--ink);transform:translate(-50%,-50%);box-shadow:0 2px 6px rgba(0,0,0,.3)}
+.cz-desc .ba-caps{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:18px}
+.cz-desc .ba-cap{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;color:var(--gold-deep)}
+.cz-desc .ba-cap::before{content:"✓";color:var(--relief-txt)}
+
+/* Características */
+.cz-desc .ben-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:560px;margin:24px auto 0}
+.cz-desc .ben-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px 14px;text-align:center}
+.cz-desc .ben-ic{width:44px;height:44px;border-radius:999px;background:var(--gold-tint);color:var(--gold-deep);display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:19px}
+.cz-desc .ben-card h4{font-size:14.5px;margin-bottom:4px;font-weight:800}
+.cz-desc .ben-card p{font-size:12px;color:var(--ink-soft);line-height:1.4}
+
+/* Comparativa */
+.cz-desc .cmp-wrap{max-width:560px;margin:24px auto 0;overflow-x:auto}
+.cz-desc .cmp-tbl{width:100%;border-collapse:separate;border-spacing:0;font-size:13px}
+.cz-desc .cmp-tbl th,.cz-desc .cmp-tbl td{padding:13px 8px;text-align:center;border-bottom:1px solid var(--line)}
+.cz-desc .cmp-tbl td:first-child{text-align:left;font-weight:700;color:var(--ink)}
+.cz-desc .cmp-tbl thead th{padding-top:0;padding-bottom:12px;vertical-align:bottom;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.02em;color:var(--ink-soft)}
+.cz-desc .cmp-tbl td.us,.cz-desc .cmp-tbl th.us{background:var(--gold-tint);border-left:2px solid var(--gold);border-right:2px solid var(--gold);font-weight:800;color:var(--gold-deep)}
+.cz-desc .cmp-tbl thead th.us{border-top:2px solid var(--gold);border-radius:14px 14px 0 0}
+.cz-desc .cmp-tbl tbody tr:last-child td.us{border-bottom:2px solid var(--gold);border-radius:0 0 14px 14px}
+
+/* FAQ */
+.cz-desc .faq{max-width:560px;margin:24px auto 0;text-align:left}
+.cz-desc .faq details{border-bottom:1px solid var(--line)}
+.cz-desc .faq summary{list-style:none;cursor:pointer;padding:15px 2px;font-weight:700;font-size:14.5px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.cz-desc .faq summary::-webkit-details-marker{display:none}
+.cz-desc .faq summary::after{content:"+";color:var(--gold-deep);font-weight:800;font-size:19px;line-height:1;transition:transform .2s}
+.cz-desc .faq details[open] summary::after{transform:rotate(45deg)}
+.cz-desc .faq .a{padding:0 2px 15px;font-size:13.5px;line-height:1.6;color:var(--ink-soft)}
+.cz-desc .faq .a b{color:var(--ink)}
+
+/* Reseñas generales (grid final) */
+.cz-desc .rv-top{display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:20px;margin:24px auto 18px;max-width:420px}
+.cz-desc .rv-avg b{display:block;font-size:40px;font-weight:800;line-height:1}
+.cz-desc .rv-avg .st{color:#c9962b;letter-spacing:2px;font-size:14px}
+.cz-desc .rv-avg span{display:block;font-size:11.5px;color:var(--ink-soft);margin-top:4px}
+.cz-desc .rv-grid{display:grid;grid-template-columns:1fr;gap:12px;max-width:560px;margin:0 auto}
+.cz-desc .rv-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-align:left}
+.cz-desc .rv-card .rv-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.cz-desc .rv-card b{font-size:13px}
+.cz-desc .rv-card .st{color:#c9962b;font-size:12px;letter-spacing:1px}
+.cz-desc .rv-card p{font-size:13px;color:var(--ink-soft);line-height:1.55}
+.cz-desc .rv-more{display:none}
+.cz-desc .rv-more.is-open{display:grid;gap:12px}
+.cz-desc .rv-toggle{display:inline-flex;align-items:center;gap:6px;background:var(--white);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:12px 24px;font-family:"Manrope",system-ui,sans-serif;font-weight:700;font-size:13.5px;cursor:pointer;margin-top:16px}
+.cz-desc .rv-toggle:hover{background:var(--gold-tint)}
+.cz-desc .rv-actions{margin-bottom:18px}
+.cz-desc .rv-write{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border:0;border-radius:999px;padding:12px 24px;font-family:"Manrope",system-ui,sans-serif;font-weight:700;font-size:13.5px;cursor:pointer;text-decoration:none}
+.cz-desc .rv-write:hover{background:var(--gold-deep)}
+
+/* Formulario "Escribir reseña" — no persiste datos, es solo UI */
+.cz-desc .rv-form{max-width:420px;margin:14px auto 0;text-align:left;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px}
+.cz-desc .rv-form-row{margin-bottom:10px}
+.cz-desc .rv-input,.cz-desc .rv-textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-family:"Manrope",system-ui,sans-serif;font-size:13.5px;color:var(--ink)}
+.cz-desc .rv-textarea{resize:vertical;margin-bottom:10px}
+.cz-desc .rv-stars{display:flex;gap:4px;margin-bottom:10px}
+.cz-desc .rv-star{background:none;border:0;font-size:22px;line-height:1;color:var(--line);cursor:pointer;padding:2px}
+.cz-desc .rv-star.is-active{color:#c9962b}
+.cz-desc .rv-submit{width:100%;background:var(--ink);color:#fff;border:0;border-radius:999px;padding:12px;font-family:"Manrope",system-ui,sans-serif;font-weight:700;font-size:13.5px;cursor:pointer}
+.cz-desc .rv-submit:hover{background:var(--gold-deep)}
+.cz-desc .rv-thanks{max-width:420px;margin:14px auto 0;background:var(--gold-tint);border:1px solid var(--line);border-radius:14px;padding:16px;font-weight:700;font-size:13.5px}
+
+.cz-desc .cta-final{margin-top:30px;background:var(--ink);color:#fff;border-radius:20px;padding:34px 24px;text-align:center}
+.cz-desc .cta-final h3{font-size:clamp(20px,5vw,26px);font-weight:800;margin:0 auto 8px;max-width:26ch;color:#fff}
+.cz-desc .cta-final p{font-size:13.5px;color:#C9C9C4;max-width:40ch;margin:0 auto 20px}
+.cz-desc .cta-final a{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#1A1A1A;font-weight:800;font-size:14.5px;padding:14px 26px;border-radius:999px;text-decoration:none}
+
+@media(max-width:420px){
+.cz-desc .ben-grid{gap:10px}
+.cz-desc .cmp-tbl{font-size:11px}
+.cz-desc .cmp-tbl th,.cz-desc .cmp-tbl td{padding:9px 5px}
+}
+@media(prefers-reduced-motion:reduce){.cz-desc *{transition:none!important}}
+
+.cz-desc .preventa{max-width:460px;margin:24px auto 0;padding:10px 16px;background:#FDF3E3;border:1px solid #F0D9A8;border-radius:999px;font-size:12px;font-weight:600;color:#7A5A12;text-align:center;line-height:1.4}
+.cz-desc .preventa b{font-weight:800}
+</style>
+
+<div class="cz-desc">
+
+<div class="preventa">📦 <b>Estamos en preventa</b> — el envío puede demorar entre 7 y 12 días hábiles</div>
+
+<!-- ======= RECORRIDO OLFATIVO (carrusel, varía por combo) ======= -->
+<div class="sec center">
+  <div class="eyebrow">Inspirados en</div>
+  <h2 class="h-sec">Recorrido Olfativo <em>de este combo</em></h2>
+  <p class="lead">{{COMBO_QTY}} fragancias, {{COMBO_QTY}} personalidades distintas</p>
+
+  <div class="olf-track">
+{{OLF_TRACK}}
+  </div>
+  <div class="olf-dots">{{OLF_DOTS}}</div>
+  <p class="swipe-hint">← deslizá para ver {{COMBO_QTY_TXT}} →</p>
+
+  <div class="faq olf-faq">
+    <details><summary>¿Son extractos originales, o imitaciones?</summary><div class="a">No son decants ni vienen directamente de los frascos originales: son <b>reformulaciones realizadas en laboratorio</b>, desarrolladas con materias primas seleccionadas para replicar lo más fielmente posible el aroma de cada perfume — no imitaciones baratas.</div></details>
+    <details><summary>¿Tiene envío gratis?</summary><div class="a">Sí — en todos los combos el envío es <b>siempre gratis</b>, sin importar el monto de tu compra.</div></details>
+    <details><summary>¿Cómo los aplico para que duren más?</summary><div class="a">Aplicalos sobre puntos de pulso (muñecas, cuello, detrás de las orejas) con la piel hidratada, sin frotar — así se fijan mejor y duran más horas.</div></details>
+  </div>
+</div>
+
+<!-- ======= BLOQUE DE DOLOR ======= -->
+<div class="sec center">
+  <div class="eyebrow">¿Te pasa esto?</div>
+  <h2 class="h-sec">Esos perfumes que amás <em>te salen carísimos</em></h2>
+  <p class="lead" style="margin-top:10px">No es que no tengas gusto: es el precio del frasco, no el de la esencia</p>
+
+  <div class="pain" id="cz-pain">
+    <img src="https://acdn-us.mitiendanube.com/stores/006/474/513/products/cenzia-dolor-43266181b4709998f417934748477673-1024-1024.webp" alt="Hombre viendo el precio de un perfume en una perfumería de lujo">
+    <div class="pain-title">Esos perfumes que amás <em>te salen carísimos.</em></div>
+    <span class="tag tag-1">💸 Precio — +$500.000 de diferencia</span>
+    <span class="tag tag-2">🤔 Decisión — comprás a ciegas</span>
+    <span class="tag tag-3">🌸 Variedad — siempre el mismo perfume</span>
+    <div class="pain-foot">Y lo seguís postergando <b>por el precio de la marca, no de la fragancia.</b></div>
+  </div>
+</div>
+
+<!-- ======= ANTES / DESPUÉS ======= -->
+<div class="sec center">
+  <div class="eyebrow">Antes y después</div>
+  <h2 class="h-sec">Esto te pasa <em>cada vez que querés un perfume nuevo</em></h2>
+  <p class="lead" style="margin-top:10px">Deslizá y mirá la diferencia</p>
+
+  <div class="bawrap">
+    <div class="ba" id="cz-ba">
+      <div class="before" id="cz-ba-before">
+        <img src="https://acdn-us.mitiendanube.com/stores/006/474/513/products/cenzia-antes-608ce5546a255f322d17934748558645-1024-1024.webp" alt="Perfume original Valentino con precio de $750.000">
+        <span class="lbl lbl-a">Un solo aroma, siempre el mismo</span>
+      </div>
+      <div class="after" id="cz-ba-after">
+        <img src="https://acdn-us.mitiendanube.com/stores/006/474/513/products/nano-banana-2-using-the-attached-reference-images-references-1_-2-and-3-are-three-designer-perfume-1-3004b2bcb4d075fd3a17934749629771-1024-1024.png" alt="Combo de extractos Cenzia, económico, variedad de aromas">
+        <span class="lbl lbl-b">Combo Cenzia, mucho más económico</span>
+      </div>
+      <span class="tag tag-a">Un solo original</span>
+      <span class="tag tag-b">Con Cenzia</span>
+      <div class="handle" id="cz-ba-handle"><div class="knob">⇆</div></div>
+    </div>
+    <div class="ba-meter" aria-live="polite">
+      <div class="ba-meter-lb">Gasto en tus fragancias <b id="cz-ba-st">MEDIO</b></div>
+      <div class="ba-meter-bar"><i id="cz-ba-fill"></i></div>
+    </div>
+  </div>
+  <div class="ba-caps">
+    <span class="ba-cap">Mismas esencias</span>
+    <span class="ba-cap">Sin gastar una fortuna</span>
+    <span class="ba-cap">Variedad real</span>
+  </div>
+</div>
+
+<!-- ======= CARACTERÍSTICAS DEL COMBO ======= -->
+<div class="sec center" style="background:var(--paper)">
+  <div class="eyebrow">Características</div>
+  <h2 class="h-sec">Qué incluye este <em>combo</em></h2>
+  <div class="ben-grid">
+    <div class="ben-card"><div class="ben-ic">🧪</div><h4>Misma esencia</h4><p>Formulados con los mismos aromatizantes de cada original, no imitaciones baratas.</p></div>
+    <div class="ben-card"><div class="ben-ic">⏳</div><h4>8 a 10 horas</h4><p>Excelente proyección y duración en piel, todo el día.</p></div>
+    <div class="ben-card"><div class="ben-ic">🧴</div><h4>{{COMBO_QTY}} frascos de 60ml</h4><p>Un envase por fragancia, te duran varios meses de uso.</p></div>
+    <div class="ben-card"><div class="ben-ic">💧</div><h4>Eau de Parfum</h4><p>Mayor concentración de esencia que una colonia común — más intensidad, más duración.</p></div>
+  </div>
+</div>
+
+<!-- ======= COMPARATIVA ======= -->
+<div class="sec center">
+  <div class="eyebrow">Comparación</div>
+  <h2 class="h-sec">Combo Cenzia <em>vs. perfumes originales</em></h2>
+  <div class="cmp-wrap">
+    <table class="cmp-tbl">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Original</th>
+          <th class="us">Cenzia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Mismo aroma</td><td>Sí</td><td class="us">Sí</td></tr>
+        <tr><td>Fragancias incluidas</td><td>1 por frasco</td><td class="us">{{COMBO_QTY}} en este combo</td></tr>
+        <tr><td>Precio por fragancia</td><td>$300.000 - $1.000.000</td><td class="us">{{COMBO_UNIT_PRICE}}</td></tr>
+        <tr><td>Variedad de aromas con el mismo gasto</td><td>No</td><td class="us">Sí</td></tr>
+        <tr><td>Formato</td><td>50-100ml según marca</td><td class="us">{{COMBO_QTY}} x 60ml</td></tr>
+        <tr><td>Duración</td><td>8 a 10 horas</td><td class="us">8 a 10 horas</td></tr>
+        <tr><td>Disponibilidad</td><td>Importado / escasez</td><td class="us">Stock permanente</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ======= FAQ ======= -->
+<div class="sec center">
+  <div class="eyebrow">Preguntas frecuentes</div>
+  <h2 class="h-sec">Antes de <em>decidirte</em></h2>
+  <div class="faq">
+    <details><summary>¿Los extractos huelen igual que el original?</summary><div class="a">Sí. Nuestras fragancias extracto están formuladas con las <b>mismas notas</b> que los perfumes originales — la diferencia está en el packaging y la marca, no en el aroma.</div></details>
+    <details><summary>¿Cuánto duran puestos?</summary><div class="a">Entre <b>8 y 10 horas</b> de excelente proyección y duración en piel.</div></details>
+    <details><summary>¿Qué incluye el combo?</summary><div class="a">Este combo incluye <b>{{COMBO_QTY}} extractos de 60ml</b>, uno por cada fragancia, formato Eau de Parfum.</div></details>
+    <details><summary>¿Cómo son los envíos?</summary><div class="a">Hacemos envíos a todo el país con <b>Andreani y Correo Argentino</b>, siempre <b>gratis</b> en combos — la demora es de <b>3 a 5 días hábiles</b> desde el despacho. Por ahora los extractos están en preventa, así que el envío puede extenderse entre <b>6 y 10 días</b>.</div></details>
+    <details><summary>¿Puedo pagar en cuotas?</summary><div class="a">Sí, podés pagar en cuotas con tarjeta de crédito o Mercado Pago. También podés abonar con débito, o por transferencia con <b>15% OFF</b>.</div></details>
+    <details><summary>¿Y si no me convence?</summary><div class="a">Tenés hasta <b>15 días</b> para devolverlo, siempre respetando nuestra política de devoluciones.</div></details>
+  </div>
+</div>
+
+<!-- ======= RESEÑAS GENERALES (AL FINAL) + CTA ======= -->
+<div class="sec center">
+  <div class="eyebrow">Opiniones</div>
+  <h2 class="h-sec" style="margin-bottom:4px">Lo que dicen <em>nuestros clientes</em></h2>
+  <div class="rv-actions" style="margin-top:14px">
+    <button type="button" class="rv-write" id="cz-rv-write-btn">✍️ Escribir una reseña</button>
+  </div>
+
+  <div class="rv-form" id="cz-rv-form" style="display:none">
+    <div class="rv-form-row"><input type="text" class="rv-input" id="cz-rv-name" placeholder="Tu nombre" maxlength="60"></div>
+    <div class="rv-stars" id="cz-rv-stars" aria-label="Calificación">
+      <button type="button" class="rv-star" data-val="1" aria-label="1 estrella">★</button>
+      <button type="button" class="rv-star" data-val="2" aria-label="2 estrellas">★</button>
+      <button type="button" class="rv-star" data-val="3" aria-label="3 estrellas">★</button>
+      <button type="button" class="rv-star" data-val="4" aria-label="4 estrellas">★</button>
+      <button type="button" class="rv-star" data-val="5" aria-label="5 estrellas">★</button>
+    </div>
+    <textarea class="rv-textarea" id="cz-rv-text" rows="3" maxlength="300" placeholder="Contanos qué te pareció..."></textarea>
+    <button type="button" class="rv-submit" id="cz-rv-submit">Enviar reseña</button>
+  </div>
+  <div class="rv-thanks" id="cz-rv-thanks" style="display:none"><p>¡Gracias por tu reseña! 🙌</p></div>
+
+  <div class="rv-top">
+    <div class="rv-avg">
+      <b>4.8</b>
+      <span class="st">★★★★★</span>
+      <span>47 reseñas</span>
+    </div>
+  </div>
+  <div class="rv-grid">
+    <div class="rv-card">
+      <div class="rv-head"><b>Federico Diaz</b><span class="st">★★★★★</span></div>
+      <p>Supero mis expectativas totalmente son edp de verdad se nota la diferencia con otros perfumes</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Candela Cruz</b><span class="st">★★★★★</span></div>
+      <p>Me parece una alternativa genial para los q nos gustan los perfumes caros pero no llegamos a comprarlos</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Sebastian Quiroga</b><span class="st">★★★★★</span></div>
+      <p>Muy ricos aunque en mi piel duran un poco menos unas 6 horas. igual x el precio esta mas que bien</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Valentina Sanchez</b><span class="st">★★★★★</span></div>
+      <p>Gente es por aca!! mismo aroma no gastas una fortuna y los frasquitos re van para llevar</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Julieta Vega</b><span class="st">★★★★★</span></div>
+      <p>Duran una banda, me bañe y todavia me sentia un poco el olor re bien</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Gonzalo Suarez</b><span class="st">★★★★☆</span></div>
+      <p>Excelente relacion precio calidad, por el combo pague menos q un solo perfume original y tengo variedad</p>
+    </div>
+    <div class="rv-more" id="cz-rv-more">
+    <div class="rv-card">
+      <div class="rv-head"><b>Gaston Alvarez</b><span class="st">★★★★★</span></div>
+      <p>La verdad me ahorre unos buenos pesos es una excelente opcion</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Esteban Roldan</b><span class="st">★★★★★</span></div>
+      <p>El pedido llego perfecto los perfumes duran muchisimo me sorprendio para bien</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Micaela Luna</b><span class="st">★★★★★</span></div>
+      <p>Zafa bastante la verdad q por el precio esta barbaro duran unas buenas horas</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Joaquin Silva</b><span class="st">★★★★☆</span></div>
+      <p>Muy bueno la verdad, tardo un poco el envio por la preventa pero vale la pena x lo q pague</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Damian Ibarra</b><span class="st">★★★★★</span></div>
+      <p>Esta bastante bien el aroma es identico y la duracion zafa bien</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Alejandro Bustamante</b><span class="st">★★★★★</span></div>
+      <p>Tremendo, el combo me re sirvio para tener variedad xq por lo q sale uno original aca me compro varios</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Pablo Gimenez</b><span class="st">★★★★★</span></div>
+      <p>Muy buena opcion economica. en la ropa te duran dias literal</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Gabriel Herrera</b><span class="st">★★★★★</span></div>
+      <p>Me lo recomendo un amigo y la verdad q un exito excelente producto</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Leandro Torres</b><span class="st">★★★★★</span></div>
+      <p>Es la primera vez q compro y me re sorprendio la fijacion me puse a la mañana y a la noche seguia</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Mateo Gonzalez</b><span class="st">★★★★★</span></div>
+      <p>Me encanta es exactamente el mismo aroma q mis perfumes favoritos pero sin tener q pagar de mas</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Paula Navarro</b><span class="st">★★★★★</span></div>
+      <p>El tamaño de 60 esta bien rinde. las fragancias son muy ricas</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Ezequiel Sosa</b><span class="st">★★★★★</span></div>
+      <p>Increible no le tenia fe a los extractos pero este combo me re convencio duran un monton</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Ariel Peralta</b><span class="st">★★★★★</span></div>
+      <p>Lo compre para el dia a dia y lo termino usando para salir tambien de lo rico q es</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Mariano Ponce</b><span class="st">★★★★☆</span></div>
+      <p>El aroma es riquisimo y dura un monton el envio fue rapido</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Hernan Gatica</b><span class="st">★★★★★</span></div>
+      <p>Me encanto el envio tardo lo normal y el combo es un mil</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Franco Ruiz</b><span class="st">★★★★★</span></div>
+      <p>Muy buen producto ojala saquen mas combos pronto</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Fernando Acosta</b><span class="st">★★★★★</span></div>
+      <p>Totalmente recomendado, ya lo recomende a todos es un viaje de ida</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Florencia Ortiz</b><span class="st">★★★★★</span></div>
+      <p>Increible la similitud con los originales voy a volver a comprar sin dudas</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Matias Romero</b><span class="st">★★★★☆</span></div>
+      <p>Un golazo pagas la esencia y no la marca, recomendadisimo</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Juan Ignacio Perez</b><span class="st">★★★★☆</span></div>
+      <p>Tardo un par de dias mas por la preventa pero la atencion de diez los perfumes huelen increible</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Sol Miranda</b><span class="st">★★★★★</span></div>
+      <p>Me parecio barbaro cumple 100% con lo que promete duran unas 8 horitas</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Tomas Rodriguez</b><span class="st">★★★★★</span></div>
+      <p>Buena presentacion y excelente calidad nada q envidiar a los de afuera</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Rodrigo Dominguez</b><span class="st">★★★★★</span></div>
+      <p>No le tenia mucha fe por el precio pero es literal el mismo olor, me duran todo el dia puestos un lujo</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Camila Blanco</b><span class="st">★★★★★</span></div>
+      <p>Es tal cual dicen en la pagina me duran unas 8 horas en piel y en ropa hasta el otro dia</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Antonella Iglesias</b><span class="st">★★★★★</span></div>
+      <p>Cumple. me gustaria q vengan en envase mas grande pero el de 60 rinde bien igual</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Maria Ines Peralta</b><span class="st">★★★★☆</span></div>
+      <p>Lo compre a ciegas confiando en las reseñas y no me defraudo riquisimo</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Facundo Martinez</b><span class="st">★★★★★</span></div>
+      <p>Me encanta poder variar de perfume sin fundirme, antes usaba siempre el mismo xq son carisimos</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Ignacio Castro</b><span class="st">★★★★☆</span></div>
+      <p>No compro mas perfumes de diseñador esto es igual y muchisimo mas barato</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Delfina Rios</b><span class="st">★★★★★</span></div>
+      <p>Es un 10 literalmente pagas la esencia nomas se siente de re buena calidad</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Lucia Medina</b><span class="st">★★★★★</span></div>
+      <p>Los envases de 60ml son re practicos la fragancia dura un monton a las 8 horas me lo seguia sintiendo</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Diego Reynoso</b><span class="st">★★★★☆</span></div>
+      <p>Amo poder tener varios aromas distintos sin gastar medio sueldo aguante cenzia</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Martina Benitez</b><span class="st">★★★★★</span></div>
+      <p>La verdad impecable, no pago mas el frasco original ni a palos. me duran las 10 hs q promete</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Sofia Cabrera</b><span class="st">★★★★★</span></div>
+      <p>Excelente la fijacion es espectacular dura todo el dia sin drama</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Marcos Villarreal</b><span class="st">★★★★★</span></div>
+      <p>Me llego ayer y ya estrene uno, es igual al original mi novia ni se dio cuenta q era otro</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Martin Rossi</b><span class="st">★★★★★</span></div>
+      <p>Esta bueno cumple con lo q dice, el combo te da variedad real</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Agustin Lopez</b><span class="st">★★★★★</span></div>
+      <p>Espectacular identico al q usaba siempre pero a una fraccion del precio</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Milagros Paz</b><span class="st">★★★★★</span></div>
+      <p>Llego por andreani en 4 dias las fragancias son riquisimas se nota q tienen buena concentracion</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Cristian Paredes</b><span class="st">★★★★☆</span></div>
+      <p>No tiene nada q envidiarle a los importados la proyeccion en las primeras horas es buenisima</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Nicolas Gomez</b><span class="st">★★★★★</span></div>
+      <p>Compre con dudas pero es posta igual me ahorre muchisima plata, la duracion un 10</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Julian Mendez</b><span class="st">★★★★★</span></div>
+      <p>Buena calidad se nota q es extracto. el olor es intenso y dura banda</p>
+    </div>
+    <div class="rv-card">
+      <div class="rv-head"><b>Lucas Fernandez</b><span class="st">★★★★★</span></div>
+      <p>Un lujo tener varios perfumes q amo a este precio es una locura</p>
+    </div>
+    </div>
+  </div>
+  <button type="button" class="rv-toggle" id="cz-rv-toggle">Ver más reseñas</button>
+
+  <div class="cta-final">
+    <h3>Armá tu perfumero por <em>una fracción del precio</em></h3>
+    <p>Mismas esencias, sin pagar el frasco ni la marca.</p>
+    <a href="#">Elegí tu combo →</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  // Ver más reseñas
+  var rvMore=document.getElementById('cz-rv-more'), rvBtn=document.getElementById('cz-rv-toggle');
+  if(rvMore&&rvBtn){
+    rvBtn.addEventListener('click',function(){
+      var open=rvMore.classList.toggle('is-open');
+      rvBtn.textContent=open?'Ver menos':'Ver más reseñas';
+    });
+  }
+
+  // Reveal de etiquetas del bloque de dolor
+  var pain=document.getElementById('cz-pain');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(pain&&!reduce&&'IntersectionObserver' in window){
+    var ioP=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){pain.classList.add('is-in');ioP.disconnect();}});},{threshold:.5});
+    ioP.observe(pain);
+  } else if(pain){ pain.classList.add('is-in'); }
+
+  // Slider antes/después
+  var ba=document.getElementById('cz-ba');
+  if(ba){
+    var lay=document.getElementById('cz-ba-after'),bef=document.getElementById('cz-ba-before'),handle=document.getElementById('cz-ba-handle'),
+        fill=document.getElementById('cz-ba-fill'),st=document.getElementById('cz-ba-st'),
+        drag=false,touched=false,raf=null;
+    function set(p){
+      p=Math.max(0,Math.min(1,p));var pct=p*100,v=pct+'%',rv=(100-pct)+'%';
+      lay.style.clipPath=lay.style.webkitClipPath='inset(0 0 0 '+v+')';
+      if(bef) bef.style.clipPath=bef.style.webkitClipPath='inset(0 '+rv+' 0 0)';
+      handle.style.left=v;
+      fill.style.left=v;
+      st.textContent=p>=.62?'ALTO':(p>.38?'MEDIO':'BAJO');
+    }
+    function setX(x){var r=ba.getBoundingClientRect();set((x-r.left)/r.width);}
+    function xFrom(e){return e.touches?e.touches[0].clientX:e.clientX;}
+    function stop(){touched=true;if(raf)cancelAnimationFrame(raf);}
+    ba.addEventListener('mousedown',function(e){stop();drag=true;setX(xFrom(e));});
+    window.addEventListener('mousemove',function(e){if(drag)setX(xFrom(e));});
+    window.addEventListener('mouseup',function(){drag=false;});
+    ba.addEventListener('touchstart',function(e){stop();drag=true;setX(xFrom(e));},{passive:true});
+    ba.addEventListener('touchmove',function(e){if(drag)setX(xFrom(e));},{passive:true});
+    ba.addEventListener('touchend',function(){drag=false;});
+    set(.5);
+    var seq=[[.5,.9,700],[.9,.9,900],[.9,.1,1500],[.1,.1,900],[.1,.5,700]];
+    function ease(t){return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;}
+    function run(i){
+      if(touched||i>=seq.length)return;
+      var s=seq[i],t0=null;
+      function f(ts){if(touched)return;if(t0===null)t0=ts;var k=Math.min(1,(ts-t0)/s[2]);set(s[0]+(s[1]-s[0])*ease(k));if(k<1)raf=requestAnimationFrame(f);else run(i+1);}
+      raf=requestAnimationFrame(f);
+    }
+    if(!reduce&&'IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){io.disconnect();setTimeout(function(){run(0);},350);}});},{threshold:.6});
+      io.observe(ba);
+    }
+  }
+
+  // Escribir reseña — solo interfaz, no se guarda en ningún lado.
+  var writeBtn=document.getElementById('cz-rv-write-btn'),
+      form=document.getElementById('cz-rv-form'),
+      starsWrap=document.getElementById('cz-rv-stars'),
+      submitBtn=document.getElementById('cz-rv-submit'),
+      thanks=document.getElementById('cz-rv-thanks'),
+      nameInp=document.getElementById('cz-rv-name'),
+      textInp=document.getElementById('cz-rv-text'),
+      rating=0;
+  if(writeBtn&&form){
+    writeBtn.addEventListener('click',function(){
+      var open=form.style.display==='block';
+      form.style.display=open?'none':'block';
+      thanks.style.display='none';
+    });
+  }
+  if(starsWrap){
+    var starBtns=starsWrap.querySelectorAll('.rv-star');
+    starBtns.forEach(function(btn){
+      btn.addEventListener('click',function(){
+        rating=parseInt(btn.getAttribute('data-val'),10);
+        starBtns.forEach(function(b){b.classList.toggle('is-active',parseInt(b.getAttribute('data-val'),10)<=rating);});
+      });
+    });
+  }
+  if(submitBtn){
+    submitBtn.addEventListener('click',function(){
+      form.style.display='none';
+      thanks.style.display='block';
+      if(nameInp)nameInp.value='';
+      if(textInp)textInp.value='';
+      rating=0;
+      if(starsWrap)starsWrap.querySelectorAll('.rv-star').forEach(function(b){b.classList.remove('is-active');});
+      setTimeout(function(){thanks.style.display='none';},4000);
+    });
+  }
+})();
+</script>
+</div>
