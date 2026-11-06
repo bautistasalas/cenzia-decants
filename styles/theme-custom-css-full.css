@@ -452,8 +452,23 @@
 /* En las tarjetas chicas (home/listados) este badge sale "-0%OFF" porque los
    productos tienen compare_at_price = price. Se oculta ahí. En la ficha de
    producto SÍ aparece — para los combos se reemplaza su texto por el ahorro
-   en $ (ver bloque "Ahorro en $ por llevar el combo" más abajo). */
+   en $ (ver bloque "Ahorro en $ por llevar el combo" más abajo). Para los
+   extractos individuales no hay ahorro que mostrar, así que se saca directo. */
 .js-item-product .js-offer-label {
+	display: none !important;
+}
+
+[data-store="product-price-378156477"] .js-offer-label,
+[data-store="product-price-378156482"] .js-offer-label,
+[data-store="product-price-378156485"] .js-offer-label,
+[data-store="product-price-378156488"] .js-offer-label,
+[data-store="product-price-378156494"] .js-offer-label,
+[data-store="product-price-378201974"] .js-offer-label,
+[data-store="product-price-379371165"] .js-offer-label,
+[data-store="product-price-379371166"] .js-offer-label,
+[data-store="product-price-379371171"] .js-offer-label,
+[data-store="product-price-379371172"] .js-offer-label,
+[data-store="product-price-379371173"] .js-offer-label {
 	display: none !important;
 }
 
