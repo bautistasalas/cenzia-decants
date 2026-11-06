@@ -450,8 +450,9 @@
 }
 
 /* En las tarjetas chicas (home/listados) este badge sale "-0%OFF" porque los
-   productos tienen compare_at_price = price. Se oculta solo ahí; en la
-   ficha de producto no aparece, así que no hace falta tocarla. */
+   productos tienen compare_at_price = price. Se oculta ahí. En la ficha de
+   producto SÍ aparece — para los combos se reemplaza su texto por el ahorro
+   en $ (ver bloque "Ahorro en $ por llevar el combo" más abajo). */
 .js-item-product .js-offer-label {
 	display: none !important;
 }
@@ -614,46 +615,53 @@ div.js-product-payments-container::after {
 	margin: 6px 0 10px;
 }
 
-/* Ahorro en $ por llevar el combo vs. comprar cada extracto suelto a $35.000 */
-[data-store="product-price-379559574"]::after {
-	content: "💰 Ahorrás $75.100 comprando el combo";
+/* Ahorro en $ por llevar el combo vs. comprar cada extracto suelto a $35.000.
+   Reemplaza el texto nativo del chip "-0%OFF" (aparece porque compare_at_price
+   = price) por el ahorro real: se achica el texto nativo a 0 y se inyecta el
+   contenido nuevo con ::after, manteniendo el fondo/forma del chip original. */
+[data-store="product-price-379559574"] .js-offer-label,
+[data-store="product-price-379559578"] .js-offer-label,
+[data-store="product-price-379559585"] .js-offer-label,
+[data-store="product-price-379559587"] .js-offer-label,
+[data-store="product-price-379562938"] .js-offer-label,
+[data-store="product-price-379562941"] .js-offer-label,
+[data-store="product-price-379562943"] .js-offer-label,
+[data-store="product-price-379562948"] .js-offer-label {
+	font-size: 0 !important;
 }
-[data-store="product-price-379559578"]::after {
-	content: "💰 Ahorrás $35.100 comprando el combo";
+[data-store="product-price-379559574"] .js-offer-label::after,
+[data-store="product-price-379559578"] .js-offer-label::after,
+[data-store="product-price-379559585"] .js-offer-label::after,
+[data-store="product-price-379559587"] .js-offer-label::after,
+[data-store="product-price-379562938"] .js-offer-label::after,
+[data-store="product-price-379562941"] .js-offer-label::after,
+[data-store="product-price-379562943"] .js-offer-label::after,
+[data-store="product-price-379562948"] .js-offer-label::after {
+	font-size: 11px;
+	font-weight: 800;
+	letter-spacing: .02em;
 }
-[data-store="product-price-379559585"]::after {
-	content: "💰 Ahorrás $60.100 comprando el combo";
+[data-store="product-price-379559574"] .js-offer-label::after {
+	content: "Ahorrás $75.100";
 }
-[data-store="product-price-379559587"]::after {
-	content: "💰 Ahorrás $60.100 comprando el combo";
+[data-store="product-price-379559578"] .js-offer-label::after {
+	content: "Ahorrás $35.100";
 }
-[data-store="product-price-379562938"]::after {
-	content: "💰 Ahorrás $90.100 comprando el combo";
+[data-store="product-price-379559585"] .js-offer-label::after {
+	content: "Ahorrás $60.100";
 }
-[data-store="product-price-379562941"]::after {
-	content: "💰 Ahorrás $35.100 comprando el combo";
+[data-store="product-price-379559587"] .js-offer-label::after {
+	content: "Ahorrás $60.100";
 }
-[data-store="product-price-379562943"]::after {
-	content: "💰 Ahorrás $35.100 comprando el combo";
+[data-store="product-price-379562938"] .js-offer-label::after {
+	content: "Ahorrás $90.100";
 }
-[data-store="product-price-379562948"]::after {
-	content: "💰 Ahorrás $35.100 comprando el combo";
+[data-store="product-price-379562941"] .js-offer-label::after {
+	content: "Ahorrás $35.100";
 }
-[data-store="product-price-379559574"]::after,
-[data-store="product-price-379559578"]::after,
-[data-store="product-price-379559585"]::after,
-[data-store="product-price-379559587"]::after,
-[data-store="product-price-379562938"]::after,
-[data-store="product-price-379562941"]::after,
-[data-store="product-price-379562943"]::after,
-[data-store="product-price-379562948"]::after {
-	display: inline-block;
-	margin-top: 8px;
-	padding: 8px 14px;
-	background: #EAF1EE;
-	border: 1px solid #CFE3D8;
-	border-radius: 999px;
-	font-size: 13px;
-	font-weight: 700;
-	color: #1F6D4A;
+[data-store="product-price-379562943"] .js-offer-label::after {
+	content: "Ahorrás $35.100";
+}
+[data-store="product-price-379562948"] .js-offer-label::after {
+	content: "Ahorrás $35.100";
 }
