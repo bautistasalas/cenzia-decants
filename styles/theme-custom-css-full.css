@@ -430,6 +430,13 @@
 	letter-spacing: .02em;
 }
 
+/* En las tarjetas chicas (home/listados) este badge sale "-0%OFF" porque los
+   productos tienen compare_at_price = price. Se oculta solo ahí; en la
+   ficha de producto no aparece, así que no hace falta tocarla. */
+.js-item-product .js-offer-label {
+	display: none !important;
+}
+
 input.btn-add-to-cart.btn.btn-primary.btn-big {
 	border-radius: 10px !important;
 	height: 48px;
@@ -450,8 +457,10 @@ div.js-product-payments-container::after {
 	font-weight: 700;
 }
 
-/* "O en 6 cuotas sin interés" como chip, igual que "Ver más detalles" */
-.js-max-installments-container {
+/* "O en 6 cuotas sin interés" como chip — SOLO en la ficha de producto.
+   En las tarjetas chicas (home/listados) se queda como texto simple,
+   la caja quedaba muy pesada ahí. */
+[data-store^="product-price-"] .js-max-installments-container {
 	background: #F6F7F8;
 	border-radius: 12px;
 	padding: 10px 14px !important;
