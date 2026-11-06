@@ -2,7 +2,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-.cz-desc{--ink:#0D161F;--ink-soft:#5B6672;--paper:#fff;--white:#fff;--line:#E6E8EB;--gold:#0D161F;--gold-deep:#0A1118;--gold-tint:rgba(13,22,31,.06);--pain:#FF5A67;--pain-txt:#C0394A;--relief:#3DDC84;--relief-txt:#2E7D52;--shadow:0 10px 40px -12px rgba(13,22,31,.18);font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.55;background:var(--white)}
+.cz-desc{--ink:#0D161F;--ink-soft:#5B6672;--paper:#fff;--white:#fff;--line:#E6E8EB;--gold:#0D161F;--gold-deep:#0A1118;--gold-tint:rgba(13,22,31,.06);--pain:#3E6690;--pain-txt:#3E6690;--relief:#3DDC84;--relief-txt:#2E7D52;--shadow:0 10px 40px -12px rgba(13,22,31,.18);font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.55;background:var(--white)}
 .cz-desc *{box-sizing:border-box}
 .cz-desc h2,.cz-desc h3{margin:0;letter-spacing:-.01em;font-weight:800;font-family:"Poppins","Manrope",system-ui,sans-serif}
 .cz-desc p{margin:0}
@@ -18,8 +18,8 @@
 .cz-desc .pain img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.72) saturate(1.05)}
 .cz-desc .pain::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 28%,rgba(0,0,0,0) 62%,rgba(0,0,0,.6) 100%)}
 .cz-desc .pain-title{position:absolute;top:0;left:0;right:0;padding:22px 20px 0;z-index:3;color:#fff;font-size:clamp(19px,4.6vw,24px);font-weight:800;line-height:1.2;font-family:"Poppins","Manrope",system-ui,sans-serif}
-.cz-desc .pain-title em{font-style:italic;font-weight:400;color:#FF8D97}
-.cz-desc .tag{position:absolute;display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;letter-spacing:.02em;padding:7px 13px;border-radius:999px;z-index:3;background:rgba(10,10,10,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1.5px solid var(--pain);color:#FF8D97;opacity:0;transform:translateY(6px);transition:opacity .5s ease,transform .5s ease}
+.cz-desc .pain-title em{font-style:italic;font-weight:400;color:#8CAED9}
+.cz-desc .tag{position:absolute;display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;letter-spacing:.02em;padding:7px 13px;border-radius:999px;z-index:3;background:rgba(10,10,10,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1.5px solid #8CAED9;color:#8CAED9;opacity:0;transform:translateY(6px);transition:opacity .5s ease,transform .5s ease}
 .cz-desc .pain.is-in .tag{opacity:1;transform:translateY(0)}
 .cz-desc .tag-1{top:58%;left:8%;transition-delay:.1s}
 .cz-desc .tag-2{top:70%;right:8%;transition-delay:.35s}
@@ -44,7 +44,7 @@
 .cz-desc .ba .knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;color:var(--gold-deep);font-weight:800;font-size:15px;z-index:5;cursor:ew-resize}
 .cz-desc .ba-meter{margin:14px 0 0;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-align:left}
 .cz-desc .ba-meter-lb{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13px;font-weight:800;margin-bottom:8px}
-.cz-desc .ba-meter-bar{height:8px;border-radius:999px;background:linear-gradient(90deg,var(--relief),#F6C244,var(--pain));position:relative}
+.cz-desc .ba-meter-bar{height:8px;border-radius:999px;background:linear-gradient(90deg,var(--relief),var(--pain));position:relative}
 .cz-desc .ba-meter-bar i{position:absolute;top:50%;left:50%;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--ink);transform:translate(-50%,-50%);box-shadow:0 2px 6px rgba(0,0,0,.3)}
 .cz-desc .ba-caps{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:18px}
 .cz-desc .ba-cap{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;color:var(--gold-deep)}
