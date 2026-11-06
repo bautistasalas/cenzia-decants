@@ -26,6 +26,18 @@ def notes_for(pid):
     corazon = [n.strip() for n in p["corazon"].split("·")]
     return (salida + corazon)[:3]
 
+
+def pyramid_for(pid):
+    """Top 3 notes per pyramid tier (salida/corazón/fondo)."""
+    p = BY_ID[pid]
+    def top3(field):
+        return ", ".join(n.strip() for n in p[field].split("·")[:3])
+    return {
+        "salida": top3("salida"),
+        "corazon": top3("corazon"),
+        "fondo": top3("fondo"),
+    }
+
 COMBOS = [
     {
         "id": 379559574,

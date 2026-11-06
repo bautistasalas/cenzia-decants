@@ -5,7 +5,7 @@ import subprocess
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "data"))
-from combo_notes import COMBOS, DISPLAY, BY_ID, notes_for  # noqa: E402
+from combo_notes import COMBOS, DISPLAY, BY_ID, pyramid_for  # noqa: E402
 
 BASE_FILE = os.path.join(os.path.dirname(__file__), "..", "product-descriptions", "combos.html")
 TMPDIR = "/tmp"
@@ -29,13 +29,16 @@ for combo in COMBOS:
     for i, fid in enumerate(combo["frags"], start=1):
         name, brand = DISPLAY[fid]
         p = BY_ID[fid]
-        notes = notes_for(fid)
-        notes_html = "".join(f"<span>{n}</span>" for n in notes)
+        py = pyramid_for(fid)
         card = f'''    <div class="olf-mini">
       <div class="n">{i} / {qty} — {brand}</div>
       <h4>{name}</h4>
       <span class="tag">"{p['tag']}"</span>
-      <div class="notes">{notes_html}</div>
+      <div class="pyramid">
+        <div><b>Salida</b><p>{py['salida']}</p></div>
+        <div><b>Corazón</b><p>{py['corazon']}</p></div>
+        <div><b>Fondo</b><p>{py['fondo']}</p></div>
+      </div>
     </div>'''
         cards.append(card)
     track_html = "\n".join(cards)
