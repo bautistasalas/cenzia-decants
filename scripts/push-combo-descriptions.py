@@ -33,7 +33,7 @@ for combo in COMBOS:
         card = f'''    <div class="olf-mini">
       <div class="n">{i} / {qty} — {brand}</div>
       <h4>{name}</h4>
-      <span class="tag">"{p['tag']}"</span>
+      <p class="blurb">"{p['tag']}"</p>
       <div class="pyramid">
         <div><b>Salida</b><p>{py['salida']}</p></div>
         <div><b>Corazón</b><p>{py['corazon']}</p></div>
