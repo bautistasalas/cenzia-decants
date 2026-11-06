@@ -372,10 +372,18 @@
 .js-item-product[data-product-id="379559578"] .item-image::after,
 .js-item-product[data-product-id="379559585"] .item-image::after,
 .js-item-product[data-product-id="379559587"] .item-image::after,
+.js-item-product[data-product-id="379562938"] .item-image::after,
+.js-item-product[data-product-id="379562941"] .item-image::after,
+.js-item-product[data-product-id="379562943"] .item-image::after,
+.js-item-product[data-product-id="379562948"] .item-image::after,
 .row[data-store="product-image-379559574"]::after,
 .row[data-store="product-image-379559578"]::after,
 .row[data-store="product-image-379559585"]::after,
-.row[data-store="product-image-379559587"]::after {
+.row[data-store="product-image-379559587"]::after,
+.row[data-store="product-image-379562938"]::after,
+.row[data-store="product-image-379562941"]::after,
+.row[data-store="product-image-379562943"]::after,
+.row[data-store="product-image-379562948"]::after {
 	content: "Combo Extracto";
 }
 
@@ -555,7 +563,11 @@ div.js-product-payments-container::after {
 [data-store="product-name-379559574"]::after,
 [data-store="product-name-379559578"]::after,
 [data-store="product-name-379559585"]::after,
-[data-store="product-name-379559587"]::after {
+[data-store="product-name-379559587"]::after,
+[data-store="product-name-379562938"]::after,
+[data-store="product-name-379562941"]::after,
+[data-store="product-name-379562943"]::after,
+[data-store="product-name-379562948"]::after {
 	content: "★★★★★  4.8 (47 reseñas)  ·  +2000 pedidos enviados";
 	display: block;
 	font-size: 12.5px;
@@ -587,7 +599,11 @@ div.js-product-payments-container::after {
 [data-store="product-price-379559574"]::before,
 [data-store="product-price-379559578"]::before,
 [data-store="product-price-379559585"]::before,
-[data-store="product-price-379559587"]::before {
+[data-store="product-price-379559587"]::before,
+[data-store="product-price-379562938"]::before,
+[data-store="product-price-379562941"]::before,
+[data-store="product-price-379562943"]::before,
+[data-store="product-price-379562948"]::before {
 	content: "● Mismas esencias que los originales\A ● 8 a 10 horas de duración\A ● Envío gratis siempre";
 	display: block;
 	white-space: pre-line;
@@ -596,4 +612,48 @@ div.js-product-payments-container::after {
 	color: #0d161f;
 	line-height: 1.8;
 	margin: 6px 0 10px;
+}
+
+/* Ahorro en $ por llevar el combo vs. comprar cada extracto suelto a $35.000 */
+[data-store="product-price-379559574"]::after {
+	content: "💰 Ahorrás $75.100 comprando el combo";
+}
+[data-store="product-price-379559578"]::after {
+	content: "💰 Ahorrás $35.100 comprando el combo";
+}
+[data-store="product-price-379559585"]::after {
+	content: "💰 Ahorrás $60.100 comprando el combo";
+}
+[data-store="product-price-379559587"]::after {
+	content: "💰 Ahorrás $60.100 comprando el combo";
+}
+[data-store="product-price-379562938"]::after {
+	content: "💰 Ahorrás $90.100 comprando el combo";
+}
+[data-store="product-price-379562941"]::after {
+	content: "💰 Ahorrás $35.100 comprando el combo";
+}
+[data-store="product-price-379562943"]::after {
+	content: "💰 Ahorrás $35.100 comprando el combo";
+}
+[data-store="product-price-379562948"]::after {
+	content: "💰 Ahorrás $35.100 comprando el combo";
+}
+[data-store="product-price-379559574"]::after,
+[data-store="product-price-379559578"]::after,
+[data-store="product-price-379559585"]::after,
+[data-store="product-price-379559587"]::after,
+[data-store="product-price-379562938"]::after,
+[data-store="product-price-379562941"]::after,
+[data-store="product-price-379562943"]::after,
+[data-store="product-price-379562948"]::after {
+	display: inline-block;
+	margin-top: 8px;
+	padding: 8px 14px;
+	background: #EAF1EE;
+	border: 1px solid #CFE3D8;
+	border-radius: 999px;
+	font-size: 13px;
+	font-weight: 700;
+	color: #1F6D4A;
 }

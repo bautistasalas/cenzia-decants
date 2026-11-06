@@ -18,6 +18,8 @@ DISPLAY = {
     378156494: ("Sauvage", "Dior"),
     379371166: ("Stronger With You Intensely", "Emporio Armani"),
     379371172: ("Ombré Leather", "Tom Ford"),
+    379371171: ("Good Girl", "Carolina Herrera"),
+    379371165: ("Donna Born In Roma Intense", "Valentino"),
 }
 
 # reseña breve en tono humano (mood/ocasión), no la "tag" técnica de olf_data
@@ -29,6 +31,8 @@ BLURB = {
     378156494: "Fresca y versátil, el clásico infalible para cualquier ocasión.",
     379371166: "Cálida y seductora, especial para citas y noches de frío.",
     379371172: "Cuero floral elegante y distinto, para looks sofisticados.",
+    379371171: "Dulce y gourmand, femenina y con muchísima proyección.",
+    379371165: "Floral ambarado y sensual, ideal para la noche.",
 }
 
 def notes_for(pid):
@@ -77,5 +81,33 @@ COMBOS = [
         "name": "Nocturno",
         "price": 79900,
         "frags": [378156485, 378156488, 378156482, 379371172],
+    },
+    {
+        "id": 379562938,
+        "slug": "black",
+        "name": "Black",
+        "price": 119900,
+        "frags": [378156485, 378156488, 379371172, 378156482, 379371166, 378156477],
+    },
+    {
+        "id": 379562941,
+        "slug": "ella",
+        "name": "Ella",
+        "price": 69900,
+        "frags": [379371171, 379371165, 378156477],
+    },
+    {
+        "id": 379562943,
+        "slug": "intenso",
+        "name": "Intenso",
+        "price": 69900,
+        "frags": [378156485, 378156488, 378156482],
+    },
+    {
+        "id": 379562948,
+        "slug": "bestia",
+        "name": "Bestia",
+        "price": 69900,
+        "frags": [378156485, 378156488, 378156477],
     },
 ]
