@@ -349,12 +349,22 @@
 .js-item-product[data-product-id="378156488"] .item-image::after,
 .js-item-product[data-product-id="378156494"] .item-image::after,
 .js-item-product[data-product-id="378201974"] .item-image::after,
+.js-item-product[data-product-id="379371165"] .item-image::after,
+.js-item-product[data-product-id="379371166"] .item-image::after,
+.js-item-product[data-product-id="379371171"] .item-image::after,
+.js-item-product[data-product-id="379371172"] .item-image::after,
+.js-item-product[data-product-id="379371173"] .item-image::after,
 .row[data-store="product-image-378156477"]::after,
 .row[data-store="product-image-378156482"]::after,
 .row[data-store="product-image-378156485"]::after,
 .row[data-store="product-image-378156488"]::after,
 .row[data-store="product-image-378156494"]::after,
-.row[data-store="product-image-378201974"]::after {
+.row[data-store="product-image-378201974"]::after,
+.row[data-store="product-image-379371165"]::after,
+.row[data-store="product-image-379371166"]::after,
+.row[data-store="product-image-379371171"]::after,
+.row[data-store="product-image-379371172"]::after,
+.row[data-store="product-image-379371173"]::after {
 	content: "60ML Extracto";
 }
 
@@ -436,16 +446,49 @@
 }
 
 .js-toggle-shipping .js-accordion-private-toggle {
-	padding-top: 18px;
-	border-top: 1px solid #E6E8EB;
+	padding: 14px 16px;
+	margin-top: 14px;
+	background: #F6F7F8;
+	border-radius: 12px;
 	font-size: 13px;
 	color: #5B6672;
 	font-weight: 600;
 }
 
-/* Oculta el selector de cantidad: el carrito siempre agrega de a 1 */
-.form-quantity-icon, .js-quantity-input {
+/* Oculta el selector de cantidad (columna entera, no solo los íconos) y
+   expande el botón "Agregar al carrito" a todo el ancho de la fila */
+.row.no-gutters.mb-4 > .col-4.col-md-3.mx-neg-1 {
 	display: none !important;
+}
+.row.no-gutters.mb-4 > .col-8.col-md-9 {
+	flex: 0 0 100% !important;
+	max-width: 100% !important;
+}
+
+/* Sacar el botón "Compartir" debajo de la descripción */
+.social-share {
+	display: none !important;
+}
+
+/* Imagen principal con esquinas redondeadas */
+.product-detail-slider {
+	border-radius: 16px !important;
+	overflow: hidden !important;
+}
+
+/* "Ver más detalles" (medios de pago) como chip redondeado */
+#btn-installments {
+	display: inline-flex !important;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 14px;
+	margin-top: 4px;
+	background: #F6F7F8;
+	border-radius: 999px;
+	font-size: 12.5px !important;
+	font-weight: 600;
+	color: #0d161f !important;
+	text-decoration: none !important;
 }
 
 /* Confianza en el pago — aplica a toda la tienda, es verdad para cualquier producto */
@@ -470,7 +513,12 @@
 [data-store="product-name-378156485"]::after,
 [data-store="product-name-378156488"]::after,
 [data-store="product-name-378156494"]::after,
-[data-store="product-name-378201974"]::after {
+[data-store="product-name-378201974"]::after,
+[data-store="product-name-379371165"]::after,
+[data-store="product-name-379371166"]::after,
+[data-store="product-name-379371171"]::after,
+[data-store="product-name-379371172"]::after,
+[data-store="product-name-379371173"]::after {
 	content: "★★★★★  4.8 (47 reseñas)";
 	display: block;
 	font-size: 13px;
