@@ -364,6 +364,8 @@
 .js-item-product[data-product-id="380476581"] .item-image::after,
 .js-item-product[data-product-id="380476586"] .item-image::after,
 .js-item-product[data-product-id="380476591"] .item-image::after,
+.js-item-product[data-product-id="380478134"] .item-image::after,
+.js-item-product[data-product-id="380478136"] .item-image::after,
 .row[data-store="product-image-378156477"]::after,
 .row[data-store="product-image-378156482"]::after,
 .row[data-store="product-image-378156485"]::after,
@@ -384,7 +386,9 @@
 .row[data-store="product-image-380476572"]::after,
 .row[data-store="product-image-380476581"]::after,
 .row[data-store="product-image-380476586"]::after,
-.row[data-store="product-image-380476591"]::after {
+.row[data-store="product-image-380476591"]::after,
+.row[data-store="product-image-380478134"]::after,
+.row[data-store="product-image-380478136"]::after {
 	content: "60ML Extracto";
 }
 
@@ -500,7 +504,9 @@
 [data-store="product-price-380476572"] .js-offer-label,
 [data-store="product-price-380476581"] .js-offer-label,
 [data-store="product-price-380476586"] .js-offer-label,
-[data-store="product-price-380476591"] .js-offer-label {
+[data-store="product-price-380476591"] .js-offer-label,
+[data-store="product-price-380478134"] .js-offer-label,
+[data-store="product-price-380478136"] .js-offer-label {
 	display: none !important;
 }
 
@@ -618,6 +624,8 @@ div.js-product-payments-container::after {
 [data-store="product-name-380476581"]::after,
 [data-store="product-name-380476586"]::after,
 [data-store="product-name-380476591"]::after,
+[data-store="product-name-380478134"]::after,
+[data-store="product-name-380478136"]::after,
 [data-store="product-name-379559574"]::after,
 [data-store="product-name-379559578"]::after,
 [data-store="product-name-379559585"]::after,
@@ -654,7 +662,9 @@ div.js-product-payments-container::after {
 [data-store="product-price-380476572"]::before,
 [data-store="product-price-380476581"]::before,
 [data-store="product-price-380476586"]::before,
-[data-store="product-price-380476591"]::before {
+[data-store="product-price-380476591"]::before,
+[data-store="product-price-380478134"]::before,
+[data-store="product-price-380478136"]::before {
 	content: "● Mismas esencias que el original\A ● 8 a 10 horas de duración\A ● Envío a todo el país";
 	display: block;
 	white-space: pre-line;
