@@ -354,6 +354,11 @@
 .js-item-product[data-product-id="379371171"] .item-image::after,
 .js-item-product[data-product-id="379371172"] .item-image::after,
 .js-item-product[data-product-id="379371173"] .item-image::after,
+.js-item-product[data-product-id="380474214"] .item-image::after,
+.js-item-product[data-product-id="380474223"] .item-image::after,
+.js-item-product[data-product-id="380474228"] .item-image::after,
+.js-item-product[data-product-id="380474236"] .item-image::after,
+.js-item-product[data-product-id="380474246"] .item-image::after,
 .row[data-store="product-image-378156477"]::after,
 .row[data-store="product-image-378156482"]::after,
 .row[data-store="product-image-378156485"]::after,
@@ -364,7 +369,12 @@
 .row[data-store="product-image-379371166"]::after,
 .row[data-store="product-image-379371171"]::after,
 .row[data-store="product-image-379371172"]::after,
-.row[data-store="product-image-379371173"]::after {
+.row[data-store="product-image-379371173"]::after,
+.row[data-store="product-image-380474214"]::after,
+.row[data-store="product-image-380474223"]::after,
+.row[data-store="product-image-380474228"]::after,
+.row[data-store="product-image-380474236"]::after,
+.row[data-store="product-image-380474246"]::after {
 	content: "60ML Extracto";
 }
 
@@ -470,7 +480,12 @@
 [data-store="product-price-379371166"] .js-offer-label,
 [data-store="product-price-379371171"] .js-offer-label,
 [data-store="product-price-379371172"] .js-offer-label,
-[data-store="product-price-379371173"] .js-offer-label {
+[data-store="product-price-379371173"] .js-offer-label,
+[data-store="product-price-380474214"] .js-offer-label,
+[data-store="product-price-380474223"] .js-offer-label,
+[data-store="product-price-380474228"] .js-offer-label,
+[data-store="product-price-380474236"] .js-offer-label,
+[data-store="product-price-380474246"] .js-offer-label {
 	display: none !important;
 }
 
@@ -578,6 +593,11 @@ div.js-product-payments-container::after {
 [data-store="product-name-379371171"]::after,
 [data-store="product-name-379371172"]::after,
 [data-store="product-name-379371173"]::after,
+[data-store="product-name-380474214"]::after,
+[data-store="product-name-380474223"]::after,
+[data-store="product-name-380474228"]::after,
+[data-store="product-name-380474236"]::after,
+[data-store="product-name-380474246"]::after,
 [data-store="product-name-379559574"]::after,
 [data-store="product-name-379559578"]::after,
 [data-store="product-name-379559585"]::after,
@@ -604,7 +624,12 @@ div.js-product-payments-container::after {
 [data-store="product-price-379371166"]::before,
 [data-store="product-price-379371171"]::before,
 [data-store="product-price-379371172"]::before,
-[data-store="product-price-379371173"]::before {
+[data-store="product-price-379371173"]::before,
+[data-store="product-price-380474214"]::before,
+[data-store="product-price-380474223"]::before,
+[data-store="product-price-380474228"]::before,
+[data-store="product-price-380474236"]::before,
+[data-store="product-price-380474246"]::before {
 	content: "● Mismas esencias que el original\A ● 8 a 10 horas de duración\A ● Envío a todo el país";
 	display: block;
 	white-space: pre-line;
