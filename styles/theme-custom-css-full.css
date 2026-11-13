@@ -264,6 +264,13 @@
 	}
 }
 
+/* DESACTIVADO 2026-11-13 — prueba: este bloque fuerza a 0 la altura de
+   cualquier iframe del slot superior de apps (edge_top_center) que no traiga
+   alto inline, y esto puede estar tapando la barra contadora de la app nueva.
+   Si al sacarlo reaparece algún problema viejo (un widget que ocupaba toda
+   la pantalla), avisale a Claude para volver a activarlo o acotarlo a ese
+   widget puntual en vez de a todo el slot.
+
 #nubesdk-runtime>div[style*="translateX"]:not([style*="bottom"]) {
 	position: relative !important;
 	top: auto !important;
@@ -288,6 +295,7 @@
 #nube-sdk-slot-edge_top_center iframe[style*="height"] {
 	margin-bottom: -45px !important;
 }
+*/
 
 /* ===== Badge "Original" / "60ML Extracto" ===== */
 
