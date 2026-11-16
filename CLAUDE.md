@@ -202,6 +202,14 @@ resolver luz/sombra/realismo final.
   las categorías viejas: verificar con un `GET` aparte.
 - La API corta con 429 después de unas 25 escrituras seguidas: pausar ~1 s
   entre `PUT` o reintentar.
+- **El menú de la tienda no es el árbol de categorías.** Se arma aparte en el
+  panel (Tienda online → Menús) y la API solo deja leerlo:
+  `GET /navigations` responde (no está documentado), pero `POST`, `PUT` y
+  `PATCH` dan 404, así que cualquier cambio de pestañas lo hace Bautista a
+  mano. Un link de tipo categoría con `data.id` "0" es "Todas": despliega
+  todas las categorías raíz adentro de esa pestaña (así estaba "Decants" el
+  2026-11-16, y por eso mostraba Cenzia Privé adentro aunque en el árbol las
+  dos líneas son raíz).
 - **Ver la tienda en vivo desde el entorno cloud:** usar
   `https://www.cenziadecants.com` (con `www`). El dominio sin `www` falla en el
   handshake TLS desde el sandbox.
