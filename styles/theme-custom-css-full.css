@@ -405,17 +405,21 @@
 .js-item-product[data-product-id="379559585"] .item-image::after,
 .js-item-product[data-product-id="379559587"] .item-image::after,
 .js-item-product[data-product-id="379562938"] .item-image::after,
-.js-item-product[data-product-id="379562941"] .item-image::after,
 .js-item-product[data-product-id="379562943"] .item-image::after,
 .js-item-product[data-product-id="379562948"] .item-image::after,
+.js-item-product[data-product-id="380863710"] .item-image::after,
+.js-item-product[data-product-id="380863743"] .item-image::after,
+.js-item-product[data-product-id="380863745"] .item-image::after,
 .row[data-store="product-image-379559574"]::after,
 .row[data-store="product-image-379559578"]::after,
 .row[data-store="product-image-379559585"]::after,
 .row[data-store="product-image-379559587"]::after,
 .row[data-store="product-image-379562938"]::after,
-.row[data-store="product-image-379562941"]::after,
 .row[data-store="product-image-379562943"]::after,
-.row[data-store="product-image-379562948"]::after {
+.row[data-store="product-image-379562948"]::after,
+.row[data-store="product-image-380863710"]::after,
+.row[data-store="product-image-380863743"]::after,
+.row[data-store="product-image-380863745"]::after {
 	/* Sin badge: la propia foto del combo ya dice "EXTRACTO" en el diseño,
 	   y la pill tapaba el nombre del combo en las tarjetas chicas. */
 	display: none !important;
