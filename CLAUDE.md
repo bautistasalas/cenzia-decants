@@ -18,6 +18,15 @@ marcadas **[PENDIENTE]** no se pudieron inferir y las tiene que definir Bautista
 - **Instagram:** [@cenziadecants](https://instagram.com/cenziadecants)
 - **Plataforma:** Tienda Nube, tema Recife (`recife`)
 
+**Terminología de cara al cliente (desde 2026-11-16):** la línea de extractos
+ya NO se nombra "Extracto" en ningún texto visible al cliente (descripciones,
+badges, CTAs) — se llama **Esencia Privé**, presentada como una línea propia
+de Cenzia de interpretaciones/inspiraciones de alta concentración, dejando
+siempre claro que no son productos oficiales de las marcas en las que se
+inspiran. "Extracto" se sigue usando solo como término técnico interno (ID de
+categoría de Tienda Nube, nombres de archivo/script) — no como palabra que
+vea el cliente.
+
 ## Colores (extraídos del tema en vivo)
 
 | Uso | Color |
@@ -65,7 +74,7 @@ sitio para inferir esto, hay que definirlo con Bautista.
 | Perfumes Enteros | oculta | frascos completos (no decant) |
 | Ofertas | oculta | liquidación |
 | Combos | visible | bundles de varios decants |
-| Extractos de Perfume | oculta, destacada en el home | productos de 60ML extracto (creada 2026-10-31) |
+| Extractos de Perfume | oculta, destacada en el home | productos de 60ML Esencia Privé — nombre de categoría interno, el cliente ve "Esencia Privé" (creada 2026-10-31) |
 
 Patrón de nombre de producto: `{Nombre de la fragancia} - {Marca}`
 (ej. `Le Male Elixir - JPG`, `Arabians Tonka - Montale`).
@@ -74,8 +83,8 @@ Patrón de nombre de producto: `{Nombre de la fragancia} - {Marca}`
 
 - **Decants:** 5ML y 10ML, variantes dentro del mismo producto. Precios
   observados ~$29.000–$66.000 ARS según tamaño y marca.
-- **Extractos:** 60ML, una sola variante, el tamaño va implícito (no se agrega
-  como variante). Precio fijo definido: **$35.000 ARS**.
+- **Esencia Privé (ex "Extractos"):** 60ML, una sola variante, el tamaño va
+  implícito (no se agrega como variante). Precio fijo definido: **$35.000 ARS**.
 - **Combos:** bundles de varios decants, categoría aparte.
 - **Perfumes Enteros:** frascos completos de marca, categoría oculta aparte.
 
@@ -85,8 +94,9 @@ Pill oscura (`#0d161f`, texto blanco, mayúsculas, esquina superior derecha de
 la imagen) sobre cada producto:
 
 - **"Original"** → default para todo el catálogo salvo excepción explícita.
-- **"60ML Extracto"** → productos de la categoría Extractos de Perfume (por ID,
-  ver el CSS — el tema no expone la categoría en el HTML de las tarjetas).
+- **"60ML Esencia Privé"** → productos de la categoría Extractos de Perfume
+  (por ID, ver el CSS — el tema no expone la categoría en el HTML de las
+  tarjetas). El texto visible dice "Esencia Privé", nunca "Extracto".
 - Exclusiones (ej. futuras esencias no originales) se agregan por ID de
   producto en el mismo archivo.
 

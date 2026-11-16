@@ -4,7 +4,7 @@
  * reemplazando todo lo que haya ahí. Es la unión de:
  *  1) El CSS base de precios/cuotas/tarjetas de producto (ya existía).
  *  2) El descuento por transferencia, al 10% OFF.
- *  3) El sistema de badges "Original" / "60ML Extracto".
+ *  3) El sistema de badges "Original" / "60ML Esencia Privé".
  *  4) El fix del botón "Comprar" directo (productos de una sola variante).
  */
 
@@ -297,7 +297,7 @@
 }
 */
 
-/* ===== Badge "Original" / "60ML Extracto" ===== */
+/* ===== Badge "Original" / "60ML Esencia Privé" ===== */
 
 .js-item-product .item-image {
 	position: relative;
@@ -397,7 +397,7 @@
 .row[data-store="product-image-380476591"]::after,
 .row[data-store="product-image-380478134"]::after,
 .row[data-store="product-image-380478136"]::after {
-	content: "60ML Extracto";
+	content: "60ML Esencia Privé";
 }
 
 .js-item-product[data-product-id="379559574"] .item-image::after,
@@ -420,7 +420,8 @@
 .row[data-store="product-image-380863710"]::after,
 .row[data-store="product-image-380863743"]::after,
 .row[data-store="product-image-380863745"]::after {
-	/* Sin badge: la propia foto del combo ya dice "EXTRACTO" en el diseño,
+	/* Sin badge: la propia foto del combo todavía dice "EXTRACTO" en el
+	   diseño (pendiente de rehacer la foto con "ESENCIA PRIVÉ"),
 	   y la pill tapaba el nombre del combo en las tarjetas chicas. */
 	display: none !important;
 }
@@ -435,7 +436,7 @@
 	}
 }
 
-/* ===== Botón "Comprar" directo (productos de una sola variante, ej. Extractos) ===== */
+/* ===== Botón "Comprar" directo (productos de una sola variante, ej. Esencia Privé) ===== */
 
 .js-item-product .js-addtocart.btn-primary {
 	background: #0d161f !important;
@@ -491,7 +492,7 @@
    productos tienen compare_at_price = price. Se oculta ahí. En la ficha de
    producto SÍ aparece — para los combos se reemplaza su texto por el ahorro
    en $ (ver bloque "Ahorro en $ por llevar el combo" más abajo). Para los
-   extractos individuales no hay ahorro que mostrar, así que se saca directo. */
+   Esencias Privé individuales no hay ahorro que mostrar, así que se saca directo. */
 .js-item-product .js-offer-label {
 	display: none !important;
 }
@@ -611,7 +612,7 @@ div.js-product-payments-container::after {
 	text-decoration: none !important;
 }
 
-/* Calificación y beneficios — SOLO Extractos de Perfume. El precio con
+/* Calificación y beneficios — SOLO Esencia Privé (categoría "Extractos de Perfume"). El precio con
    transferencia ya no va acá: lo calcula en vivo scripts/transfer-discount.js
    (instalado vía Scripts API), que funciona para cualquier precio real,
    incluidos combos futuros. */
@@ -704,7 +705,7 @@ div.js-product-payments-container::after {
 	margin: 6px 0 10px;
 }
 
-/* Ahorro en $ por llevar el combo vs. comprar cada extracto suelto a $35.000.
+/* Ahorro en $ por llevar el combo vs. comprar cada Esencia Privé suelta a $35.000.
    Reemplaza el texto nativo del chip "-0%OFF" (aparece porque compare_at_price
    = price) por el ahorro real: se achica el texto nativo a 0 y se inyecta el
    contenido nuevo con ::after, manteniendo el fondo/forma del chip original. */
