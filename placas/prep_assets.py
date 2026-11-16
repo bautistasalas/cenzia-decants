@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Prepara los recortes para las placas: frasco de marca (desde la foto del producto) y frasco Cenzia Privé."""
+"""Recorta el frasco de marca de la foto principal de un producto, sobre blanco puro.
+Ese recorte es la referencia que se le pasa al generador de imágenes para armar la escena de cada placa."""
 import sys
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image
 
 
 def white_level(im):
@@ -54,21 +55,6 @@ def brand_bottle(path, out):
     c[h - n:] = 255.0 - (255.0 - c[h - n:]) * ramp
     Image.fromarray(np.clip(c, 0, 255).astype(np.uint8)).save(out)
     return box, bg
-
-
-def cenzia_bottle(combo_path, out):
-    """Frasco Cenzia Privé recortado de la foto del Combo Intenso (se enmascara el Montale de atrás)."""
-    im = Image.open(combo_path).convert("RGB").crop((300, 1020, 960, 1880))   # 660 x 860
-    S = 4
-    mask = Image.new("L", (im.width * S, im.height * S), 0)
-    poly = [(296, 92), (412, 92), (414, 200), (428, 214), (428, 262), (470, 268), (626, 285), (630, 300),
-            (630, 742), (598, 800), (190, 812), (84, 770), (62, 720), (60, 330), (64, 312), (150, 290), (282, 264), (282, 214), (296, 200)]
-    ImageDraw.Draw(mask).polygon([(x * S, y * S) for x, y in poly], fill=255)
-    mask = mask.resize(im.size, Image.LANCZOS).filter(ImageFilter.GaussianBlur(1.6))
-    white = Image.new("RGB", im.size, (255, 255, 255))
-    comp = Image.composite(im, white, mask)
-    comp.save(out)
-    return comp.size
 
 
 if __name__ == "__main__":

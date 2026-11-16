@@ -2,9 +2,12 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
+<!-- Placa de galería por perfume, 2000 x 2000 px.
+     Izquierda: foto del perfume rodeado de sus materias primas (sin el frasco Cenzia Privé).
+     Derecha: recorrido olfativo detallado. Los datos llegan como JSON en el hash de la URL. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#0d161f;--soft:#5b6672;--line:#dfe3e8;--tint:#f4f6f8}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -13,33 +16,30 @@ body{font-family:"Manrope",system-ui,sans-serif;color:var(--ink);-webkit-font-sm
 .card{position:relative;width:2000px;height:2000px;background:#fff;overflow:hidden}
 
 /* Encabezado: mismo esquema que las fotos de combos (eyebrow · título · pill) */
-.head{position:absolute;left:0;right:0;top:118px;text-align:center}
-.eyebrow{font-family:"Poppins",sans-serif;font-weight:400;font-size:62px;letter-spacing:.42em;margin-right:-.42em;line-height:1}
-.title{font-family:"Poppins",sans-serif;font-weight:800;line-height:1.02;letter-spacing:-.01em;margin:34px auto 0;max-width:1800px;text-transform:uppercase}
-.sub{margin-top:40px;display:flex;justify-content:center;align-items:center;gap:34px}
-.brand{font-size:74px;font-weight:600;color:var(--soft)}
-.pill{display:inline-block;background:var(--ink);color:#fff;font-family:"Poppins",sans-serif;font-weight:600;font-size:54px;line-height:1;padding:24px 50px 26px;border-radius:999px}
+.head{position:absolute;left:0;right:0;top:104px;text-align:center}
+.eyebrow{font-family:"Poppins",sans-serif;font-weight:400;font-size:60px;letter-spacing:.42em;margin-right:-.42em;line-height:1}
+.title{font-family:"Poppins",sans-serif;font-weight:800;line-height:1.02;letter-spacing:-.01em;margin:30px auto 0;max-width:1800px;text-transform:uppercase}
+.sub{margin-top:34px;display:flex;justify-content:center;align-items:center;gap:34px}
+.brand{font-size:72px;font-weight:600;color:var(--soft)}
+.pill{display:inline-block;background:var(--ink);color:#fff;font-family:"Poppins",sans-serif;font-weight:600;font-size:52px;line-height:1;padding:23px 48px 25px;border-radius:999px}
 
-/* Cuerpo */
-.photo{position:absolute;left:70px;top:640px;width:940px;height:1080px}
-.photo img{position:absolute;bottom:0;display:block;mix-blend-mode:multiply}
-.photo .b-brand{left:0;height:1000px}
-.photo .b-cenzia{right:0;height:640px}
-.chips{position:absolute;left:70px;width:940px;top:1790px;display:flex;justify-content:center;gap:26px}
-.chip{font-family:"Poppins",sans-serif;font-weight:600;font-size:50px;line-height:1;color:var(--ink);background:var(--tint);border-radius:999px;padding:24px 44px 26px}
-.info{position:absolute;left:1090px;right:100px;top:690px}
-.label{font-family:"Poppins",sans-serif;font-weight:400;font-size:50px;letter-spacing:.30em;line-height:1}
-.rule{height:5px;background:var(--line);margin:30px 0 10px}
-.row{padding:32px 0 34px;border-bottom:3px solid var(--line)}
-.tier{display:block;font-family:"Poppins",sans-serif;font-weight:600;font-size:46px;letter-spacing:.16em;color:var(--soft);text-transform:uppercase;line-height:1}
-.notes{display:block;margin-top:16px;font-family:"Poppins",sans-serif;font-weight:700;font-size:74px;line-height:1.12}
+/* Foto: el perfume rodeado de sus materias primas */
+.scene{position:absolute;left:80px;top:600px;width:900px;height:1180px;border-radius:48px;overflow:hidden;background:var(--tint)}
+.scene img{width:100%;height:100%;object-fit:cover;display:block}
+.cap{position:absolute;left:80px;width:900px;top:1818px;text-align:center;font-family:"Poppins",sans-serif;font-weight:500;font-size:46px;line-height:1.2;color:var(--soft)}
+.cap b{color:var(--ink);font-weight:700}
 
-/* Materias primas con foto */
-.keys{margin-top:56px;display:flex;justify-content:flex-start;gap:70px}
-.key{text-align:center}
-.key .ph{width:270px;height:270px;border-radius:50%;overflow:hidden;margin:0 auto;box-shadow:0 0 0 6px #fff,0 0 0 9px var(--line)}
-.key .ph img{width:100%;height:100%;object-fit:cover;display:block}
-.key b{display:block;margin-top:24px;font-family:"Poppins",sans-serif;font-weight:700;font-size:56px;line-height:1}
+/* Recorrido olfativo */
+.info{position:absolute;left:1060px;right:90px;top:606px}
+.label{font-family:"Poppins",sans-serif;font-weight:400;font-size:48px;letter-spacing:.30em;line-height:1}
+.rule{height:5px;background:var(--line);margin:28px 0 6px}
+.row{padding:30px 0 32px;border-bottom:3px solid var(--line)}
+.tier{display:block;font-family:"Poppins",sans-serif;font-weight:600;font-size:42px;letter-spacing:.16em;color:var(--soft);text-transform:uppercase;line-height:1}
+.notes{display:block;margin-top:14px;font-family:"Poppins",sans-serif;font-weight:700;font-size:var(--notes,66px);line-height:1.12}
+.txt{display:block;margin-top:12px;font-size:var(--txt,46px);font-weight:500;line-height:1.3;color:var(--soft)}
+.meta{margin-top:34px;display:grid;grid-template-columns:auto 1fr;gap:16px 34px;align-items:baseline}
+.meta span{font-family:"Poppins",sans-serif;font-weight:600;font-size:38px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);line-height:1.2}
+.meta b{font-family:"Poppins",sans-serif;font-weight:600;font-size:var(--txt,46px);line-height:1.2}
 </style>
 </head>
 <body>
@@ -49,13 +49,13 @@ body{font-family:"Manrope",system-ui,sans-serif;color:var(--ink);-webkit-font-sm
     <h1 class="title" id="title"></h1>
     <div class="sub"><span class="brand" id="brand"></span><span class="pill">Cenzia Privé</span></div>
   </div>
-  <div class="photo"><img class="b-brand" id="brandimg" alt=""><img class="b-cenzia" src="src/cenzia-prive.webp" alt=""></div>
-  <div class="chips"><span class="chip">60 ml</span><span class="chip">Eau de Parfum</span></div>
-  <div class="info">
+  <div class="scene"><img id="scene" alt=""></div>
+  <div class="cap"><b>Esencia Privé</b> de 60 ml · Eau de Parfum</div>
+  <div class="info" id="info">
     <div class="label">RECORRIDO OLFATIVO</div>
     <div class="rule"></div>
     <div id="rows"></div>
-    <div class="keys" id="keys"></div>
+    <div class="meta" id="meta"></div>
   </div>
 </div>
 <script>
@@ -63,17 +63,31 @@ const d = JSON.parse(decodeURIComponent(location.hash.slice(1)));
 const title = document.getElementById('title');
 title.textContent = d.name;
 document.getElementById('brand').textContent = d.brand ? 'de ' + d.brand : '';
-document.getElementById('brandimg').src = d.photo;
-document.getElementById('rows').innerHTML = [['Salida', d.salida], ['Corazón', d.corazon], ['Fondo', d.fondo]]
-  .map(([t, n]) => `<div class="row"><span class="tier">${t}</span><span class="notes">${n}</span></div>`).join('');
-document.getElementById('keys').innerHTML = d.keys.map(k => `<div class="key"><div class="ph"><img src="${k.img}" style="object-position:${k.pos || '50% 50%'}"></div><b>${k.name}</b></div>`).join('');
-// Ajuste del título al ancho disponible (una sola línea si entra, si no dos)
+const scene = document.getElementById('scene');
+scene.src = d.scene;
+if (d.scene_pos) scene.style.objectPosition = d.scene_pos;
+document.getElementById('rows').innerHTML = [['Salida', d.salida, d.salida_txt], ['Corazón', d.corazon, d.corazon_txt], ['Fondo', d.fondo, d.fondo_txt]]
+  .map(([t, n, x]) => `<div class="row"><span class="tier">${t}</span><span class="notes">${n}</span>${x ? `<span class="txt">${x}</span>` : ''}</div>`).join('');
+document.getElementById('meta').innerHTML = [['Familia', d.familia], ['Ideal para', d.ideal], ['Intensidad', d.intensidad]]
+  .filter(([, v]) => v).map(([k, v]) => `<span>${k}</span><b>${v}</b>`).join('');
+
 document.fonts.ready.then(() => {
-  let size = 170;
+  // Título: una sola línea, lo más grande que entre
+  let size = 168;
   title.style.fontSize = size + 'px';
   title.style.whiteSpace = 'nowrap';
-  while (title.scrollWidth > 1800 && size > 96) { size -= 2; title.style.fontSize = size + 'px'; }
+  while (title.scrollWidth > 1800 && size > 92) { size -= 2; title.style.fontSize = size + 'px'; }
+  // Columna de texto: si no entra hasta el borde inferior, se achica de a poco
+  const info = document.getElementById('info');
+  let notes = 66, txt = 46;
+  const fits = () => info.getBoundingClientRect().bottom <= 1900;
+  while (!fits() && notes > 48) {
+    notes -= 2; txt = Math.max(38, txt - 1);
+    info.style.setProperty('--notes', notes + 'px');
+    info.style.setProperty('--txt', txt + 'px');
+  }
   document.body.setAttribute('data-ready', '1');
+  document.body.setAttribute('data-fit', fits() ? 'ok' : 'overflow');
 });
 </script>
 </body>

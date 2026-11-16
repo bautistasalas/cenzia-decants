@@ -4,13 +4,20 @@
     "product_id": 378156482,
     "name": "Born In Roma Intense",
     "brand": "Valentino",
-    "photo": "src/born-in-roma-intense.webp",
+    "scene": "scenes/born-in-roma-intense.jpg",
     "salida": "Vainilla bourbon",
+    "salida_txt": "Dulce y cálida desde el primer momento.",
     "corazon": "Lavandín",
+    "corazon_txt": "Lavanda aromática que le da frescura y equilibrio.",
     "fondo": "Vetiver ahumado",
-    "keys": [
-      {"name": "Vainilla", "img": "ing/vainilla.jpg", "pos": "40% 55%"},
-      {"name": "Lavanda", "img": "ing/lavanda.jpg", "pos": "45% 30%"}
+    "fondo_txt": "Amaderado y ahumado: es lo que queda en la piel.",
+    "familia": "Ambarada · Fougère",
+    "ideal": "Todo el año, día y noche",
+    "intensidad": "Alta · estela fuerte",
+    "materias": [
+      "vainas de vainilla",
+      "ramitos de lavanda",
+      "raíces de vetiver"
     ]
   }
 ]
