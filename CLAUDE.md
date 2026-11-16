@@ -209,7 +209,12 @@ resolver luz/sombra/realismo final.
   mano. Un link de tipo categoría con `data.id` "0" es "Todas": despliega
   todas las categorías raíz adentro de esa pestaña (así estaba "Decants" el
   2026-11-16, y por eso mostraba Cenzia Privé adentro aunque en el árbol las
-  dos líneas son raíz).
+  dos líneas son raíz). Mientras Bautista no lo cambie en el panel, el último
+  bloque de `styles/theme-custom-css-full.css` ("MENÚ: las dos líneas como
+  pestañas principales") lo resuelve a la vista en celular y computadora; se
+  desactiva solo cuando la pestaña deje de apuntar a /productos/. Ojo si se
+  toca ese bloque: el tema le pone `pointer-events: none` al desplegable al
+  salir el mouse y eso se hereda a las pestañas subidas con `display: contents`.
 - **Ver la tienda en vivo desde el entorno cloud:** usar
   `https://www.cenziadecants.com` (con `www`). El dominio sin `www` falla en el
   handshake TLS desde el sandbox.

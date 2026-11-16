@@ -773,3 +773,99 @@ div.js-product-payments-container::after {
 [data-store="product-price-380863745"] .js-offer-label::after {
 	content: "Ahorrás $60.100";
 }
+
+/* ================================================================
+   MENÚ: las dos líneas como pestañas principales (parche visual)
+   ================================================================
+   En el panel, la pestaña "Decants" del Menú Principal apunta a "Todas las
+   categorías", así que Tienda Nube lista adentro las dos líneas (Decants
+   Originales y Cenzia Privé). El menú no se puede editar por API, así que
+   esto lo resuelve a la vista: esconde esa pestaña contenedora y sube sus
+   dos hijas al primer nivel, cada una con sus subcategorías.
+
+   Queda: Inicio · Decants Originales · Cenzia Privé · Nuestro WhatsApp.
+
+   Solo actúa sobre la pestaña que apunta a /productos/ ("Todas"). El día que
+   el menú se arme bien desde el panel (Tienda online → Menús: "Decants" →
+   categoría Decants Originales, y un link nuevo a Cenzia Privé) deja de
+   coincidir y este bloque no hace nada: se puede borrar sin apuro.
+   Navegadores sin :has() (anteriores a 2022) ignoran el bloque entero y ven
+   el menú como estaba. */
+
+/* --- Celular (menú hamburguesa) --- */
+#nav-hamburger .nav-primary > .nav-list > .nav-item.item-with-subitems:has(> .js-menu-panel > .modal-body > .nav-item > a[href$="/productos/"]) > a.js-toggle-menu-panel {
+	display: none !important;
+}
+#nav-hamburger .nav-primary > .nav-list > .nav-item.item-with-subitems:has(> .js-menu-panel > .modal-body > .nav-item > a[href$="/productos/"]) > .js-menu-panel {
+	display: block !important;
+	position: static !important;
+	width: auto !important;
+	height: auto !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	background: transparent !important;
+	transition: none !important;
+}
+#nav-hamburger .nav-primary > .nav-list > .nav-item.item-with-subitems:has(> .js-menu-panel > .modal-body > .nav-item > a[href$="/productos/"]) > .js-menu-panel > .modal-header,
+#nav-hamburger .nav-primary > .nav-list > .nav-item.item-with-subitems:has(> .js-menu-panel > .modal-body > .nav-item > a[href$="/productos/"]) > .js-menu-panel > .modal-body > .nav-item:has(> a[href$="/productos/"]) {
+	display: none !important;
+}
+/* la última fila que sube pierde su línea divisoria: se la devuelve */
+#nav-hamburger .nav-primary > .nav-list > .nav-item.item-with-subitems:has(> .js-menu-panel > .modal-body > .nav-item > a[href$="/productos/"]) > .js-menu-panel > .modal-body > .nav-item:last-child > a.nav-list-link {
+	border-bottom: 1px solid rgba(13, 22, 31, .08) !important;
+}
+
+/* --- Computadora (barra del encabezado) --- */
+.nav-desktop-list > li.nav-dropdown:has(> .nav-item-container > a[href$="/productos/"]),
+.nav-desktop-list > li.nav-dropdown:has(> .nav-item-container > a[href$="/productos/"]) > .desktop-dropdown,
+.nav-desktop-list > li.nav-dropdown:has(> .nav-item-container > a[href$="/productos/"]) > .desktop-dropdown > .desktop-dropdown-container,
+.nav-desktop-list > li.nav-dropdown:has(> .nav-item-container > a[href$="/productos/"]) > .desktop-dropdown > .desktop-dropdown-container > .desktop-list-subitems {
+	display: contents !important;
+	visibility: visible !important;
+	/* el tema le pone pointer-events:none al desplegable cuando sale el mouse,
+	   y eso se hereda: sin esta línea las pestañas dejan de responder */
+	pointer-events: auto !important;
+}
+.nav-desktop-list > li.nav-dropdown:has(> .nav-item-container > a[href$="/productos/"]) > .nav-item-container {
+	display: none !important;
+}
+.nav-desktop-list > li.nav-dropdown:has(> .nav-item-container > a[href$="/productos/"]) .desktop-list-subitems > li {
+	display: inline-flex !important;
+	position: relative;
+	padding: 0 15px;
+	visibility: visible !important;
+}
+.nav-desktop-list > li.nav-dropdown:has(> .nav-item-container > a[href$="/productos/"]) .desktop-list-subitems > li > .nav-item-container > a {
+	margin: 0 !important;
+	color: inherit !important;
+}
+/* desplegable propio de cada línea */
+.nav-desktop-list > li.nav-dropdown:has(> .nav-item-container > a[href$="/productos/"]) .desktop-list-subitems > li > .list-subitems {
+	display: none;
+	position: absolute;
+	top: calc(100% + 15px);
+	left: 0;
+	min-width: 230px;
+	margin: 0 !important;
+	padding: 18px 20px 10px;
+	background: #fff;
+	border: 1px solid rgba(13, 22, 31, .1);
+	border-top: 0;
+	border-radius: 0 0 12px 12px;
+	box-shadow: 0 14px 30px -14px rgba(13, 22, 31, .3);
+	text-align: left;
+	z-index: 30;
+}
+/* puente invisible para que el desplegable no se cierre al bajar el mouse */
+.nav-desktop-list > li.nav-dropdown:has(> .nav-item-container > a[href$="/productos/"]) .desktop-list-subitems > li > .list-subitems::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -16px;
+	height: 16px;
+}
+.nav-desktop-list > li.nav-dropdown:has(> .nav-item-container > a[href$="/productos/"]) .desktop-list-subitems > li:hover > .list-subitems,
+.nav-desktop-list > li.nav-dropdown:has(> .nav-item-container > a[href$="/productos/"]) .desktop-list-subitems > li:focus-within > .list-subitems {
+	display: block;
+}
