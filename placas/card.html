@@ -18,18 +18,18 @@ html,body{width:2000px;height:2000px;background:#fff}
 body{font-family:"Manrope",system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
 .card{position:relative;width:2000px;height:2000px;background:#fff;overflow:hidden}
 
-/* Encabezado: mismo esquema que las fotos de combos (eyebrow · título · pill) */
-.head{position:absolute;left:0;right:0;top:92px;text-align:center}
-.eyebrow{font-family:"Poppins",sans-serif;font-weight:400;font-size:56px;letter-spacing:.42em;margin-right:-.42em;line-height:1}
-.title{font-family:"Poppins",sans-serif;font-weight:800;line-height:1.02;letter-spacing:-.01em;margin:28px auto 0;max-width:1800px;text-transform:uppercase}
-.sub{margin-top:30px;display:flex;justify-content:center;align-items:center;gap:32px}
-.brand{font-size:68px;font-weight:600;color:var(--soft)}
-.pill{display:inline-block;background:var(--ink);color:#fff;font-family:"Poppins",sans-serif;font-weight:600;font-size:50px;line-height:1;padding:22px 46px 24px;border-radius:999px}
+/* Encabezado chico a propósito: lo que tiene que destacar es la información de abajo */
+.head{position:absolute;left:0;right:0;top:84px;text-align:center}
+.eyebrow{font-family:"Poppins",sans-serif;font-weight:400;font-size:42px;letter-spacing:.42em;margin-right:-.42em;line-height:1;color:var(--soft)}
+.title{font-family:"Poppins",sans-serif;font-weight:700;line-height:1.05;letter-spacing:0;margin:22px auto 0;max-width:1700px;text-transform:uppercase}
+.sub{margin-top:22px;display:flex;justify-content:center;align-items:center;gap:26px}
+.brand{font-size:50px;font-weight:600;color:var(--soft)}
+.pill{display:inline-block;background:var(--ink);color:#fff;font-family:"Poppins",sans-serif;font-weight:600;font-size:38px;line-height:1;padding:17px 36px 19px;border-radius:999px}
 
 /* Foto: el perfume rodeado de sus materias primas */
-.scene{position:absolute;left:80px;top:556px;width:830px;height:1226px;border-radius:48px;overflow:hidden;background:linear-gradient(180deg,#eef1f4 0%,#f7f8fa 62%,#eceff3 100%)}
+.scene{position:absolute;left:80px;top:404px;width:830px;height:1378px;border-radius:48px;overflow:hidden;background:linear-gradient(180deg,#eef1f4 0%,#f7f8fa 62%,#eceff3 100%)}
 .scene>img.full{width:100%;height:100%;object-fit:cover;display:block}
-.scene .bottle{position:absolute;left:50%;bottom:150px;height:700px;transform:translateX(-50%);mix-blend-mode:multiply;z-index:2}
+.scene .bottle{position:absolute;left:50%;bottom:190px;height:760px;transform:translateX(-50%);mix-blend-mode:multiply;z-index:2}
 .zone{position:absolute;border:6px dashed #8793a1;background:rgba(13,22,31,.045);border-radius:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px;z-index:1}
 .zone b{font-family:"Poppins",sans-serif;font-weight:700;font-size:30px;line-height:1.1;color:#3d4753;text-transform:uppercase;letter-spacing:.03em}
 .zone i{font-style:normal;font-family:"Poppins",sans-serif;font-weight:500;font-size:27px;line-height:1.2;color:#5b6672;margin-top:6px}
@@ -38,19 +38,19 @@ body{font-family:"Manrope",system-ui,sans-serif;color:var(--ink);-webkit-font-sm
 .cap b{color:var(--ink);font-weight:700}
 
 /* Columna de texto */
-.info{position:absolute;left:980px;right:84px;top:556px}
-.reco{background:var(--tint);border-radius:40px;padding:38px 46px 42px}
-.reco span{display:block;font-family:"Poppins",sans-serif;font-weight:600;font-size:36px;letter-spacing:.16em;color:var(--soft);text-transform:uppercase;line-height:1}
-.reco p{margin-top:18px;font-family:"Poppins",sans-serif;font-weight:600;font-size:var(--reco,50px);line-height:1.26}
-.label{margin-top:50px;font-family:"Poppins",sans-serif;font-weight:400;font-size:46px;letter-spacing:.30em;line-height:1}
+.info{position:absolute;left:980px;right:84px;top:404px}
+.reco{background:var(--tint);border-radius:40px;padding:42px 48px 46px}
+.reco span{display:block;font-family:"Poppins",sans-serif;font-weight:600;font-size:38px;letter-spacing:.16em;color:var(--soft);text-transform:uppercase;line-height:1}
+.reco p{margin-top:18px;font-family:"Poppins",sans-serif;font-weight:600;font-size:var(--reco,58px);line-height:1.24}
+.label{margin-top:56px;font-family:"Poppins",sans-serif;font-weight:400;font-size:48px;letter-spacing:.30em;line-height:1}
 .rule{height:5px;background:var(--line);margin:26px 0 4px}
-.row{padding:26px 0 28px;border-bottom:3px solid var(--line)}
-.tier{display:block;font-family:"Poppins",sans-serif;font-weight:600;font-size:40px;letter-spacing:.16em;color:var(--soft);text-transform:uppercase;line-height:1}
-.notes{display:block;margin-top:12px;font-family:"Poppins",sans-serif;font-weight:700;font-size:var(--notes,62px);line-height:1.12}
-.txt{display:block;margin-top:10px;font-size:var(--txt,44px);font-weight:500;line-height:1.28;color:var(--soft)}
-.meta{margin-top:30px;display:grid;grid-template-columns:auto 1fr;gap:14px 32px;align-items:baseline}
-.meta span{font-family:"Poppins",sans-serif;font-weight:600;font-size:36px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);line-height:1.2}
-.meta b{font-family:"Poppins",sans-serif;font-weight:600;font-size:var(--txt,44px);line-height:1.2}
+.row{padding:30px 0 32px;border-bottom:3px solid var(--line)}
+.tier{display:block;font-family:"Poppins",sans-serif;font-weight:600;font-size:42px;letter-spacing:.16em;color:var(--soft);text-transform:uppercase;line-height:1}
+.notes{display:block;margin-top:12px;font-family:"Poppins",sans-serif;font-weight:700;font-size:var(--notes,72px);line-height:1.12}
+.txt{display:block;margin-top:12px;font-size:var(--txt,50px);font-weight:500;line-height:1.28;color:var(--soft)}
+.meta{margin-top:34px;display:grid;grid-template-columns:auto 1fr;gap:16px 32px;align-items:baseline}
+.meta span{font-family:"Poppins",sans-serif;font-weight:600;font-size:38px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);line-height:1.2}
+.meta b{font-family:"Poppins",sans-serif;font-weight:600;font-size:var(--txt,50px);line-height:1.2}
 </style>
 </head>
 <body>
@@ -89,11 +89,11 @@ if (mode === 'final') {
 } else {
   // Boceto: frasco real + una zona rotulada por materia, repartidas alrededor del frasco
   const ZONES = [
-    { cls: '',      css: 'left:26px;top:240px;width:190px;height:560px' },     // atrás a la izquierda (alto: ramas, espigas)
-    { cls: '',      css: 'right:26px;top:280px;width:190px;height:520px' },    // atrás a la derecha (alto)
-    { cls: 'front', css: 'left:36px;bottom:56px;width:290px;height:170px' },   // adelante a la izquierda (bajo)
-    { cls: 'front', css: 'right:36px;bottom:56px;width:290px;height:170px' },  // adelante a la derecha (bajo)
-    { cls: 'front', css: 'left:50%;margin-left:-110px;bottom:26px;width:220px;height:110px' }, // adelante al centro
+    { cls: '',      css: 'left:26px;top:300px;width:190px;height:640px' },     // atrás a la izquierda (alto: ramas, espigas)
+    { cls: '',      css: 'right:26px;top:350px;width:190px;height:590px' },    // atrás a la derecha (alto)
+    { cls: 'front', css: 'left:36px;bottom:70px;width:290px;height:180px' },   // adelante a la izquierda (bajo)
+    { cls: 'front', css: 'right:36px;bottom:70px;width:290px;height:180px' },  // adelante a la derecha (bajo)
+    { cls: 'front', css: 'left:50%;margin-left:-110px;bottom:34px;width:220px;height:116px' }, // adelante al centro
   ];
   const zones = (d.materias || []).slice(0, ZONES.length).map((m, i) => {
     const z = ZONES[m.zona != null ? m.zona : i];
@@ -103,14 +103,14 @@ if (mode === 'final') {
 }
 
 document.fonts.ready.then(() => {
-  // Título: una sola línea, lo más grande que entre
-  let size = 160;
+  // Título: una sola línea y contenido; no compite con la información
+  let size = 92;
   title.style.fontSize = size + 'px';
   title.style.whiteSpace = 'nowrap';
-  while (title.scrollWidth > 1800 && size > 92) { size -= 2; title.style.fontSize = size + 'px'; }
+  while (title.scrollWidth > 1700 && size > 60) { size -= 2; title.style.fontSize = size + 'px'; }
   // Columna de texto: si no entra hasta el borde inferior, se achica de a poco
   const info = document.getElementById('info');
-  let notes = 62, txt = 44, reco = 50;
+  let notes = 72, txt = 50, reco = 58;
   const fits = () => info.getBoundingClientRect().bottom <= 1904;
   while (!fits() && notes > 46) {
     notes -= 2; txt = Math.max(37, txt - 1); reco = Math.max(42, reco - 1);
