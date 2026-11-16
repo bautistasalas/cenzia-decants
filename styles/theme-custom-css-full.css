@@ -645,7 +645,6 @@ div.js-product-payments-container::after {
 [data-store="product-name-379559585"]::after,
 [data-store="product-name-379559587"]::after,
 [data-store="product-name-379562938"]::after,
-[data-store="product-name-379562941"]::after,
 [data-store="product-name-379562943"]::after,
 [data-store="product-name-379562948"]::after {
 	content: "★★★★★  4.8 (47 reseñas)  ·  +2000 pedidos enviados";
@@ -679,7 +678,7 @@ div.js-product-payments-container::after {
 [data-store="product-price-380476591"]::before,
 [data-store="product-price-380478134"]::before,
 [data-store="product-price-380478136"]::before {
-	content: "● Mismas esencias que el original\A ● 8 a 10 horas de duración\A ● Envío a todo el país";
+	content: "● Inspirada en el perfume original\A ● 8 a 10 horas de duración\A ● Envío a todo el país";
 	display: block;
 	white-space: pre-line;
 	font-size: 13.5px;
@@ -693,10 +692,12 @@ div.js-product-payments-container::after {
 [data-store="product-price-379559585"]::before,
 [data-store="product-price-379559587"]::before,
 [data-store="product-price-379562938"]::before,
-[data-store="product-price-379562941"]::before,
 [data-store="product-price-379562943"]::before,
-[data-store="product-price-379562948"]::before {
-	content: "● Mismas esencias que los originales\A ● 8 a 10 horas de duración\A ● Envío gratis siempre";
+[data-store="product-price-379562948"]::before,
+[data-store="product-price-380863710"]::before,
+[data-store="product-price-380863743"]::before,
+[data-store="product-price-380863745"]::before {
+	content: "● Inspiradas en los perfumes originales\A ● 8 a 10 horas de duración\A ● Envío gratis siempre";
 	display: block;
 	white-space: pre-line;
 	font-size: 13.5px;
@@ -707,17 +708,25 @@ div.js-product-payments-container::after {
 }
 
 /* Ahorro en $ por llevar el combo vs. comprar cada Esencia Privé suelta a $35.000.
-   Reemplaza el texto nativo del chip "-0%OFF" (aparece porque compare_at_price
-   = price) por el ahorro real: se achica el texto nativo a 0 y se inyecta el
-   contenido nuevo con ::after, manteniendo el fondo/forma del chip original. */
+   Reemplaza el texto nativo del chip ("-29% OFF") por el ahorro en pesos: se
+   achica el texto nativo a 0 y se inyecta el contenido nuevo con ::after,
+   manteniendo el fondo/forma del chip original.
+   OJO: los montos están escritos a mano. Ahorro = precio tachado (cantidad ×
+   $35.000) − precio promocional. Si cambia un precio en el panel, hay que
+   actualizar el número acá y volver a pegar el CSS; si no, el cartel miente.
+   Escalera vigente desde 2026-11-16: 2→$59.900 (Intenso), 3→$84.900 (Bestia,
+   Ella), 4→$99.900 (Caballero, Seductor, Nocturno, Icónico), 5→$114.900
+   (Los Más Buscados, Femme), 6→$124.900 (Black). */
 [data-store="product-price-379559574"] .js-offer-label,
 [data-store="product-price-379559578"] .js-offer-label,
 [data-store="product-price-379559585"] .js-offer-label,
 [data-store="product-price-379559587"] .js-offer-label,
 [data-store="product-price-379562938"] .js-offer-label,
-[data-store="product-price-379562941"] .js-offer-label,
 [data-store="product-price-379562943"] .js-offer-label,
-[data-store="product-price-379562948"] .js-offer-label {
+[data-store="product-price-379562948"] .js-offer-label,
+[data-store="product-price-380863710"] .js-offer-label,
+[data-store="product-price-380863743"] .js-offer-label,
+[data-store="product-price-380863745"] .js-offer-label {
 	font-size: 0 !important;
 }
 [data-store="product-price-379559574"] .js-offer-label::after,
@@ -725,34 +734,42 @@ div.js-product-payments-container::after {
 [data-store="product-price-379559585"] .js-offer-label::after,
 [data-store="product-price-379559587"] .js-offer-label::after,
 [data-store="product-price-379562938"] .js-offer-label::after,
-[data-store="product-price-379562941"] .js-offer-label::after,
 [data-store="product-price-379562943"] .js-offer-label::after,
-[data-store="product-price-379562948"] .js-offer-label::after {
+[data-store="product-price-379562948"] .js-offer-label::after,
+[data-store="product-price-380863710"] .js-offer-label::after,
+[data-store="product-price-380863743"] .js-offer-label::after,
+[data-store="product-price-380863745"] .js-offer-label::after {
 	font-size: 11px;
 	font-weight: 800;
 	letter-spacing: .02em;
 }
 [data-store="product-price-379559574"] .js-offer-label::after {
-	content: "Ahorrás $75.100";
+	content: "Ahorrás $60.100";
 }
 [data-store="product-price-379559578"] .js-offer-label::after {
-	content: "Ahorrás $25.100";
+	content: "Ahorrás $40.100";
 }
 [data-store="product-price-379559585"] .js-offer-label::after {
-	content: "Ahorrás $60.100";
+	content: "Ahorrás $40.100";
 }
 [data-store="product-price-379559587"] .js-offer-label::after {
-	content: "Ahorrás $60.100";
+	content: "Ahorrás $40.100";
 }
 [data-store="product-price-379562938"] .js-offer-label::after {
-	content: "Ahorrás $90.100";
-}
-[data-store="product-price-379562941"] .js-offer-label::after {
-	content: "Ahorrás $35.100";
+	content: "Ahorrás $85.100";
 }
 [data-store="product-price-379562943"] .js-offer-label::after {
-	content: "Ahorrás $45.100";
+	content: "Ahorrás $10.100";
 }
 [data-store="product-price-379562948"] .js-offer-label::after {
-	content: "Ahorrás $35.100";
+	content: "Ahorrás $20.100";
+}
+[data-store="product-price-380863710"] .js-offer-label::after {
+	content: "Ahorrás $20.100";
+}
+[data-store="product-price-380863743"] .js-offer-label::after {
+	content: "Ahorrás $40.100";
+}
+[data-store="product-price-380863745"] .js-offer-label::after {
+	content: "Ahorrás $60.100";
 }

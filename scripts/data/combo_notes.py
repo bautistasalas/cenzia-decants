@@ -53,61 +53,58 @@ def pyramid_for(pid):
         "fondo": top3("fondo"),
     }
 
+# Precio = precio promocional cargado en la tienda (escalera 2026-11-16:
+# 2→59.900, 3→84.900, 4→99.900, 5→114.900, 6→124.900). El tachado es
+# cantidad × $35.000. Femme, Icónico y Ella (nuevo) no se generan desde acá:
+# sus descripciones se armaron por fuera y se corrigen directo en la tienda.
 COMBOS = [
     {
         "id": 379559574,
         "slug": "los-mas-buscados",
         "name": "Los Más Buscados",
-        "price": 99900,
+        "price": 114900,
         "frags": [378156477, 379371166, 378156482, 378156488, 378156494],
     },
     {
         "id": 379559578,
         "slug": "caballero",
         "name": "Caballero",
-        "price": 79900,
-        "frags": [378156488, 379371166, 378156482],
+        "price": 99900,
+        "frags": [378156488, 379371166, 378156482, 378156485],
     },
     {
         "id": 379559585,
         "slug": "seductor",
         "name": "Seductor",
-        "price": 79900,
+        "price": 99900,
         "frags": [378156485, 378156477, 378156482, 379371166],
     },
     {
         "id": 379559587,
         "slug": "nocturno",
         "name": "Nocturno",
-        "price": 79900,
+        "price": 99900,
         "frags": [378156485, 378156488, 378156482, 379371172],
     },
     {
         "id": 379562938,
         "slug": "black",
         "name": "Black",
-        "price": 119900,
+        "price": 124900,
         "frags": [378156485, 378156488, 379371172, 378156482, 379371166, 378156477],
-    },
-    {
-        "id": 379562941,
-        "slug": "ella",
-        "name": "Ella",
-        "price": 69900,
-        "frags": [379371171, 379371165, 378156477],
     },
     {
         "id": 379562943,
         "slug": "intenso",
         "name": "Intenso",
         "price": 59900,
-        "frags": [378156485, 378156488, 378156482],
+        "frags": [378156488, 378156482],
     },
     {
         "id": 379562948,
         "slug": "bestia",
         "name": "Bestia",
-        "price": 69900,
+        "price": 84900,
         "frags": [378156485, 378156488, 378156477],
     },
 ]
