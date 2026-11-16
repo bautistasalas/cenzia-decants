@@ -525,9 +525,9 @@ input.btn-add-to-cart.btn.btn-primary.btn-big {
 	letter-spacing: .01em;
 }
 
-/* Aviso de Mercado Pago, versión con mayor especificidad por si algo más pisa esto */
+/* Aviso de Pago Nube, versión con mayor especificidad por si algo más pisa esto */
 div.js-product-payments-container::after {
-	content: "🔒 Trabajamos con Mercado Pago — pago 100% seguro" !important;
+	content: "🔒 Trabajamos con Pago Nube — pago 100% seguro" !important;
 	display: block !important;
 	margin-top: 10px;
 	padding: 11px 14px;
@@ -559,7 +559,7 @@ div.js-product-payments-container::after {
 
 /* Medios de pago aceptados, debajo del botón de comprar */
 .row.no-gutters.mb-4 > .col-8.col-md-9::after {
-	content: "💳 Visa  ·  Mastercard  ·  American Express  ·  Mercado Pago";
+	content: "💳 Visa  ·  Mastercard  ·  American Express  ·  Pago Nube";
 	display: block;
 	margin-top: 10px;
 	padding: 10px 14px;
