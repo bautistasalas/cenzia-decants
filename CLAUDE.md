@@ -131,3 +131,12 @@ resolver luz/sombra/realismo final.
   actuales NO incluyen `write_scripts` — para instalar scripts hay que pegar
   código manualmente en el panel).
 - Ver `README.md` para cómo probar la conexión.
+- **Renombrar un producto por API le cambia la URL:** un `PUT` que manda solo
+  `name` regenera el `handle`, y la URL anterior pasa a dar 404 (pasó el
+  2026-11-16 con los 7 combos Cenzia Privé; hubo que restaurar los handles).
+  Al renombrar, mandar siempre el `handle` actual en el mismo `PUT` y verificar
+  después que la URL de antes sigue cargando. Tener el mismo cuidado con las
+  categorías, que también arman las URLs del menú.
+- **Ver la tienda en vivo desde el entorno cloud:** usar
+  `https://www.cenziadecants.com` (con `www`). El dominio sin `www` falla en el
+  handshake TLS desde el sandbox.
