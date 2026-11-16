@@ -55,8 +55,11 @@ def pyramid_for(pid):
 
 # Precio = precio promocional cargado en la tienda (escalera 2026-11-16:
 # 2→59.900, 3→84.900, 4→99.900, 5→114.900, 6→124.900). El tachado es
-# cantidad × $35.000. Femme, Icónico y Ella (nuevo) no se generan desde acá:
-# sus descripciones se armaron por fuera y se corrigen directo en la tienda.
+# cantidad × $35.000.
+# Cada combo define sus tarjetas de una de dos formas:
+#   "frags" → lista de IDs; la tarjeta se arma con DISPLAY + BLURB + pyramid_for.
+#   "cards" → tarjetas escritas a mano (Ella, Icónico y Femme, que se crearon
+#             con textos propios; se copiaron tal cual de la tienda).
 COMBOS = [
     {
         "id": 379559574,
@@ -106,5 +109,41 @@ COMBOS = [
         "name": "Bestia",
         "price": 84900,
         "frags": [378156485, 378156488, 378156477],
+    },
+    {
+        "id": 380863710,
+        "slug": "ella",
+        "name": "Ella",
+        "price": 84900,
+        "cards": [
+            {"brand": "Giorgio Armani", "name": "My Way", "blurb": "Nardo y azahar sobre una base cálida de cedro y vainilla — fresco al principio, envolvente con el correr de las horas.", "salida": "Bergamota, Flor de azahar", "corazon": "Nardo, Jazmín", "fondo": "Cedro, Vainilla"},
+            {"brand": "Kenzo", "name": "Flower", "blurb": "Un floral clásico de rosa y violeta, dulce pero no empalagoso, con un fondo suave de vainilla e incienso.", "salida": "Rosa búlgara, Espino, Grosella negra, Mandarina", "corazon": "Violeta de Parma, Rosa, Opopónax, Jazmín", "fondo": "Almizcle blanco, Vainilla, Incienso"},
+            {"brand": "Carolina Herrera", "name": "Good Girl", "blurb": "Floral dulce con un fondo gourmand de cacao y café. Femenino, reconocible, con mucha proyección.", "salida": "Almendra, Bergamota, Limón", "corazon": "Jazmín sambac, Tuberosa", "fondo": "Haba tonka, Cacao, Café, Vainilla"},
+        ],
+    },
+    {
+        "id": 380863743,
+        "slug": "iconico",
+        "name": "Icónico",
+        "price": 99900,
+        "cards": [
+            {"brand": "Carolina Herrera", "name": "La Bomba", "blurb": "Fresco y jugoso de entrada, con un corazón floral tropical que se asienta en una base cálida de vainilla.", "salida": "Pitahaya (fruta del dragón)", "corazon": "Peonía cereza, Frangipani rojo", "fondo": "Vainilla, Pachulí"},
+            {"brand": "Lattafa", "name": "Eclaire", "blurb": "Un gourmand goloso de caramelo y leche que se vuelve floral y envolvente en el fondo.", "salida": "Caramelo, Leche, Azúcar", "corazon": "Miel, Flores blancas", "fondo": "Almizcle, Praliné, Vainilla"},
+            {"brand": "Emporio Armani", "name": "Power Of You", "blurb": "Maracuyá y frangipani sobre un fondo de vainilla y benjuí — una fragancia alegre pensada para el buen clima.", "salida": "Maracuyá, Naranja amarga, Limón", "corazon": "Frangipani, Notas solares", "fondo": "Vainilla de Madagascar, Benjuí, Labdanum"},
+            {"brand": "Carolina Herrera", "name": "Good Girl", "blurb": "Floral dulce con un fondo gourmand de cacao y café. Femenino, reconocible, con mucha proyección.", "salida": "Almendra, Bergamota, Limón", "corazon": "Jazmín sambac, Tuberosa", "fondo": "Haba tonka, Cacao, Café, Vainilla"},
+        ],
+    },
+    {
+        "id": 380863745,
+        "slug": "femme",
+        "name": "Femme",
+        "price": 114900,
+        "cards": [
+            {"brand": "Giorgio Armani", "name": "My Way", "blurb": "Nardo y azahar sobre una base cálida de cedro y vainilla — fresco al principio, envolvente con el correr de las horas.", "salida": "Bergamota, Flor de azahar", "corazon": "Nardo, Jazmín", "fondo": "Cedro, Vainilla"},
+            {"brand": "Kenzo", "name": "Flower", "blurb": "Un floral clásico de rosa y violeta, dulce pero no empalagoso, con un fondo suave de vainilla e incienso.", "salida": "Rosa búlgara, Espino, Grosella negra, Mandarina", "corazon": "Violeta de Parma, Rosa, Opopónax, Jazmín", "fondo": "Almizcle blanco, Vainilla, Incienso"},
+            {"brand": "Carolina Herrera", "name": "Good Girl", "blurb": "Floral dulce con un fondo gourmand de cacao y café. Femenino, reconocible, con mucha proyección.", "salida": "Almendra, Bergamota, Limón", "corazon": "Jazmín sambac, Tuberosa", "fondo": "Haba tonka, Cacao, Café, Vainilla"},
+            {"brand": "Lancôme", "name": "La Vida Es Bella", "blurb": "Una nube dulce de praliné y vainilla, elevada por un iris floral brillante. Icónico y reconocible al instante.", "salida": "Grosella negra, Pera", "corazon": "Iris, Jazmín, Flor de azahar", "fondo": "Praliné, Vainilla, Pachulí, Haba tonka"},
+            {"brand": "Carolina Herrera", "name": "La Bomba", "blurb": "Fresco y jugoso de entrada, con un corazón floral tropical que se asienta en una base cálida de vainilla.", "salida": "Pitahaya (fruta del dragón)", "corazon": "Peonía cereza, Frangipani rojo", "fondo": "Vainilla, Pachulí"},
+        ],
     },
 ]

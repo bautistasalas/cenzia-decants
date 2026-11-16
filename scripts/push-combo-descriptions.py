@@ -15,6 +15,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "data"))
 from combo_notes import COMBOS, DISPLAY, BY_ID, BLURB, pyramid_for  # noqa: E402
@@ -35,20 +36,30 @@ def fmt_price(n):
     return "${:,}".format(n).replace(",", ".")
 
 
-def build(combo):
-    qty = len(combo["frags"])
-    cards = []
-    for i, fid in enumerate(combo["frags"], start=1):
+def cards_data(combo):
+    """Tarjetas del carrusel: escritas a mano ("cards") o armadas desde los IDs ("frags")."""
+    if "cards" in combo:
+        return combo["cards"]
+    out = []
+    for fid in combo["frags"]:
         name, brand = DISPLAY[fid]
-        py = pyramid_for(fid)
+        out.append({"brand": brand, "name": name, "blurb": BLURB[fid], **pyramid_for(fid)})
+    return out
+
+
+def build(combo):
+    data = cards_data(combo)
+    qty = len(data)
+    cards = []
+    for i, c in enumerate(data, start=1):
         card = f'''    <div class="olf-mini">
-      <div class="n">{i} / {qty} — {brand}</div>
-      <h4>{name}</h4>
-      <p class="blurb">{BLURB[fid]}</p>
+      <div class="n">{i} / {qty} — {c['brand']}</div>
+      <h4>{c['name']}</h4>
+      <p class="blurb">{c['blurb']}</p>
       <div class="pyramid">
-        <div><b>Salida</b><p>{py['salida']}</p></div>
-        <div><b>Corazón</b><p>{py['corazon']}</p></div>
-        <div><b>Fondo</b><p>{py['fondo']}</p></div>
+        <div><b>Salida</b><p>{c['salida']}</p></div>
+        <div><b>Corazón</b><p>{c['corazon']}</p></div>
+        <div><b>Fondo</b><p>{c['fondo']}</p></div>
       </div>
     </div>'''
         cards.append(card)
@@ -64,6 +75,7 @@ def build(combo):
     html = html.replace("{{COMBO_QTY_TXT}}", NUM_WORDS.get(qty, str(qty)))
     html = html.replace("{{COMBO_QTY}}", str(qty))
     html = html.replace("{{COMBO_UNIT_PRICE}}", unit_price_txt)
+    assert "{{" not in html, "quedó un placeholder sin completar"
     return html
 
 
@@ -110,3 +122,4 @@ for combo in COMBOS:
         capture_output=True, text=True,
     )
     print(f"combo {combo['id']} ({combo['name']}): {result.stdout.strip()} {result.stderr.strip()}")
+    time.sleep(1)  # la API corta con 429 si se le pega muy seguido
