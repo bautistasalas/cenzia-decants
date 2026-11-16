@@ -4,7 +4,9 @@
     "product_id": 378156482,
     "name": "Born In Roma Intense",
     "brand": "Valentino",
+    "bottle": "src/born-in-roma-intense.webp",
     "scene": "scenes/born-in-roma-intense.jpg",
+    "reco": "Citas y salidas de noche. Es dulce, envolvente y deja estela.",
     "salida": "Vainilla bourbon",
     "salida_txt": "Dulce y cálida desde el primer momento.",
     "corazon": "Lavandín",
@@ -12,12 +14,23 @@
     "fondo": "Vetiver ahumado",
     "fondo_txt": "Amaderado y ahumado: es lo que queda en la piel.",
     "familia": "Ambarada · Fougère",
-    "ideal": "Todo el año, día y noche",
     "intensidad": "Alta · estela fuerte",
     "materias": [
-      "vainas de vainilla",
-      "ramitos de lavanda",
-      "raíces de vetiver"
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      },
+      {
+        "nombre": "Vetiver",
+        "detalle": "raíces",
+        "en": "a small bundle of dried vetiver roots"
+      }
     ]
   }
 ]

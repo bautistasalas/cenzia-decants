@@ -2,9 +2,12 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<!-- Placa de galería por perfume, 2000 x 2000 px.
-     Izquierda: foto del perfume rodeado de sus materias primas (sin el frasco Cenzia Privé).
-     Derecha: recorrido olfativo detallado. Los datos llegan como JSON en el hash de la URL. -->
+<!-- Placa de galería por perfume, 2000 x 2000 px. Los datos llegan como JSON en el hash de la URL.
+     Izquierda: el perfume solo, rodeado de sus materias primas (sin el frasco Cenzia Privé).
+     Derecha: recomendación de uso + recorrido olfativo detallado.
+     Dos modos:
+       - boceto: frasco real recortado + zonas rotuladas para cada materia (guía para generar la foto en Runway).
+       - final:  la foto ya generada (campo "scene"). -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -16,30 +19,38 @@ body{font-family:"Manrope",system-ui,sans-serif;color:var(--ink);-webkit-font-sm
 .card{position:relative;width:2000px;height:2000px;background:#fff;overflow:hidden}
 
 /* Encabezado: mismo esquema que las fotos de combos (eyebrow · título · pill) */
-.head{position:absolute;left:0;right:0;top:104px;text-align:center}
-.eyebrow{font-family:"Poppins",sans-serif;font-weight:400;font-size:60px;letter-spacing:.42em;margin-right:-.42em;line-height:1}
-.title{font-family:"Poppins",sans-serif;font-weight:800;line-height:1.02;letter-spacing:-.01em;margin:30px auto 0;max-width:1800px;text-transform:uppercase}
-.sub{margin-top:34px;display:flex;justify-content:center;align-items:center;gap:34px}
-.brand{font-size:72px;font-weight:600;color:var(--soft)}
-.pill{display:inline-block;background:var(--ink);color:#fff;font-family:"Poppins",sans-serif;font-weight:600;font-size:52px;line-height:1;padding:23px 48px 25px;border-radius:999px}
+.head{position:absolute;left:0;right:0;top:92px;text-align:center}
+.eyebrow{font-family:"Poppins",sans-serif;font-weight:400;font-size:56px;letter-spacing:.42em;margin-right:-.42em;line-height:1}
+.title{font-family:"Poppins",sans-serif;font-weight:800;line-height:1.02;letter-spacing:-.01em;margin:28px auto 0;max-width:1800px;text-transform:uppercase}
+.sub{margin-top:30px;display:flex;justify-content:center;align-items:center;gap:32px}
+.brand{font-size:68px;font-weight:600;color:var(--soft)}
+.pill{display:inline-block;background:var(--ink);color:#fff;font-family:"Poppins",sans-serif;font-weight:600;font-size:50px;line-height:1;padding:22px 46px 24px;border-radius:999px}
 
 /* Foto: el perfume rodeado de sus materias primas */
-.scene{position:absolute;left:80px;top:600px;width:900px;height:1180px;border-radius:48px;overflow:hidden;background:var(--tint)}
-.scene img{width:100%;height:100%;object-fit:cover;display:block}
-.cap{position:absolute;left:80px;width:900px;top:1818px;text-align:center;font-family:"Poppins",sans-serif;font-weight:500;font-size:46px;line-height:1.2;color:var(--soft)}
+.scene{position:absolute;left:80px;top:556px;width:830px;height:1226px;border-radius:48px;overflow:hidden;background:linear-gradient(180deg,#eef1f4 0%,#f7f8fa 62%,#eceff3 100%)}
+.scene>img.full{width:100%;height:100%;object-fit:cover;display:block}
+.scene .bottle{position:absolute;left:50%;bottom:150px;height:700px;transform:translateX(-50%);mix-blend-mode:multiply;z-index:2}
+.zone{position:absolute;border:6px dashed #8793a1;background:rgba(13,22,31,.045);border-radius:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px;z-index:1}
+.zone b{font-family:"Poppins",sans-serif;font-weight:700;font-size:30px;line-height:1.1;color:#3d4753;text-transform:uppercase;letter-spacing:.03em}
+.zone i{font-style:normal;font-family:"Poppins",sans-serif;font-weight:500;font-size:27px;line-height:1.2;color:#5b6672;margin-top:6px}
+.zone.front{z-index:3;background:rgba(255,255,255,.72)}
+.cap{position:absolute;left:80px;width:830px;top:1822px;text-align:center;font-family:"Poppins",sans-serif;font-weight:500;font-size:40px;line-height:1.2;color:var(--soft);white-space:nowrap}
 .cap b{color:var(--ink);font-weight:700}
 
-/* Recorrido olfativo */
-.info{position:absolute;left:1060px;right:90px;top:606px}
-.label{font-family:"Poppins",sans-serif;font-weight:400;font-size:48px;letter-spacing:.30em;line-height:1}
-.rule{height:5px;background:var(--line);margin:28px 0 6px}
-.row{padding:30px 0 32px;border-bottom:3px solid var(--line)}
-.tier{display:block;font-family:"Poppins",sans-serif;font-weight:600;font-size:42px;letter-spacing:.16em;color:var(--soft);text-transform:uppercase;line-height:1}
-.notes{display:block;margin-top:14px;font-family:"Poppins",sans-serif;font-weight:700;font-size:var(--notes,66px);line-height:1.12}
-.txt{display:block;margin-top:12px;font-size:var(--txt,46px);font-weight:500;line-height:1.3;color:var(--soft)}
-.meta{margin-top:34px;display:grid;grid-template-columns:auto 1fr;gap:16px 34px;align-items:baseline}
-.meta span{font-family:"Poppins",sans-serif;font-weight:600;font-size:38px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);line-height:1.2}
-.meta b{font-family:"Poppins",sans-serif;font-weight:600;font-size:var(--txt,46px);line-height:1.2}
+/* Columna de texto */
+.info{position:absolute;left:980px;right:84px;top:556px}
+.reco{background:var(--tint);border-radius:40px;padding:38px 46px 42px}
+.reco span{display:block;font-family:"Poppins",sans-serif;font-weight:600;font-size:36px;letter-spacing:.16em;color:var(--soft);text-transform:uppercase;line-height:1}
+.reco p{margin-top:18px;font-family:"Poppins",sans-serif;font-weight:600;font-size:var(--reco,50px);line-height:1.26}
+.label{margin-top:50px;font-family:"Poppins",sans-serif;font-weight:400;font-size:46px;letter-spacing:.30em;line-height:1}
+.rule{height:5px;background:var(--line);margin:26px 0 4px}
+.row{padding:26px 0 28px;border-bottom:3px solid var(--line)}
+.tier{display:block;font-family:"Poppins",sans-serif;font-weight:600;font-size:40px;letter-spacing:.16em;color:var(--soft);text-transform:uppercase;line-height:1}
+.notes{display:block;margin-top:12px;font-family:"Poppins",sans-serif;font-weight:700;font-size:var(--notes,62px);line-height:1.12}
+.txt{display:block;margin-top:10px;font-size:var(--txt,44px);font-weight:500;line-height:1.28;color:var(--soft)}
+.meta{margin-top:30px;display:grid;grid-template-columns:auto 1fr;gap:14px 32px;align-items:baseline}
+.meta span{font-family:"Poppins",sans-serif;font-weight:600;font-size:36px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);line-height:1.2}
+.meta b{font-family:"Poppins",sans-serif;font-weight:600;font-size:var(--txt,44px);line-height:1.2}
 </style>
 </head>
 <body>
@@ -49,9 +60,10 @@ body{font-family:"Manrope",system-ui,sans-serif;color:var(--ink);-webkit-font-sm
     <h1 class="title" id="title"></h1>
     <div class="sub"><span class="brand" id="brand"></span><span class="pill">Cenzia Privé</span></div>
   </div>
-  <div class="scene"><img id="scene" alt=""></div>
-  <div class="cap"><b>Esencia Privé</b> de 60 ml · Eau de Parfum</div>
+  <div class="scene" id="scene"></div>
+  <div class="cap"><b>Esencia Privé</b> · 60 ml · Eau de Parfum</div>
   <div class="info" id="info">
+    <div class="reco"><span>Te la recomendamos para</span><p id="reco"></p></div>
     <div class="label">RECORRIDO OLFATIVO</div>
     <div class="rule"></div>
     <div id="rows"></div>
@@ -60,31 +72,51 @@ body{font-family:"Manrope",system-ui,sans-serif;color:var(--ink);-webkit-font-sm
 </div>
 <script>
 const d = JSON.parse(decodeURIComponent(location.hash.slice(1)));
+const mode = d.mode || (d.scene ? 'final' : 'boceto');
 const title = document.getElementById('title');
 title.textContent = d.name;
 document.getElementById('brand').textContent = d.brand ? 'de ' + d.brand : '';
-const scene = document.getElementById('scene');
-scene.src = d.scene;
-if (d.scene_pos) scene.style.objectPosition = d.scene_pos;
+document.getElementById('reco').textContent = d.reco || '';
 document.getElementById('rows').innerHTML = [['Salida', d.salida, d.salida_txt], ['Corazón', d.corazon, d.corazon_txt], ['Fondo', d.fondo, d.fondo_txt]]
   .map(([t, n, x]) => `<div class="row"><span class="tier">${t}</span><span class="notes">${n}</span>${x ? `<span class="txt">${x}</span>` : ''}</div>`).join('');
-document.getElementById('meta').innerHTML = [['Familia', d.familia], ['Ideal para', d.ideal], ['Intensidad', d.intensidad]]
+document.getElementById('meta').innerHTML = [['Familia', d.familia], ['Intensidad', d.intensidad]]
   .filter(([, v]) => v).map(([k, v]) => `<span>${k}</span><b>${v}</b>`).join('');
+
+// Foto
+const scene = document.getElementById('scene');
+if (mode === 'final') {
+  scene.innerHTML = `<img class="full" src="${d.scene}" style="object-position:${d.scene_pos || '50% 50%'}">`;
+} else {
+  // Boceto: frasco real + una zona rotulada por materia, repartidas alrededor del frasco
+  const ZONES = [
+    { cls: '',      css: 'left:26px;top:240px;width:190px;height:560px' },     // atrás a la izquierda (alto: ramas, espigas)
+    { cls: '',      css: 'right:26px;top:280px;width:190px;height:520px' },    // atrás a la derecha (alto)
+    { cls: 'front', css: 'left:36px;bottom:56px;width:290px;height:170px' },   // adelante a la izquierda (bajo)
+    { cls: 'front', css: 'right:36px;bottom:56px;width:290px;height:170px' },  // adelante a la derecha (bajo)
+    { cls: 'front', css: 'left:50%;margin-left:-110px;bottom:26px;width:220px;height:110px' }, // adelante al centro
+  ];
+  const zones = (d.materias || []).slice(0, ZONES.length).map((m, i) => {
+    const z = ZONES[m.zona != null ? m.zona : i];
+    return `<div class="zone ${z.cls}" style="${z.css}"><b>${m.nombre}</b>${m.detalle ? `<i>${m.detalle}</i>` : ''}</div>`;
+  }).join('');
+  scene.innerHTML = zones + `<img class="bottle" src="${d.bottle}" alt="">`;
+}
 
 document.fonts.ready.then(() => {
   // Título: una sola línea, lo más grande que entre
-  let size = 168;
+  let size = 160;
   title.style.fontSize = size + 'px';
   title.style.whiteSpace = 'nowrap';
   while (title.scrollWidth > 1800 && size > 92) { size -= 2; title.style.fontSize = size + 'px'; }
   // Columna de texto: si no entra hasta el borde inferior, se achica de a poco
   const info = document.getElementById('info');
-  let notes = 66, txt = 46;
-  const fits = () => info.getBoundingClientRect().bottom <= 1900;
-  while (!fits() && notes > 48) {
-    notes -= 2; txt = Math.max(38, txt - 1);
+  let notes = 62, txt = 44, reco = 50;
+  const fits = () => info.getBoundingClientRect().bottom <= 1904;
+  while (!fits() && notes > 46) {
+    notes -= 2; txt = Math.max(37, txt - 1); reco = Math.max(42, reco - 1);
     info.style.setProperty('--notes', notes + 'px');
     info.style.setProperty('--txt', txt + 'px');
+    info.style.setProperty('--reco', reco + 'px');
   }
   document.body.setAttribute('data-ready', '1');
   document.body.setAttribute('data-fit', fits() ? 'ok' : 'overflow');
