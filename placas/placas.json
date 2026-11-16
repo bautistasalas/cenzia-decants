@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "born-in-roma-intense",
+    "product_id": 378156482,
+    "name": "Born In Roma Intense",
+    "brand": "Valentino",
+    "photo": "src/born-in-roma-intense.webp",
+    "salida": "Vainilla bourbon",
+    "corazon": "Lavandín",
+    "fondo": "Vetiver ahumado",
+    "keys": [
+      {"name": "Vainilla", "img": "ing/vainilla.jpg", "pos": "40% 55%"},
+      {"name": "Lavanda", "img": "ing/lavanda.jpg", "pos": "45% 30%"}
+    ]
+  }
+]
