@@ -35,7 +35,21 @@ Presentada como una línea propia de Cenzia de interpretaciones/inspiraciones
 de alta concentración, dejando siempre claro que no son productos oficiales
 de las marcas en las que se inspiran. "Extracto" se sigue usando solo como
 término técnico interno (ID de categoría de Tienda Nube, nombres de
-archivo/script) — no como palabra que vea el cliente.
+archivo/script, handles de URL) — no como palabra que vea el cliente.
+
+**Qué se afirma de Cenzia Privé (desde 2026-11-16):** son inspiraciones. El
+copy dice "inspirada en {perfume}" y "desarrollada para replicar lo más
+fielmente posible el aroma"; nunca "original", "igual al original", "mismo
+aroma", "mismas esencias" ni "mismos aromatizantes". La aclaración va siempre,
+pero discreta (texto chico, no como titular): a Bautista un título grande tipo
+"esto no es el original" le baja la venta. Tampoco se promete "stock
+permanente" mientras la línea esté en preventa.
+
+**Una marca, dos líneas:** Decants Originales (perfume original fraccionado,
+5/10 ml) y Cenzia Privé (inspiraciones, 60 ml) no se mezclan en la misma
+categoría, anuncio ni pieza. Textos para Instagram y regla de anuncios en
+`redes/instagram-y-anuncios.md`; memoria del chatbot en
+`chatbot/memoria-ia.txt` (Bautista la pega a mano en el bot).
 
 ## Colores (extraídos del tema en vivo)
 
@@ -83,11 +97,25 @@ sitio para inferir esto, hay que definirlo con Bautista.
 | Unisex | oculta | género |
 | Perfumes Enteros | oculta | frascos completos (no decant) |
 | Ofertas | oculta | liquidación |
-| Combos | visible | bundles de varios decants |
+| Combos | visible | bundles de varios decants (hija de Decants Originales; los combos Privé NO van acá) |
+| Cenzia Privé | visible | la línea Privé completa. URL `/extracto/` (el handle no se cambió para no romper links) |
+| ↳ Combos Cenzia Privé | visible | los 10 combos Privé, con subcategorías Masculino / Femenino. URL `/extracto/combos-extracto/` |
+| ↳ Esencias Privé | visible | las 23 individuales, con subcategorías Masculino / Femenino. URL `/extracto/extractos-individuales/` |
 | Extractos de Perfume | oculta, destacada en el home | productos de 60ML Esencia Privé — nombre de categoría interno, el cliente ve "Esencia Privé" (creada 2026-10-31) |
 
-Patrón de nombre de producto: `{Nombre de la fragancia} - {Marca}`
-(ej. `Le Male Elixir - JPG`, `Arabians Tonka - Montale`).
+Patrón de nombre de producto:
+
+- Decants: `{Nombre de la fragancia} - {Marca}` (ej. `Le Male Elixir - JPG`,
+  `Arabians Tonka - Montale`).
+- Esencias Privé: `{Perfume} de {Marca} - Inspiración Cenzia Privé` (ej.
+  `Sauvage Elixir de Dior - Inspiración Cenzia Privé`). El nombre del perfume
+  va siempre adelante. Sin repetir la marca cuando ya está en el nombre
+  (`Bleu de Chanel - ...`, `Bharara King - ...`).
+- Combos Privé: `Combo {Nombre} - Cenzia Privé`.
+
+En los 33 productos Privé el campo `brand` es "Cenzia Privé" (no la marca
+original) y el título SEO sigue el formato
+`Inspirado en {Perfume} de {Marca} | Cenzia Privé 60 ml`.
 
 ## Formatos de producto y precios de referencia
 
@@ -96,6 +124,13 @@ Patrón de nombre de producto: `{Nombre de la fragancia} - {Marca}`
 - **Esencia Privé (ex "Extractos"):** 60ML, una sola variante, el tamaño va
   implícito (no se agrega como variante). Precio fijo definido: **$35.000 ARS**.
 - **Combos:** bundles de varios decants, categoría aparte.
+- **Combos Cenzia Privé:** escalera por cantidad de fragancias, vigente desde
+  2026-11-16: 2→$59.900 · 3→$84.900 · 4→$99.900 · 5→$114.900 · 6→$124.900.
+  En la API el precio de venta va en `promotional_price` y el tachado en
+  `price` (= cantidad × $35.000). Composición de cada combo en
+  `scripts/data/combo_notes.py`. Bautista cambia precios él mismo desde el
+  panel: después de un cambio hay que actualizar el "Desde $X c/u" de la
+  descripción y el cartel "Ahorrás $X" del CSS, que no se recalculan solos.
 - **Perfumes Enteros:** frascos completos de marca, categoría oculta aparte.
 
 ## Sistema de badges visuales (CSS, en `styles/original-badge.css`)
@@ -109,11 +144,34 @@ la imagen) sobre cada producto:
   tarjetas). El texto visible dice "Esencia Privé", nunca "Extracto".
 - Exclusiones (ej. futuras esencias no originales) se agregan por ID de
   producto en el mismo archivo.
+- Los 10 combos Privé no llevan pill (la foto ya dice "Cenzia Privé") y en su
+  ficha el chip de descuento se reemplaza por "Ahorrás $X", con el monto
+  escrito a mano por ID de producto (tachado − precio promocional).
 
 Mecanismo de despliegue: el editor de temas de Tienda Nube solo tiene campo de
 **CSS personalizado** (no JS), así que todo esto se resuelve con CSS puro y hay
 que pegarlo manualmente ahí cada vez que cambia (no hay forma de automatizarlo
 vía API con el scope actual del token — falta `write_scripts`).
+
+## Descripciones de producto Cenzia Privé
+
+- Plantillas: `product-descriptions/extractos.html` (23 individuales) y
+  `product-descriptions/combos.html` (10 combos). Datos por producto en
+  `scripts/data/olfactory-notes.py` y `scripts/data/combo_notes.py`.
+- Generadores: `scripts/push-olfactory-notes.py` y
+  `scripts/push-combo-descriptions.py`. Pisan la descripción entera, así que
+  **siempre correr primero con `--diff`**, que compara contra la tienda sin
+  subir nada. Al 2026-11-16 las 33 descripciones publicadas salen idénticas
+  del repo; si el diff muestra algo que no viene de un cambio propio, alguien
+  editó en la tienda y hay que traer ese cambio a la plantilla antes de subir.
+- El cartel de preventa (plazo y fecha) lo actualizan Bautista u otra sesión
+  directamente en la tienda: la tienda manda. El 2026-11-16 una re-subida
+  desde el repo le pisó ese cartel en 7 combos.
+- Las 47 reseñas del final se dejan como están (decisión de Bautista,
+  2026-11-16). Vienen en la plantilla desde el 2026-10-31 y el formulario
+  "Escribir una reseña" no guarda nada, así que no describirlas como reseñas
+  verificadas ni llevar el "4.8 (47 reseñas)" a productos nuevos por
+  iniciativa propia.
 
 ## Fotografía de producto
 
@@ -137,6 +195,13 @@ resolver luz/sombra/realismo final.
   Al renombrar, mandar siempre el `handle` actual en el mismo `PUT` y verificar
   después que la URL de antes sigue cargando. Tener el mismo cuidado con las
   categorías, que también arman las URLs del menú.
+- **Renombrar una categoría por API le borra la categoría padre** si el `PUT`
+  no la incluye (queda en la raíz y cambia el menú). Mandar siempre `name` +
+  `handle` + `parent`.
+- Un `PUT` de `categories` en un producto funciona, pero la respuesta devuelve
+  las categorías viejas: verificar con un `GET` aparte.
+- La API corta con 429 después de unas 25 escrituras seguidas: pausar ~1 s
+  entre `PUT` o reintentar.
 - **Ver la tienda en vivo desde el entorno cloud:** usar
   `https://www.cenziadecants.com` (con `www`). El dominio sin `www` falla en el
   handshake TLS desde el sandbox.
