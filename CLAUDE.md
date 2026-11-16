@@ -20,12 +20,22 @@ marcadas **[PENDIENTE]** no se pudieron inferir y las tiene que definir Bautista
 
 **Terminología de cara al cliente (desde 2026-11-16):** la línea de extractos
 ya NO se nombra "Extracto" en ningún texto visible al cliente (descripciones,
-badges, CTAs) — se llama **Esencia Privé**, presentada como una línea propia
-de Cenzia de interpretaciones/inspiraciones de alta concentración, dejando
-siempre claro que no son productos oficiales de las marcas en las que se
-inspiran. "Extracto" se sigue usando solo como término técnico interno (ID de
-categoría de Tienda Nube, nombres de archivo/script) — no como palabra que
-vea el cliente.
+badges, CTAs, nombres de producto). Se usan dos términos, cada uno en su rol:
+
+- **Cenzia Privé** → nombre de la línea/colección (sustantivo propio, no se
+  cuenta ni se pluraliza). Se usa para presentar la línea en general: eyebrows
+  de sección, el nombre de los combos ("Combo Seductor - Cenzia Privé"), la
+  comparativa ("Cenzia Privé vs. perfume original"), fotos de antes/después.
+  Mismo patrón que usan Dior Privé o Armani Privé en la industria real.
+- **Esencia Privé** → sustantivo común, contable, para cuando se habla de una
+  o varias unidades del producto: el badge ("60ML Esencia Privé"), "una
+  Esencia Privé", "4 Esencias Privé de 60ml", preguntas del FAQ.
+
+Presentada como una línea propia de Cenzia de interpretaciones/inspiraciones
+de alta concentración, dejando siempre claro que no son productos oficiales
+de las marcas en las que se inspiran. "Extracto" se sigue usando solo como
+término técnico interno (ID de categoría de Tienda Nube, nombres de
+archivo/script) — no como palabra que vea el cliente.
 
 ## Colores (extraídos del tema en vivo)
 
