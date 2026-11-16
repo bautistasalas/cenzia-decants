@@ -422,9 +422,8 @@
 .row[data-store="product-image-380863745"]::after {
 	/* Sin badge: la propia foto del combo ya lleva el nombre de la línea
 	   ("Cenzia Privé") en el diseño, y la pill tapaba el nombre del combo
-	   en las tarjetas chicas. Fotos ya reemplazadas (2026-11-16): Seductor,
-	   Caballero, Intenso, Ella, Femme. Faltan reemplazar (diseño anterior):
-	   Los Más Buscados, Nocturno, Black, Bestia, Icónico. */
+	   en las tarjetas chicas. Las fotos de los 10 combos se reemplazaron
+	   por el diseño nuevo el 2026-11-16. */
 	display: none !important;
 }
 
