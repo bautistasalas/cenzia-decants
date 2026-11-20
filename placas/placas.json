@@ -303,7 +303,8 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/my-way.webp"
+    "bottle": "src/my-way.webp",
+    "scene": "scenes/my-way.jpg"
   },
   {
     "slug": "flower",
@@ -341,7 +342,8 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/flower.webp"
+    "bottle": "src/flower.webp",
+    "scene": "scenes/flower.jpg"
   },
   {
     "slug": "good-girl",
@@ -379,7 +381,8 @@
         "en": "roasted coffee beans"
       }
     ],
-    "bottle": "src/good-girl.webp"
+    "bottle": "src/good-girl.webp",
+    "scene": "scenes/good-girl.jpg"
   },
   {
     "slug": "la-vida-es-bella",
@@ -417,7 +420,8 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/la-vida-es-bella.webp"
+    "bottle": "src/la-vida-es-bella.webp",
+    "scene": "scenes/la-vida-es-bella.jpg"
   },
   {
     "slug": "la-bomba",
@@ -455,7 +459,8 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/la-bomba.webp"
+    "bottle": "src/la-bomba.webp",
+    "scene": "scenes/la-bomba.jpg"
   },
   {
     "slug": "eclaire",
@@ -493,7 +498,8 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/eclaire.webp"
+    "bottle": "src/eclaire.webp",
+    "scene": "scenes/eclaire.jpg"
   },
   {
     "slug": "power-of-you",
@@ -531,6 +537,7 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/power-of-you.webp"
+    "bottle": "src/power-of-you.webp",
+    "scene": "scenes/power-of-you.jpg"
   }
 ]

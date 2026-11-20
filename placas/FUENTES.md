@@ -17,16 +17,13 @@
 | Archivo | Origen |
 |---|---|
 | `scenes/born-in-roma-intense.jpg` | Recorte de la placa que Bautista generó en Runway (2026-11-20). Se usa solo la foto, sin el texto. |
-
-Los siete perfumes de mujer (My Way, Flower, Good Girl, La Vida Es Bella,
-La Bomba, Eclaire, Power Of You) tienen cargados el texto y el frasco de
-referencia, pero todavía no tienen foto: salen como boceto.
+| Las otras 13 de `scenes/` | Generadas en el Canva de Bautista (ver abajo). |
 
 ## Fotos generadas en el Canva de Bautista (2026-11-20)
 
 Una por perfume, con el frasco de `src/` como única referencia, formato 3:4.
 Quedan guardadas en su Canva (1088 x 1456 px); el identificador sirve para
-volver a encontrarlas. Las seis de hombre ya están en `scenes/`.
+volver a encontrarlas. Las trece ya están en `scenes/`.
 
 Para bajarlas en tamaño completo no alcanza con el identificador (Canva solo
 devuelve una miniatura de 149 x 200): hay que colocar cada foto en una página
@@ -42,6 +39,13 @@ Después, `add_scene.py` las deja en `scenes/` a 1200 x 1600.
 | Le Male Elixir | `MAHbdk-rq3I` |
 | Sauvage Eau de Parfum | `MAHbdlkQe8E` |
 | Ombré Leather | `MAHbdhsKiYU` |
+| My Way | `MAHbdowvm-g` |
+| Flower | `MAHbdt540Rs` |
+| Good Girl | `MAHbdiF9Idw` |
+| La Vida Es Bella | `MAHbdsqBv2U` |
+| La Bomba | `MAHbdrL_gFE` |
+| Eclaire | `MAHbdjsl3LU` |
+| Power Of You | `MAHbdhlwaR8` |
 
 Texto que se usó para generarlas (las materias salen del campo `en` de cada
 materia en `placas.json`):
