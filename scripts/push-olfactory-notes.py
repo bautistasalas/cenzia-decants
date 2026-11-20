@@ -4,6 +4,7 @@
 Uso:
     python3 scripts/push-olfactory-notes.py --diff   # compara con la tienda, no sube nada
     python3 scripts/push-olfactory-notes.py          # sube
+    python3 scripts/push-olfactory-notes.py 378156482   # solo ese producto (sirve también con --diff)
 
 Correr SIEMPRE --diff antes de subir: las descripciones también se editan a
 mano en la tienda (ej. el cartel de preventa) y este script pisa todo el HTML.
@@ -69,8 +70,11 @@ def norm(html):
 
 
 DIFF_ONLY = "--diff" in sys.argv
+ONLY = {int(a) for a in sys.argv[1:] if a.isdigit()}  # IDs sueltos: solo esos productos
 
 for p in PRODUCTS:
+    if ONLY and p["id"] not in ONLY:
+        continue
     html = build(p)
 
     if DIFF_ONLY:

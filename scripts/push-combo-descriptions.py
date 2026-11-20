@@ -4,6 +4,7 @@
 Uso:
     python3 scripts/push-combo-descriptions.py --diff   # compara con la tienda, no sube nada
     python3 scripts/push-combo-descriptions.py          # sube
+    python3 scripts/push-combo-descriptions.py 379562943   # solo ese combo (sirve también con --diff)
 
 Correr SIEMPRE --diff antes de subir: las descripciones también se editan a
 mano en la tienda (ej. el cartel de preventa) y este script pisa todo el HTML.
@@ -93,8 +94,11 @@ def norm(html):
 
 
 DIFF_ONLY = "--diff" in sys.argv
+ONLY = {int(a) for a in sys.argv[1:] if a.isdigit()}  # IDs sueltos: solo esos combos
 
 for combo in COMBOS:
+    if ONLY and combo["id"] not in ONLY:
+        continue
     html = build(combo)
 
     if DIFF_ONLY:

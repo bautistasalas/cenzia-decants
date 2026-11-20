@@ -161,8 +161,9 @@ vía API con el scope actual del token — falta `write_scripts`).
 - Generadores: `scripts/push-olfactory-notes.py` y
   `scripts/push-combo-descriptions.py`. Pisan la descripción entera, así que
   **siempre correr primero con `--diff`**, que compara contra la tienda sin
-  subir nada. Al 2026-11-16 las 33 descripciones publicadas salen idénticas
-  del repo; si el diff muestra algo que no viene de un cambio propio, alguien
+  subir nada. Con uno o más IDs de producto al final procesan solo esos
+  (sirve para subir un cambio puntual sin reescribir el resto). Al 2026-11-20
+  las 33 descripciones publicadas salen idénticas del repo; si el diff muestra algo que no viene de un cambio propio, alguien
   editó en la tienda y hay que traer ese cambio a la plantilla antes de subir.
 - El cartel de preventa (plazo y fecha) lo actualizan Bautista u otra sesión
   directamente en la tienda: la tienda manda. El 2026-11-16 una re-subida
@@ -197,14 +198,20 @@ vía API con el scope actual del token — falta `write_scripts`).
   imágenes (la prueba en Runway salió con errores de tipeo en casi todo).
 - A Bautista no le sirven bocetos ni vistas previas borrosas: mostrarle la
   placa terminada.
-- Las notas de cada placa son las de la descripción del producto. Excepción
-  al 2026-11-20: Born In Roma Intense, donde la placa lleva las notas del
-  perfume (vainilla bourbon, lavandín, vetiver ahumado) y la descripción de
-  la tienda tiene otras; falta que Bautista decida si se corrige.
+- Las notas de cada placa son las de la descripción del producto. La de Born
+  In Roma Intense era la única distinta: la descripción tenía notas que no
+  son de ese perfume (jengibre, sales minerales, nuez moscada) y se corrigió
+  el 2026-11-20, con el OK de Bautista, en el producto y en los 6 combos que
+  lo incluyen (vainilla bourbon, lavandín, vetiver ahumado).
 - Subida a la tienda: `scripts/upload-placas.py` (sin argumentos muestra el
-  plan; con `--subir` sube). Pone en cada combo la placa de cada perfume que
-  trae (40 fotos) y en cada Esencia Privé individual la suya (23). Al
-  2026-11-20 no se subió nada: falta el OK de Bautista.
+  plan; con `--subir` sube lo que falte). El 2026-11-20 se subieron las 63:
+  en cada combo, después de la foto principal, la placa de cada perfume que
+  trae, en el orden de su descripción (40 fotos), y en cada Esencia Privé
+  individual la suya como segunda foto (23). Si se rehace una placa hay que
+  borrar la foto vieja de cada producto antes de volver a correrlo: el script
+  reconoce las que ya están por el nombre `placa-{slug}` y no las reemplaza.
+- La página pública tarda unos minutos en mostrar una foto recién subida (la
+  API ya la devuelve, pero el HTML de la tienda sale de caché).
 
 ## Fotografía de producto
 
