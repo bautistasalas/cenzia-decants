@@ -539,5 +539,358 @@
     ],
     "bottle": "src/power-of-you.webp",
     "scene": "scenes/power-of-you.jpg"
+  },
+  {
+    "slug": "y",
+    "product_id": 378201974,
+    "name": "Y",
+    "brand": "Yves Saint Laurent",
+    "reco": "Oficina y uso diario, todo el año. Es fresca y prolija, y también rinde de noche.",
+    "salida": "Bergamota · Manzana · Jengibre",
+    "salida_txt": "Fresca, frutal y con un toque picante.",
+    "corazon": "Salvia · Bayas de enebro · Geranio",
+    "corazon_txt": "Aromático y verde.",
+    "fondo": "Madera de ámbar · Haba tonka · Cedro · Vetiver",
+    "fondo_txt": "Amaderado, elegante y seco.",
+    "familia": "Fougère aromática",
+    "intensidad": "Media-alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Salvia",
+        "detalle": "hojas",
+        "en": "fresh sage leaves"
+      },
+      {
+        "nombre": "Manzana",
+        "detalle": "en mitades",
+        "en": "a green apple cut in half"
+      },
+      {
+        "nombre": "Jengibre",
+        "detalle": "raíz",
+        "en": "a piece of fresh ginger root"
+      },
+      {
+        "nombre": "Enebro",
+        "detalle": "bayas",
+        "en": "a few dark blue juniper berries"
+      }
+    ],
+    "bottle": "src/y.webp",
+    "scene": "scenes/y.jpg",
+    "scene_bg": "white"
+  },
+  {
+    "slug": "donna-born-in-roma-intense",
+    "product_id": 379371165,
+    "name": "Donna Born In Roma Intense",
+    "brand": "Valentino",
+    "reco": "Salidas de noche y días de frío. Es cálida y envolvente, dulce sin empalagar.",
+    "salida": "Vainilla bourbon · Ámbar",
+    "salida_txt": "Dulce y cálida desde el primer momento.",
+    "corazon": "Jazmín",
+    "corazon_txt": "Floral, suave y femenino.",
+    "fondo": "Benjuí",
+    "fondo_txt": "Resina cálida que queda en la piel.",
+    "familia": "Floral · Ambarada",
+    "intensidad": "Alta · estela sensual",
+    "materias": [
+      {
+        "nombre": "Jazmín",
+        "detalle": "flores",
+        "en": "white jasmine flowers"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      },
+      {
+        "nombre": "Benjuí",
+        "detalle": "resina",
+        "en": "small golden-brown pieces of benzoin resin"
+      },
+      {
+        "nombre": "Ámbar",
+        "detalle": "piedras",
+        "en": "a few translucent amber resin stones"
+      }
+    ],
+    "bottle": "src/donna-born-in-roma-intense.webp",
+    "scene": "scenes/donna-born-in-roma-intense.jpg",
+    "scene_bg": "white"
+  },
+  {
+    "slug": "club-de-nuit-intense-man",
+    "product_id": 379371173,
+    "name": "Club de Nuit Intense Man",
+    "brand": "Armaf",
+    "reco": "Todo el año, de día o de noche. Frutal al principio y amaderada al final: dura muchísimo.",
+    "salida": "Limón · Piña · Grosella negra · Bergamota · Manzana",
+    "salida_txt": "Frutal, cítrica y fresca.",
+    "corazon": "Abedul · Jazmín · Rosa",
+    "corazon_txt": "Madera de abedul con un toque floral.",
+    "fondo": "Almizcle · Ambergris · Pachulí · Vainilla",
+    "fondo_txt": "Almizclado, cálido y duradero.",
+    "familia": "Amaderada · Afrutada especiada",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Piña",
+        "detalle": "en gajo",
+        "en": "a pineapple wedge with its rind"
+      },
+      {
+        "nombre": "Abedul",
+        "detalle": "corteza",
+        "en": "a few curls of white birch bark"
+      },
+      {
+        "nombre": "Limón",
+        "detalle": "en mitades",
+        "en": "a halved lemon"
+      },
+      {
+        "nombre": "Grosella negra",
+        "detalle": "racimo",
+        "en": "a small cluster of blackcurrants"
+      }
+    ],
+    "bottle": "src/club-de-nuit-intense-man.webp",
+    "scene": "scenes/club-de-nuit-intense-man.jpg",
+    "scene_bg": "white"
+  },
+  {
+    "slug": "bharara-king",
+    "product_id": 380474214,
+    "name": "Bharara King",
+    "brand": "",
+    "reco": "Salidas de noche y días de frío. Cítrica al principio y dulce al final.",
+    "salida": "Bergamota · Naranja · Limón",
+    "salida_txt": "Cítrica y fresca al arrancar.",
+    "corazon": "Notas frutales",
+    "corazon_txt": "Frutal y jugosa.",
+    "fondo": "Ámbar · Almizcle · Vainilla",
+    "fondo_txt": "Vainilla y ámbar: cálido y dulce.",
+    "familia": "Cítrica · Ambarada",
+    "intensidad": "Alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Naranja",
+        "detalle": "en mitades",
+        "en": "a halved orange"
+      },
+      {
+        "nombre": "Limón",
+        "detalle": "entero",
+        "en": "a fresh lemon"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      },
+      {
+        "nombre": "Ámbar",
+        "detalle": "piedras",
+        "en": "a few translucent amber resin stones"
+      }
+    ],
+    "bottle": "src/bharara-king.webp"
+  },
+  {
+    "slug": "scandal-pour-homme",
+    "product_id": 380474223,
+    "name": "Scandal Pour Homme",
+    "brand": "Jean Paul Gaultier",
+    "reco": "Salidas de noche y días de frío. Caramelo dulce sobre una base seca y amaderada.",
+    "salida": "Salvia esclarea",
+    "salida_txt": "Aromática y fresca.",
+    "corazon": "Caramelo",
+    "corazon_txt": "Dulce: es lo que más se siente.",
+    "fondo": "Vetiver",
+    "fondo_txt": "Amaderado y seco.",
+    "familia": "Amaderada · Oriental",
+    "intensidad": "Alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Salvia",
+        "detalle": "hojas",
+        "en": "fresh clary sage leaves"
+      },
+      {
+        "nombre": "Caramelo",
+        "detalle": "trozos",
+        "en": "a few pieces of soft golden caramel"
+      },
+      {
+        "nombre": "Vetiver",
+        "detalle": "raíces",
+        "en": "a small bundle of dried vetiver roots"
+      }
+    ],
+    "bottle": "src/scandal-pour-homme.webp",
+    "scene": "scenes/scandal-pour-homme.jpg",
+    "scene_bg": "white"
+  },
+  {
+    "slug": "althair",
+    "product_id": 380476586,
+    "name": "Althaïr",
+    "brand": "Parfums de Marly",
+    "reco": "Todo el año, de día o de noche. Vainilla especiada, elegante y con mucha presencia.",
+    "salida": "Bergamota · Mandarina · Elemí",
+    "salida_txt": "Cítrica y fresca al arrancar.",
+    "corazon": "Azahar · Canela · Cardamomo",
+    "corazon_txt": "Especiado, con un toque floral.",
+    "fondo": "Vainilla bourbon · Guayacol · Praliné",
+    "fondo_txt": "Vainilla y praliné con un toque amaderado.",
+    "familia": "Amaderada · Especiada",
+    "intensidad": "Alta · buena proyección",
+    "materias": [
+      {
+        "nombre": "Canela",
+        "detalle": "ramas",
+        "en": "cinnamon sticks"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      },
+      {
+        "nombre": "Mandarina",
+        "detalle": "en gajos",
+        "en": "a peeled mandarin with a few loose segments"
+      },
+      {
+        "nombre": "Cardamomo",
+        "detalle": "vainas",
+        "en": "green cardamom pods"
+      }
+    ],
+    "bottle": "src/althair.webp",
+    "scene": "scenes/althair.jpg",
+    "scene_bg": "white"
+  },
+  {
+    "slug": "tobacco-vanille",
+    "product_id": 380476591,
+    "name": "Tobacco Vanille",
+    "brand": "Tom Ford",
+    "reco": "Noches de frío y ocasiones especiales. Es densa, cálida y dulce: deja huella.",
+    "salida": "Hoja de tabaco · Notas especiadas",
+    "salida_txt": "Tabaco especiado desde el arranque.",
+    "corazon": "Vainilla · Cacao · Haba tonka · Flor de tabaco",
+    "corazon_txt": "Dulce y cremoso.",
+    "fondo": "Frutos secos · Notas amaderadas",
+    "fondo_txt": "Seco y amaderado.",
+    "familia": "Oriental · Amaderada",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Tabaco",
+        "detalle": "hojas secas",
+        "en": "dried golden-brown tobacco leaves"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      },
+      {
+        "nombre": "Cacao",
+        "detalle": "trozos",
+        "en": "small chunks of dark cacao"
+      },
+      {
+        "nombre": "Haba tonka",
+        "detalle": "habas",
+        "en": "dark tonka beans"
+      }
+    ],
+    "bottle": "src/tobacco-vanille.webp",
+    "scene": "scenes/tobacco-vanille.jpg",
+    "scene_bg": "white"
+  },
+  {
+    "slug": "sauvage-elixir",
+    "product_id": 380478134,
+    "name": "Sauvage Elixir",
+    "brand": "Dior",
+    "reco": "Salidas de noche y días de frío. Especiada e intensa: de las que más estela dejan.",
+    "salida": "Pomelo · Canela · Nuez moscada · Cardamomo",
+    "salida_txt": "Especiada, con un toque cítrico.",
+    "corazon": "Lavanda",
+    "corazon_txt": "Aromática y limpia.",
+    "fondo": "Regaliz · Ámbar · Vetiver · Pachulí · Sándalo",
+    "fondo_txt": "Regaliz y maderas: denso y duradero.",
+    "familia": "Amaderada · Especiada",
+    "intensidad": "Muy alta · estela muy fuerte",
+    "materias": [
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Canela",
+        "detalle": "ramas",
+        "en": "cinnamon sticks"
+      },
+      {
+        "nombre": "Pomelo",
+        "detalle": "en mitades",
+        "en": "a halved pink grapefruit"
+      },
+      {
+        "nombre": "Regaliz",
+        "detalle": "raíces",
+        "en": "a few licorice root sticks"
+      }
+    ],
+    "bottle": "src/sauvage-elixir.webp",
+    "scene": "scenes/sauvage-elixir.jpg",
+    "scene_bg": "white"
+  },
+  {
+    "slug": "bleu-de-chanel",
+    "product_id": 380478136,
+    "name": "Bleu de Chanel",
+    "brand": "",
+    "reco": "Para todo: trabajo, salidas y uso diario. Fresca al principio, amaderada después.",
+    "salida": "Pomelo · Limón · Menta · Pimienta rosa",
+    "salida_txt": "Cítrica y fresca, con un toque de menta.",
+    "corazon": "Jengibre · Nuez moscada · Jazmín",
+    "corazon_txt": "Especiado y aromático.",
+    "fondo": "Incienso · Ámbar · Cedro · Sándalo · Pachulí · Labdanum",
+    "fondo_txt": "Amaderado, elegante y envolvente.",
+    "familia": "Amaderada · Aromática",
+    "intensidad": "Alta · buena proyección",
+    "materias": [
+      {
+        "nombre": "Menta",
+        "detalle": "hojas",
+        "en": "fresh mint leaves"
+      },
+      {
+        "nombre": "Cedro",
+        "detalle": "madera",
+        "en": "a few small pieces of cedar wood"
+      },
+      {
+        "nombre": "Pomelo",
+        "detalle": "en mitades",
+        "en": "a halved pink grapefruit"
+      },
+      {
+        "nombre": "Jengibre",
+        "detalle": "raíz",
+        "en": "a piece of fresh ginger root"
+      }
+    ],
+    "bottle": "src/bleu-de-chanel.webp",
+    "scene": "scenes/bleu-de-chanel.jpg",
+    "scene_bg": "white"
   }
 ]

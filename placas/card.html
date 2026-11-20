@@ -77,7 +77,9 @@ const d = JSON.parse(decodeURIComponent(location.hash.slice(1)));
 const mode = d.mode || (d.scene ? 'final' : 'boceto');
 const title = document.getElementById('title');
 title.textContent = d.name;
-document.getElementById('brand').textContent = d.brand ? 'de ' + d.brand : '';
+// Si la marca ya está en el nombre ("Bleu de Chanel", "Bharara King") no hay renglón "de {marca}"
+const brandEl = document.getElementById('brand');
+if (d.brand) brandEl.textContent = 'de ' + d.brand; else brandEl.remove();
 document.getElementById('reco').textContent = d.reco || '';
 // Cada nota va entera en un renglón: el corte de línea solo cae entre una nota y la siguiente
 const keep = s => String(s || '').split(' · ').map(n => n.trim().replace(/ /g, ' ')).join(' · ');
@@ -89,6 +91,8 @@ document.getElementById('meta').innerHTML = [['Familia', d.familia], ['Intensida
 // Foto
 const scene = document.getElementById('scene');
 if (mode === 'final') {
+  // scene_bg "white": la foto viene sobre blanco puro y se funde con la placa, sin recuadro gris
+  if (d.scene_bg === 'white') scene.style.background = '#fff';
   scene.innerHTML = `<img class="full" src="${d.scene}" style="object-position:${d.scene_pos || '50% 50%'}">`;
 } else {
   // Boceto: frasco real + una zona rotulada por materia, repartidas alrededor del frasco

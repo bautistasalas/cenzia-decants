@@ -181,9 +181,17 @@ vía API con el scope actual del token — falta `write_scripts`).
   recortado, referencia para generar la foto), `add_scene.py` (suma una foto
   nueva) y `FUENTES.md` (origen de cada imagen y cómo se bajan del Canva de
   Bautista en tamaño completo).
-- Hay 14 placas: los 7 perfumes de los combos de hombre y los 7 de los de
-  mujer. Aprobó el diseño sobre la de Born In Roma Intense ("tenés que
-  hacerlas así", 2026-11-20).
+- Hay 22 placas con foto final: los 7 perfumes de los combos de hombre, los 7
+  de los de mujer y 8 de los otros 9 individuales. Falta Bharara King (ver
+  `FUENTES.md`). Aprobó el diseño sobre la de Born In Roma Intense ("tenés
+  que hacerlas así", 2026-11-20).
+- **Formato que pide Bautista para toda foto de la tienda: 1:1 y fondo blanco
+  puro** ("las fotos tienen que estar en 1:1 y fondo full white",
+  2026-11-20). La placa es 2000 x 2000 con fondo `#fff`. Desde ese pedido la
+  foto de adentro también va sobre blanco (`scene_bg: "white"`), sin recuadro
+  gris. Las 14 primeras siguen con el fondo gris claro de la que aprobó: falta
+  que diga si se rehacen sobre blanco (es una generación nueva por foto, con
+  sus créditos de Canva).
 - La foto muestra solo el perfume de marca con sus materias primas: el frasco
   Cenzia Privé no aparece (pedido de Bautista, 2026-11-16). El encabezado va
   chico: lo que tiene que destacar es la información.
