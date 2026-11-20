@@ -42,8 +42,12 @@ copy dice "inspirada en {perfume}" y "desarrollada para replicar lo más
 fielmente posible el aroma"; nunca "original", "igual al original", "mismo
 aroma", "mismas esencias" ni "mismos aromatizantes". La aclaración va siempre,
 pero discreta (texto chico, no como titular): a Bautista un título grande tipo
-"esto no es el original" le baja la venta. Tampoco se promete "stock
-permanente" mientras la línea esté en preventa.
+"esto no es el original" le baja la venta.
+
+**Despacho (desde 2026-11-20):** la línea ya no está en preventa: llegó el
+stock y el despacho demora de 1 a 2 días hábiles, más los 3 a 5 del correo.
+Bautista pidió sacar directamente el cartel de preventa de las 33
+descripciones. No prometer "stock permanente" salvo que él lo pida.
 
 **Una marca, dos líneas:** Decants Originales (perfume original fraccionado,
 5/10 ml) y Cenzia Privé (inspiraciones, 60 ml) no se mezclan en la misma
@@ -165,14 +169,16 @@ vía API con el scope actual del token — falta `write_scripts`).
   (sirve para subir un cambio puntual sin reescribir el resto). Al 2026-11-20
   las 33 descripciones publicadas salen idénticas del repo; si el diff muestra algo que no viene de un cambio propio, alguien
   editó en la tienda y hay que traer ese cambio a la plantilla antes de subir.
-- El cartel de preventa (plazo y fecha) lo actualizan Bautista u otra sesión
-  directamente en la tienda: la tienda manda. El 2026-11-16 una re-subida
-  desde el repo le pisó ese cartel en 7 combos.
+- Bautista u otra sesión a veces editan una descripción directamente en la
+  tienda: la tienda manda. El 2026-11-16 una re-subida desde el repo le pisó
+  en 7 combos el cartel de preventa que él había actualizado ahí (ese cartel
+  ya no existe: se sacó el 2026-11-20, cuando llegó el stock).
 - Las 47 reseñas del final se dejan como están (decisión de Bautista,
   2026-11-16). Vienen en la plantilla desde el 2026-10-31 y el formulario
   "Escribir una reseña" no guarda nada, así que no describirlas como reseñas
   verificadas ni llevar el "4.8 (47 reseñas)" a productos nuevos por
-  iniciativa propia.
+  iniciativa propia. Dos de esas reseñas mencionan la demora "por la
+  preventa"; al sacar el cartel no se tocaron.
 
 ## Placas de galería (una por perfume)
 

@@ -7,7 +7,7 @@ Uso:
     python3 scripts/push-olfactory-notes.py 378156482   # solo ese producto (sirve también con --diff)
 
 Correr SIEMPRE --diff antes de subir: las descripciones también se editan a
-mano en la tienda (ej. el cartel de preventa) y este script pisa todo el HTML.
+mano en la tienda (ej. un cartel o un plazo) y este script pisa todo el HTML.
 Si el diff muestra un cambio que no viene de este repo, primero hay que traer
 ese cambio a extractos.html.
 """
