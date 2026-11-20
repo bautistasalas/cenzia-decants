@@ -10,9 +10,17 @@
   datos de `placas.json`. La prueba hecha en Runway con el texto adentro de la
   imagen salió con errores de tipeo en casi todos los renglones.
 
+- Dos recortes de `src/` se hicieron a mano porque en la foto de la tienda el
+  frasco de marca toca al de 60 ml y `prep_assets.py` no encuentra el hueco:
+  Stronger With You Intensely y La Bomba.
+
 | Archivo | Origen |
 |---|---|
 | `scenes/born-in-roma-intense.jpg` | Recorte de la placa que Bautista generó en Runway (2026-11-20). Se usa solo la foto, sin el texto. |
+
+Los siete perfumes de mujer (My Way, Flower, Good Girl, La Vida Es Bella,
+La Bomba, Eclaire, Power Of You) tienen cargados el texto y el frasco de
+referencia, pero todavía no tienen foto: salen como boceto.
 
 ## Fotos generadas en el Canva de Bautista (2026-11-20)
 

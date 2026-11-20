@@ -260,5 +260,271 @@
       }
     ],
     "bottle": "src/ombre-leather.webp"
+  },
+  {
+    "slug": "my-way",
+    "product_id": 380476572,
+    "name": "My Way",
+    "brand": "Giorgio Armani",
+    "reco": "Todos los días y salidas de día. Es floral, fresca y elegante, sin ser pesada.",
+    "salida": "Bergamota · Flor de azahar",
+    "salida_txt": "Cítrica y luminosa al arrancar.",
+    "corazon": "Nardo · Jazmín",
+    "corazon_txt": "Flores blancas, limpias y elegantes.",
+    "fondo": "Cedro · Vainilla",
+    "fondo_txt": "Madera suave con un toque de vainilla.",
+    "familia": "Floral · Almizclada",
+    "intensidad": "Media-alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Flor de azahar",
+        "detalle": "ramito",
+        "en": "a small twig of white orange blossom flowers with green leaves"
+      },
+      {
+        "nombre": "Nardo",
+        "detalle": "vara",
+        "en": "a stem of white tuberose flowers"
+      },
+      {
+        "nombre": "Bergamota",
+        "detalle": "en mitades",
+        "en": "a halved green bergamot"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/my-way.webp"
+  },
+  {
+    "slug": "flower",
+    "product_id": 380476562,
+    "name": "Flower",
+    "brand": "Kenzo",
+    "reco": "Uso diario y oficina. Es un floral clásico y suave, dulce sin empalagar.",
+    "salida": "Rosa búlgara · Espino · Grosella negra · Mandarina",
+    "salida_txt": "Rosa fresca con un toque frutal.",
+    "corazon": "Violeta de Parma · Rosa · Opopónax · Jazmín",
+    "corazon_txt": "Violeta y rosa: floral clásico y suave.",
+    "fondo": "Almizcle blanco · Vainilla · Incienso",
+    "fondo_txt": "Almizcle limpio con vainilla e incienso.",
+    "familia": "Floral · Oriental",
+    "intensidad": "Media · discreta y elegante",
+    "materias": [
+      {
+        "nombre": "Rosa",
+        "detalle": "flor",
+        "en": "a pink Bulgarian rose with a few loose petals"
+      },
+      {
+        "nombre": "Violetas",
+        "detalle": "ramito",
+        "en": "a small bunch of purple Parma violets"
+      },
+      {
+        "nombre": "Mandarina",
+        "detalle": "en gajos",
+        "en": "a peeled mandarin with a few loose segments"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/flower.webp"
+  },
+  {
+    "slug": "good-girl",
+    "product_id": 379371171,
+    "name": "Good Girl",
+    "brand": "Carolina Herrera",
+    "reco": "Salidas de noche y citas. Es dulce y sensual, con mucha presencia.",
+    "salida": "Almendra · Bergamota · Limón",
+    "salida_txt": "Almendra suave con un toque cítrico.",
+    "corazon": "Jazmín sambac · Tuberosa",
+    "corazon_txt": "Flores blancas, intensas y femeninas.",
+    "fondo": "Haba tonka · Cacao · Café · Vainilla",
+    "fondo_txt": "Goloso y cálido: cacao, café y vainilla.",
+    "familia": "Floral · Oriental",
+    "intensidad": "Alta · gran proyección",
+    "materias": [
+      {
+        "nombre": "Jazmín",
+        "detalle": "flores",
+        "en": "white jasmine sambac flowers"
+      },
+      {
+        "nombre": "Almendras",
+        "detalle": "enteras",
+        "en": "a few whole almonds"
+      },
+      {
+        "nombre": "Cacao",
+        "detalle": "trozos",
+        "en": "small chunks of dark cacao"
+      },
+      {
+        "nombre": "Café",
+        "detalle": "granos",
+        "en": "roasted coffee beans"
+      }
+    ],
+    "bottle": "src/good-girl.webp"
+  },
+  {
+    "slug": "la-vida-es-bella",
+    "product_id": 380474228,
+    "name": "La Vida Es Bella",
+    "brand": "Lancôme",
+    "reco": "Todo el año, de día o de noche. Dulce y elegante: de las más reconocidas.",
+    "salida": "Grosella negra · Pera",
+    "salida_txt": "Frutal y jugosa al arrancar.",
+    "corazon": "Iris · Jazmín · Flor de azahar",
+    "corazon_txt": "Iris elegante entre flores blancas.",
+    "fondo": "Praliné · Vainilla · Pachulí · Haba tonka",
+    "fondo_txt": "Praliné y vainilla: dulce y envolvente.",
+    "familia": "Floral · Gourmand",
+    "intensidad": "Alta · gran proyección",
+    "materias": [
+      {
+        "nombre": "Iris",
+        "detalle": "flor",
+        "en": "a purple iris flower"
+      },
+      {
+        "nombre": "Pera",
+        "detalle": "en mitades",
+        "en": "a halved pear"
+      },
+      {
+        "nombre": "Grosella negra",
+        "detalle": "racimo",
+        "en": "a small cluster of blackcurrants"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/la-vida-es-bella.webp"
+  },
+  {
+    "slug": "la-bomba",
+    "product_id": 380474236,
+    "name": "La Bomba",
+    "brand": "Carolina Herrera",
+    "reco": "Días de sol y uso diario. Es frutal, alegre y fresca, con un fondo suave de vainilla.",
+    "salida": "Pitahaya",
+    "salida_txt": "Fruta del dragón: jugosa y fresca.",
+    "corazon": "Peonía cereza · Frangipani rojo",
+    "corazon_txt": "Floral tropical, intenso y luminoso.",
+    "fondo": "Vainilla · Pachulí",
+    "fondo_txt": "Vainilla cálida con un toque de pachulí.",
+    "familia": "Floral · Frutal",
+    "intensidad": "Media-alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Peonía",
+        "detalle": "flor",
+        "en": "a cherry-pink peony flower"
+      },
+      {
+        "nombre": "Frangipani",
+        "detalle": "flores",
+        "en": "red frangipani flowers"
+      },
+      {
+        "nombre": "Pitahaya",
+        "detalle": "en mitades",
+        "en": "a halved pink dragon fruit"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/la-bomba.webp"
+  },
+  {
+    "slug": "eclaire",
+    "product_id": 380474246,
+    "name": "Eclaire",
+    "brand": "Lattafa",
+    "reco": "Días de frío y uso diario. Es bien golosa: caramelo, leche y vainilla.",
+    "salida": "Caramelo · Leche · Azúcar",
+    "salida_txt": "Caramelo cremoso desde el primer momento.",
+    "corazon": "Miel · Flores blancas",
+    "corazon_txt": "Miel suave con un toque floral.",
+    "fondo": "Almizcle · Praliné · Vainilla",
+    "fondo_txt": "Praliné y vainilla: dulce y duradero.",
+    "familia": "Gourmand · Floral",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Flores blancas",
+        "detalle": "ramito",
+        "en": "a small bunch of white flowers"
+      },
+      {
+        "nombre": "Miel",
+        "detalle": "panal",
+        "en": "a small piece of honeycomb with honey"
+      },
+      {
+        "nombre": "Caramelo",
+        "detalle": "trozos",
+        "en": "a few pieces of soft golden caramel"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/eclaire.webp"
+  },
+  {
+    "slug": "power-of-you",
+    "product_id": 380476581,
+    "name": "Power Of You",
+    "brand": "Emporio Armani",
+    "reco": "Días de calor y uso diario. Es frutal, dulce y alegre, con un fondo de vainilla.",
+    "salida": "Maracuyá · Naranja amarga · Limón",
+    "salida_txt": "Frutal y cítrica, bien jugosa.",
+    "corazon": "Frangipani · Notas solares",
+    "corazon_txt": "Floral tropical y luminoso.",
+    "fondo": "Vainilla de Madagascar · Benjuí · Labdanum",
+    "fondo_txt": "Vainilla cálida y envolvente.",
+    "familia": "Frutal · Floral",
+    "intensidad": "Media-alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Frangipani",
+        "detalle": "flores",
+        "en": "white and yellow frangipani flowers"
+      },
+      {
+        "nombre": "Naranja",
+        "detalle": "en mitades",
+        "en": "a halved orange"
+      },
+      {
+        "nombre": "Maracuyá",
+        "detalle": "en mitades",
+        "en": "a halved passion fruit"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/power-of-you.webp"
   }
 ]

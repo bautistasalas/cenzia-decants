@@ -31,7 +31,7 @@ body{font-family:"Manrope",system-ui,sans-serif;color:var(--ink);-webkit-font-sm
 .scene>img.full{width:100%;height:100%;object-fit:cover;display:block}
 .scene .bottle{position:absolute;left:50%;bottom:170px;height:700px;transform:translateX(-50%);mix-blend-mode:multiply;z-index:2}
 .zone{position:absolute;border:6px dashed #8793a1;background:rgba(13,22,31,.045);border-radius:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px;z-index:1}
-.zone b{font-family:"Poppins",sans-serif;font-weight:700;font-size:30px;line-height:1.1;color:#3d4753;text-transform:uppercase;letter-spacing:.03em}
+.zone b{font-family:"Poppins",sans-serif;font-weight:700;font-size:26px;line-height:1.1;color:#3d4753;text-transform:uppercase;letter-spacing:.02em}
 .zone i{font-style:normal;font-family:"Poppins",sans-serif;font-weight:500;font-size:27px;line-height:1.2;color:#5b6672;margin-top:6px}
 .zone.front{z-index:3;background:rgba(255,255,255,.72)}
 
@@ -117,11 +117,20 @@ document.fonts.ready.then(() => {
   const limit = document.querySelector('.cap').getBoundingClientRect().top - 36;
   let notes = 72, txt = 50;
   const fits = () => info.getBoundingClientRect().bottom <= limit;
-  while (!fits() && notes > 46) {
+  const shrink = () => {
     notes -= 2; txt = Math.max(37, txt - 1);
     info.style.setProperty('--notes', notes + 'px');
     info.style.setProperty('--txt', txt + 'px');
-  }
+  };
+  // Ancho: una nota larga ("Vainilla de Madagascar ·") tiene que entrar en un renglón. Primero se achica un poco
+  // toda la columna; si ni así entra, a esa fila sola se le permite cortar donde haga falta.
+  const edge = info.getBoundingClientRect().right + 1;
+  const tooWide = el => el.scrollWidth > el.clientWidth + 1 || el.getBoundingClientRect().right > edge;
+  const cells = [...info.querySelectorAll('.notes, .meta b')];
+  while (cells.some(tooWide) && notes > 64) shrink();
+  cells.filter(tooWide).forEach(el => { el.textContent = el.textContent.replace(/ /g, ' '); });
+  // Alto
+  while (!fits() && notes > 46) shrink();
   // Recomendación: como mucho tres líneas dentro de su caja
   const recoP = document.getElementById('reco');
   let rs = 50;
