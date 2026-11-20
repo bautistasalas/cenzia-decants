@@ -173,6 +173,32 @@ vía API con el scope actual del token — falta `write_scripts`).
   verificadas ni llevar el "4.8 (47 reseñas)" a productos nuevos por
   iniciativa propia.
 
+## Placas de galería (una por perfume)
+
+- Carpeta `placas/`: `placas.json` (textos por perfume), `card.html` (diseño,
+  2000 x 2000), `render.js` (genera `out/{slug}-final.png`), `scenes/` (foto
+  de cada perfume rodeado de sus materias primas), `src/` (frasco de marca
+  recortado, referencia para generar la foto), `add_scene.py` (suma una foto
+  nueva) y `FUENTES.md` (origen de cada imagen y cómo se bajan del Canva de
+  Bautista en tamaño completo).
+- Hay 14 placas: los 7 perfumes de los combos de hombre y los 7 de los de
+  mujer. Aprobó el diseño sobre la de Born In Roma Intense ("tenés que
+  hacerlas así", 2026-11-20).
+- La foto muestra solo el perfume de marca con sus materias primas: el frasco
+  Cenzia Privé no aparece (pedido de Bautista, 2026-11-16). El encabezado va
+  chico: lo que tiene que destacar es la información.
+- El texto lo pone siempre `card.html`; nunca se le pide a un generador de
+  imágenes (la prueba en Runway salió con errores de tipeo en casi todo).
+- A Bautista no le sirven bocetos ni vistas previas borrosas: mostrarle la
+  placa terminada.
+- Las notas de cada placa son las de la descripción del producto. Excepción
+  al 2026-11-20: Born In Roma Intense, donde la placa lleva las notas del
+  perfume (vainilla bourbon, lavandín, vetiver ahumado) y la descripción de
+  la tienda tiene otras; falta que Bautista decida si se corrige.
+- Subida a las galerías de los combos: `scripts/upload-placas.py` (sin
+  argumentos muestra el plan; con `--subir` sube). Al 2026-11-20 no se subió
+  nada: falta el OK de Bautista.
+
 ## Fotografía de producto
 
 Estilo de imagen principal establecido en este proyecto (ver
