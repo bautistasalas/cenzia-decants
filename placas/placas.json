@@ -31,7 +31,8 @@
         "detalle": "raíces",
         "en": "a small bundle of dried vetiver roots"
       }
-    ]
+    ],
+    "scene_bg": "white"
   },
   {
     "slug": "arabians-tonka",
@@ -70,7 +71,8 @@
       }
     ],
     "bottle": "src/arabians-tonka.webp",
-    "scene": "scenes/arabians-tonka.jpg"
+    "scene": "scenes/arabians-tonka.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "stronger-with-you-intensely",
@@ -109,7 +111,8 @@
       }
     ],
     "bottle": "src/stronger-with-you-intensely.webp",
-    "scene": "scenes/stronger-with-you-intensely.jpg"
+    "scene": "scenes/stronger-with-you-intensely.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "erba-pura",
@@ -148,7 +151,8 @@
       }
     ],
     "bottle": "src/erba-pura.webp",
-    "scene": "scenes/erba-pura.jpg"
+    "scene": "scenes/erba-pura.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "le-male-elixir",
@@ -187,7 +191,8 @@
       }
     ],
     "bottle": "src/le-male-elixir.webp",
-    "scene": "scenes/le-male-elixir.jpg"
+    "scene": "scenes/le-male-elixir.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "sauvage-eau-de-parfum",
@@ -226,7 +231,8 @@
       }
     ],
     "bottle": "src/sauvage-eau-de-parfum.webp",
-    "scene": "scenes/sauvage-eau-de-parfum.jpg"
+    "scene": "scenes/sauvage-eau-de-parfum.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "ombre-leather",
@@ -265,7 +271,8 @@
       }
     ],
     "bottle": "src/ombre-leather.webp",
-    "scene": "scenes/ombre-leather.jpg"
+    "scene": "scenes/ombre-leather.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "my-way",
@@ -304,7 +311,8 @@
       }
     ],
     "bottle": "src/my-way.webp",
-    "scene": "scenes/my-way.jpg"
+    "scene": "scenes/my-way.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "flower",
@@ -343,7 +351,8 @@
       }
     ],
     "bottle": "src/flower.webp",
-    "scene": "scenes/flower.jpg"
+    "scene": "scenes/flower.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "good-girl",
@@ -382,7 +391,8 @@
       }
     ],
     "bottle": "src/good-girl.webp",
-    "scene": "scenes/good-girl.jpg"
+    "scene": "scenes/good-girl.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "la-vida-es-bella",
@@ -421,7 +431,8 @@
       }
     ],
     "bottle": "src/la-vida-es-bella.webp",
-    "scene": "scenes/la-vida-es-bella.jpg"
+    "scene": "scenes/la-vida-es-bella.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "la-bomba",
@@ -460,7 +471,8 @@
       }
     ],
     "bottle": "src/la-bomba.webp",
-    "scene": "scenes/la-bomba.jpg"
+    "scene": "scenes/la-bomba.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "eclaire",
@@ -499,7 +511,8 @@
       }
     ],
     "bottle": "src/eclaire.webp",
-    "scene": "scenes/eclaire.jpg"
+    "scene": "scenes/eclaire.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "power-of-you",
@@ -538,7 +551,8 @@
       }
     ],
     "bottle": "src/power-of-you.webp",
-    "scene": "scenes/power-of-you.jpg"
+    "scene": "scenes/power-of-you.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "y",
@@ -696,7 +710,9 @@
         "en": "a few translucent amber resin stones"
       }
     ],
-    "bottle": "src/bharara-king.webp"
+    "bottle": "src/bharara-king.webp",
+    "scene": "scenes/bharara-king.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "scandal-pour-homme",
