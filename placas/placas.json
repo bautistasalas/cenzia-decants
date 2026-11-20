@@ -69,7 +69,8 @@
         "en": "dark tonka beans"
       }
     ],
-    "bottle": "src/arabians-tonka.webp"
+    "bottle": "src/arabians-tonka.webp",
+    "scene": "scenes/arabians-tonka.jpg"
   },
   {
     "slug": "stronger-with-you-intensely",
@@ -107,7 +108,8 @@
         "en": "scattered pink peppercorns"
       }
     ],
-    "bottle": "src/stronger-with-you-intensely.webp"
+    "bottle": "src/stronger-with-you-intensely.webp",
+    "scene": "scenes/stronger-with-you-intensely.jpg"
   },
   {
     "slug": "erba-pura",
@@ -145,7 +147,8 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/erba-pura.webp"
+    "bottle": "src/erba-pura.webp",
+    "scene": "scenes/erba-pura.jpg"
   },
   {
     "slug": "le-male-elixir",
@@ -183,7 +186,8 @@
         "en": "fresh mint leaves"
       }
     ],
-    "bottle": "src/le-male-elixir.webp"
+    "bottle": "src/le-male-elixir.webp",
+    "scene": "scenes/le-male-elixir.jpg"
   },
   {
     "slug": "sauvage-eau-de-parfum",
@@ -221,7 +225,8 @@
         "en": "a few star anise pods"
       }
     ],
-    "bottle": "src/sauvage-eau-de-parfum.webp"
+    "bottle": "src/sauvage-eau-de-parfum.webp",
+    "scene": "scenes/sauvage-eau-de-parfum.jpg"
   },
   {
     "slug": "ombre-leather",
@@ -259,7 +264,8 @@
         "en": "a small patch of green moss"
       }
     ],
-    "bottle": "src/ombre-leather.webp"
+    "bottle": "src/ombre-leather.webp",
+    "scene": "scenes/ombre-leather.jpg"
   },
   {
     "slug": "my-way",

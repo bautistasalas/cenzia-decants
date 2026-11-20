@@ -26,8 +26,13 @@ referencia, pero todavía no tienen foto: salen como boceto.
 
 Una por perfume, con el frasco de `src/` como única referencia, formato 3:4.
 Quedan guardadas en su Canva (1088 x 1456 px); el identificador sirve para
-volver a encontrarlas. Todavía no están en `scenes/`: falta bajarlas en tamaño
-completo, y hasta entonces esas seis placas no tienen foto.
+volver a encontrarlas. Las seis de hombre ya están en `scenes/`.
+
+Para bajarlas en tamaño completo no alcanza con el identificador (Canva solo
+devuelve una miniatura de 149 x 200): hay que colocar cada foto en una página
+de 1500 x 2000 de un diseño, guardar y exportar esas páginas como PNG. Se usa
+el diseño de trabajo "Publicación cuadrada con foto a sangre" (`DAHbGZCniAo`).
+Después, `add_scene.py` las deja en `scenes/` a 1200 x 1600.
 
 | Perfume | Identificador en Canva |
 |---|---|

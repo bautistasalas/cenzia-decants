@@ -12,6 +12,7 @@ from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MIN_W, MIN_H = 900, 1200  # tamaño del recuadro de la foto dentro de la placa de 2000 px
+MAX_H = 1600              # más alto que esto no suma nitidez en la placa y solo pesa en el repo
 
 
 def to_3x4(im):
@@ -35,6 +36,8 @@ def add(slug, photo, out_dir=None, json_path=None):
     assert card, f"no hay una placa con slug {slug!r}"
 
     im = to_3x4(Image.open(photo).convert("RGB"))
+    if im.height > MAX_H:
+        im = im.resize((round(im.width * MAX_H / im.height), MAX_H), Image.LANCZOS)
     if im.width < MIN_W or im.height < MIN_H:
         print(f"OJO: la foto quedó de {im.width}x{im.height}; en la placa se va a ver blanda (mínimo {MIN_W}x{MIN_H})")
     os.makedirs(out_dir, exist_ok=True)
