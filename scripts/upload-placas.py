@@ -1,13 +1,16 @@
 # -*- coding: utf-8 -*-
-"""Sube las placas de galería (placas/out/*-final.png) a los combos Cenzia Privé.
+"""Sube las placas de galería (placas/out/*-final.png) a la tienda.
 
-Cada combo recibe, después de las fotos que ya tiene, la placa de cada perfume
-que trae, en el mismo orden que su descripción (scripts/data/combo_notes.py).
+- Cada combo Cenzia Privé recibe, después de las fotos que ya tiene, la placa
+  de cada perfume que trae, en el mismo orden que su descripción
+  (scripts/data/combo_notes.py).
+- Cada Esencia Privé individual recibe su propia placa como foto siguiente.
 
 Uso:
     python3 scripts/upload-placas.py                    # muestra el plan, no sube nada
-    python3 scripts/upload-placas.py --subir            # sube lo que falta en los 10 combos
+    python3 scripts/upload-placas.py --subir            # sube lo que falta (combos e individuales)
     python3 scripts/upload-placas.py --subir 379562943  # solo ese producto
+    python3 scripts/upload-placas.py --solo-combos      # deja afuera las individuales (o --solo-individuales)
 
 Antes hay que generar las placas:  cd placas && node render.js
 Se puede correr más de una vez: una placa que ya está en la galería (se la
@@ -80,15 +83,20 @@ def main():
     args = sys.argv[1:]
     subir = "--subir" in args
     only = {int(a) for a in args if a.isdigit()}
+    # (producto, nombre para mostrar, placas que le tocan)
+    targets = []
+    if "--solo-individuales" not in args:
+        targets += [(c["id"], "Combo " + c["name"], cards_of(c)) for c in COMBOS]
+    if "--solo-combos" not in args:
+        targets += [(c["product_id"], c["name"], [c]) for c in CARDS]
     total = 0
-    for combo in COMBOS:
-        pid = combo["id"]
+    for pid, label, cards in targets:
         if only and pid not in only:
             continue
         imgs = gallery(pid)
         pos = max([i.get("position", 0) for i in imgs] or [0])
-        print(f"\n{combo['name']} ({pid}): {len(imgs)} foto(s) hoy")
-        for card in cards_of(combo):
+        print(f"\n{label} ({pid}): {len(imgs)} foto(s) hoy")
+        for card in cards:
             slug = card["slug"]
             if any(f"placa-{slug}-" in i["src"] for i in imgs):
                 print(f"   ya está   placa-{slug}")

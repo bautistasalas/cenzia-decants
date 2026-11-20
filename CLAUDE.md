@@ -201,9 +201,10 @@ vía API con el scope actual del token — falta `write_scripts`).
   al 2026-11-20: Born In Roma Intense, donde la placa lleva las notas del
   perfume (vainilla bourbon, lavandín, vetiver ahumado) y la descripción de
   la tienda tiene otras; falta que Bautista decida si se corrige.
-- Subida a las galerías de los combos: `scripts/upload-placas.py` (sin
-  argumentos muestra el plan; con `--subir` sube). Al 2026-11-20 no se subió
-  nada: falta el OK de Bautista.
+- Subida a la tienda: `scripts/upload-placas.py` (sin argumentos muestra el
+  plan; con `--subir` sube). Pone en cada combo la placa de cada perfume que
+  trae (40 fotos) y en cada Esencia Privé individual la suya (23). Al
+  2026-11-20 no se subió nada: falta el OK de Bautista.
 
 ## Fotografía de producto
 
