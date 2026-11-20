@@ -32,5 +32,233 @@
         "en": "a small bundle of dried vetiver roots"
       }
     ]
+  },
+  {
+    "slug": "arabians-tonka",
+    "product_id": 378156488,
+    "name": "Arabians Tonka",
+    "brand": "Montale",
+    "reco": "Salidas de noche y días de frío. Es potente y deja huella: no pasa inadvertida.",
+    "salida": "Azafrán · Bergamota",
+    "salida_txt": "Especiada y luminosa al arrancar.",
+    "corazon": "Rosa búlgara · Oud",
+    "corazon_txt": "Rosa intensa sobre madera de oud.",
+    "fondo": "Haba tonka · Ámbar · Musgo de roble",
+    "fondo_txt": "Dulce, cálido y amaderado; dura horas.",
+    "familia": "Oriental · Amaderada",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Rosa",
+        "detalle": "flor",
+        "en": "a pink Bulgarian rose with a few loose petals"
+      },
+      {
+        "nombre": "Oud",
+        "detalle": "madera",
+        "en": "small pieces of dark oud wood"
+      },
+      {
+        "nombre": "Azafrán",
+        "detalle": "hebras",
+        "en": "a small pile of red saffron threads"
+      },
+      {
+        "nombre": "Haba tonka",
+        "detalle": "habas",
+        "en": "dark tonka beans"
+      }
+    ],
+    "bottle": "src/arabians-tonka.webp"
+  },
+  {
+    "slug": "stronger-with-you-intensely",
+    "product_id": 379371166,
+    "name": "Stronger With You Intensely",
+    "brand": "Emporio Armani",
+    "reco": "Citas y noches de frío. Es dulce y especiada, de las que se reconocen al instante.",
+    "salida": "Pimienta rosa · Enebro · Violeta",
+    "salida_txt": "Especiada y fresca al principio.",
+    "corazon": "Toffee · Canela · Lavanda · Salvia",
+    "corazon_txt": "Caramelo cálido con un toque de canela.",
+    "fondo": "Vainilla · Haba tonka · Ámbar · Gamuza",
+    "fondo_txt": "Avainillado y envolvente; dura horas.",
+    "familia": "Oriental · Amaderada",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Canela",
+        "detalle": "ramas",
+        "en": "cinnamon sticks"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      },
+      {
+        "nombre": "Toffee",
+        "detalle": "caramelos",
+        "en": "a few pieces of golden toffee caramel"
+      },
+      {
+        "nombre": "Pimienta rosa",
+        "detalle": "granos",
+        "en": "scattered pink peppercorns"
+      }
+    ],
+    "bottle": "src/stronger-with-you-intensely.webp"
+  },
+  {
+    "slug": "erba-pura",
+    "product_id": 378156477,
+    "name": "Erba Pura",
+    "brand": "Xerjoff",
+    "reco": "Uso diario y días de calor. Fresca y frutal al principio, dulce al final: gusta a casi todos.",
+    "salida": "Naranja · Limón · Bergamota",
+    "salida_txt": "Cítrica y fresca desde el primer momento.",
+    "corazon": "Frutas mediterráneas",
+    "corazon_txt": "Jugosa y frutal.",
+    "fondo": "Vainilla de Madagascar · Almizcle blanco · Ámbar",
+    "fondo_txt": "Dulce, suave y envolvente.",
+    "familia": "Afrutada · Gourmand",
+    "intensidad": "Media-alta · estela dulce",
+    "materias": [
+      {
+        "nombre": "Naranja",
+        "detalle": "en mitades",
+        "en": "a halved orange"
+      },
+      {
+        "nombre": "Limón",
+        "detalle": "entero",
+        "en": "a fresh lemon"
+      },
+      {
+        "nombre": "Bergamota",
+        "detalle": "en mitades",
+        "en": "a halved green bergamot"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/erba-pura.webp"
+  },
+  {
+    "slug": "le-male-elixir",
+    "product_id": 378156485,
+    "name": "Le Male Elixir",
+    "brand": "Jean Paul Gaultier",
+    "reco": "Salidas de noche y días de frío. Es intensa y golosa, con muchísima duración.",
+    "salida": "Lavanda · Menta",
+    "salida_txt": "Lavanda fresca con un toque de menta.",
+    "corazon": "Vainilla · Benjuí",
+    "corazon_txt": "Dulce, cálida y envolvente.",
+    "fondo": "Miel · Tabaco · Haba tonka",
+    "fondo_txt": "Denso y goloso: es lo que queda en la piel.",
+    "familia": "Ambarada · Fougère",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Tabaco",
+        "detalle": "hojas secas",
+        "en": "dried golden-brown tobacco leaves"
+      },
+      {
+        "nombre": "Miel",
+        "detalle": "panal",
+        "en": "a small piece of honeycomb with honey"
+      },
+      {
+        "nombre": "Menta",
+        "detalle": "hojas",
+        "en": "fresh mint leaves"
+      }
+    ],
+    "bottle": "src/le-male-elixir.webp"
+  },
+  {
+    "slug": "sauvage-eau-de-parfum",
+    "product_id": 378156494,
+    "name": "Sauvage Eau de Parfum",
+    "brand": "Dior",
+    "reco": "Todos los días, todo el año. Fresca y especiada: va igual de bien de día que de noche.",
+    "salida": "Bergamota de Calabria",
+    "salida_txt": "Cítrica y fresca.",
+    "corazon": "Pimienta de Sichuan · Lavanda · Anís estrellado · Nuez moscada",
+    "corazon_txt": "Especiada y aromática.",
+    "fondo": "Ambroxan · Vainilla",
+    "fondo_txt": "Amaderado suave con un toque dulce.",
+    "familia": "Aromática · Fresca especiada",
+    "intensidad": "Alta · gran proyección",
+    "materias": [
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Bergamota",
+        "detalle": "en mitades",
+        "en": "a halved green bergamot"
+      },
+      {
+        "nombre": "Pimienta",
+        "detalle": "granos",
+        "en": "scattered Sichuan peppercorns"
+      },
+      {
+        "nombre": "Anís estrellado",
+        "detalle": "estrellas",
+        "en": "a few star anise pods"
+      }
+    ],
+    "bottle": "src/sauvage-eau-de-parfum.webp"
+  },
+  {
+    "slug": "ombre-leather",
+    "product_id": 379371172,
+    "name": "Ombré Leather",
+    "brand": "Tom Ford",
+    "reco": "Looks elegantes, de día o de noche. Es un cuero seco y moderno, distinto a lo dulce de siempre.",
+    "salida": "Cardamomo",
+    "salida_txt": "Especiado y fresco.",
+    "corazon": "Cuero · Jazmín sambac",
+    "corazon_txt": "Cuero suave con un toque floral.",
+    "fondo": "Ámbar · Musgo · Pachulí",
+    "fondo_txt": "Seco, amaderado y elegante.",
+    "familia": "Floral · Cuero",
+    "intensidad": "Media-alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Jazmín",
+        "detalle": "flores",
+        "en": "white jasmine sambac flowers"
+      },
+      {
+        "nombre": "Cuero",
+        "detalle": "tira",
+        "en": "a rolled strip of dark brown leather"
+      },
+      {
+        "nombre": "Cardamomo",
+        "detalle": "vainas",
+        "en": "green cardamom pods"
+      },
+      {
+        "nombre": "Musgo",
+        "detalle": "verde",
+        "en": "a small patch of green moss"
+      }
+    ],
+    "bottle": "src/ombre-leather.webp"
   }
 ]

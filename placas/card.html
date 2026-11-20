@@ -79,10 +79,12 @@ const title = document.getElementById('title');
 title.textContent = d.name;
 document.getElementById('brand').textContent = d.brand ? 'de ' + d.brand : '';
 document.getElementById('reco').textContent = d.reco || '';
+// Cada nota va entera en un renglón: el corte de línea solo cae entre una nota y la siguiente
+const keep = s => String(s || '').split(' · ').map(n => n.trim().replace(/ /g, ' ')).join(' · ');
 document.getElementById('rows').innerHTML = [['Salida', d.salida, d.salida_txt], ['Corazón', d.corazon, d.corazon_txt], ['Fondo', d.fondo, d.fondo_txt]]
-  .map(([t, n, x]) => `<div class="row"><span class="tier">${t}</span><span class="notes">${n}</span>${x ? `<span class="txt">${x}</span>` : ''}</div>`).join('');
+  .map(([t, n, x]) => `<div class="row"><span class="tier">${t}</span><span class="notes">${keep(n)}</span>${x ? `<span class="txt">${x}</span>` : ''}</div>`).join('');
 document.getElementById('meta').innerHTML = [['Familia', d.familia], ['Intensidad', d.intensidad]]
-  .filter(([, v]) => v).map(([k, v]) => `<span>${k}</span><b>${v}</b>`).join('');
+  .filter(([, v]) => v).map(([k, v]) => `<span>${k}</span><b>${keep(v)}</b>`).join('');
 
 // Foto
 const scene = document.getElementById('scene');
