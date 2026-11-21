@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <!-- Placa de galería por perfume, 2000 x 2000 px. Los datos llegan como JSON en el hash de la URL.
+     Dos líneas, que nunca se mezclan en una misma placa (campo "linea"):
+       - Cenzia Privé (por defecto): "INSPIRADA EN", pill "Cenzia Privé", pie "Esencia Privé · 60 ml".
+       - "decant": "DECANT DE", pill "Original", pie "Decant original · {concentración} · {tamaños}".
      Izquierda: el perfume solo, rodeado de sus materias primas (sin el frasco Cenzia Privé).
      Debajo de la foto: recomendación de uso. Derecha: recorrido olfativo detallado.
      Dos modos:
@@ -58,9 +61,9 @@ body{font-family:"Manrope",system-ui,sans-serif;color:var(--ink);-webkit-font-sm
 <body>
 <div class="card" id="card">
   <div class="head">
-    <div class="eyebrow">INSPIRADA EN</div>
+    <div class="eyebrow" id="eyebrow">INSPIRADA EN</div>
     <h1 class="title" id="title"></h1>
-    <div class="sub"><span class="brand" id="brand"></span><span class="pill">Cenzia Privé</span></div>
+    <div class="sub"><span class="brand" id="brand"></span><span class="pill" id="pill">Cenzia Privé</span></div>
   </div>
   <div class="scene" id="scene"></div>
   <div class="reco"><span>Te la recomendamos para</span><p id="reco"></p></div>
@@ -70,13 +73,19 @@ body{font-family:"Manrope",system-ui,sans-serif;color:var(--ink);-webkit-font-sm
     <div id="rows"></div>
     <div class="meta" id="meta"></div>
   </div>
-  <div class="cap"><b>Esencia Privé</b> · 60 ml · Eau de Parfum</div>
+  <div class="cap" id="cap"><b>Esencia Privé</b> · 60 ml · Eau de Parfum</div>
 </div>
 <script>
 const d = JSON.parse(decodeURIComponent(location.hash.slice(1)));
 const mode = d.mode || (d.scene ? 'final' : 'boceto');
 const title = document.getElementById('title');
 title.textContent = d.name;
+// Línea Decants Originales: es el perfume de la marca, así que no dice "inspirada en" ni "Cenzia Privé"
+if (d.linea === 'decant') {
+  document.getElementById('eyebrow').textContent = 'DECANT DE';
+  document.getElementById('pill').textContent = 'Original';
+  document.getElementById('cap').innerHTML = '<b>Decant original</b> · ' + [d.conc, d.sizes || '5 y 10 ml'].filter(Boolean).join(' · ');
+}
 // Si la marca ya está en el nombre ("Bleu de Chanel", "Bharara King") no hay renglón "de {marca}"
 const brandEl = document.getElementById('brand');
 if (d.brand) brandEl.textContent = 'de ' + d.brand; else brandEl.remove();
