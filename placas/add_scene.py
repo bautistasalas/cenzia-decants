@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """Deja lista la foto de una placa: la recorta a 3:4, la guarda en scenes/ y la anota en placas.json.
 
-Uso:  python3 placas/add_scene.py <slug> <foto> [--blanco]
-Después:  cd placas && node render.js <slug> final
+Uso:  python3 placas/add_scene.py <slug> <foto> [--blanco] [--datos decants.json]
+Después:  cd placas && node render.js <slug> final [--datos decants.json]
+
+--datos decants.json: la placa es de la línea Decants Originales (se anota en placas/decants.json).
 
 --blanco: la foto viene sobre fondo blanco (pedido de Bautista, 2026-11-20: "1:1 y fondo full
 white"). Lleva el fondo a blanco puro, funde los bordes y anota scene_bg "white" para que en la
@@ -84,6 +86,11 @@ def add(slug, photo, white=False, out_dir=None, json_path=None):
 
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if a != "--blanco"]
+    datos = None
+    if "--datos" in args:
+        i = args.index("--datos")
+        datos = os.path.join(HERE, os.path.basename(args[i + 1]))
+        del args[i:i + 2]
     if len(args) != 2:
         sys.exit(__doc__)
-    print(*add(args[0], args[1], white="--blanco" in sys.argv))
+    print(*add(args[0], args[1], white="--blanco" in sys.argv, json_path=datos))

@@ -57,12 +57,75 @@ def brand_bottle(path, out):
     return box, bg
 
 
+def components(mask):
+    """Manchas conectadas (8 vecinos) de una máscara chica. Devuelve la matriz de etiquetas y cuántas hay."""
+    h, w = mask.shape
+    lab = np.zeros((h, w), np.int32)
+    n = 0
+    for sy, sx in zip(*np.nonzero(mask)):
+        if lab[sy, sx]:
+            continue
+        n += 1
+        lab[sy, sx] = n
+        stack = [(sy, sx)]
+        while stack:
+            y, x = stack.pop()
+            for yy in range(max(0, y - 1), min(h, y + 2)):
+                for xx in range(max(0, x - 1), min(w, x + 2)):
+                    if mask[yy, xx] and not lab[yy, xx]:
+                        lab[yy, xx] = n
+                        stack.append((yy, xx))
+    return lab, n
+
+
+def brand_bottle_decant(path, out):
+    """Foto principal de un Decant Original: el decant (con su cartel "Decant 5ML") va a la izquierda y el frasco
+    de marca a la derecha. Se queda con la mancha más grande de la mitad derecha y borra todo lo demás."""
+    im, bg = white_level(Image.open(path))
+    a = np.asarray(im).astype(np.int32)
+    H, W = a.shape[:2]
+    content = (a.min(axis=2) < 238) | ((a.max(axis=2) - a.min(axis=2)) > 22)
+    k = max(1, W // 270)                      # celda de ~4 px
+    h, w = H // k, W // k
+    small = content[: h * k, : w * k].reshape(h, k, w, k).any(axis=(1, 3))
+    grown = small.copy()                      # se engorda dos celdas para unir tapa, vidrio claro y reflejos del mismo frasco
+    for _ in range(2):
+        g = grown.copy()
+        g[1:] |= grown[:-1]; g[:-1] |= grown[1:]; g[:, 1:] |= grown[:, :-1]; g[:, :-1] |= grown[:, 1:]
+        grown = g
+    lab, n = components(grown)
+    best, area = 0, 0
+    for i in range(1, n + 1):
+        ys, xs = np.nonzero((lab == i) & small)
+        if len(xs) > area and xs.mean() > w * 0.42:
+            best, area = i, len(xs)
+    assert best, "no encontré el frasco de marca a la derecha"
+    keep = lab == best
+    ys, xs = np.nonzero(keep & small)
+    pad = int(W * 0.02)
+    box = (max(0, xs.min() * k - pad), max(0, ys.min() * k - pad), min(W, (xs.max() + 1) * k + pad), min(H, (ys.max() + 1) * k + pad))
+    # lo que no es el frasco (el decant, su cartel) queda en blanco aunque caiga dentro del recorte
+    full = np.kron(keep, np.ones((k, k), bool))
+    full = np.pad(full, ((0, H - full.shape[0]), (0, W - full.shape[1])))
+    c = np.where(full[..., None], a, 255)[box[1]:box[3], box[0]:box[2]].astype(np.float32)
+    # la sombra del piso se desvanece hacia abajo para que no quede un corte recto
+    hh = c.shape[0]
+    nfade = int(hh * 0.06)
+    ramp = np.linspace(1.0, 0.0, nfade)[:, None, None]
+    c[hh - nfade:] = 255.0 - (255.0 - c[hh - nfade:]) * ramp
+    Image.fromarray(np.clip(c, 0, 255).astype(np.uint8)).save(out)
+    return box, bg
+
+
 if __name__ == "__main__":
-    # Uso: python3 prep_assets.py <foto principal del producto> <salida.webp>
+    # Uso: python3 prep_assets.py <foto principal del producto> <salida.webp> [--decant]
     #   recorta el frasco de marca de la foto de la tienda y deja el fondo en blanco puro.
-    src, out = sys.argv[1], sys.argv[2]
+    #   --decant: foto de un Decant Original (el frasco de marca está a la derecha del decant).
+    args = [x for x in sys.argv[1:] if x != "--decant"]
+    src, out = args[0], args[1]
     tmp = out + ".png"
-    print("recorte:", brand_bottle(src, tmp))
+    fn = brand_bottle_decant if "--decant" in sys.argv else brand_bottle
+    print("recorte:", fn(src, tmp))
     Image.open(tmp).convert("RGB").save(out, quality=95, method=6)
     import os
     os.remove(tmp)
