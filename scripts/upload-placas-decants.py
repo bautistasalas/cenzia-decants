@@ -95,10 +95,13 @@ def main():
             sys.exit("--restaurar necesita el ID de al menos un producto")
         sys.exit(0 if all(restaurar(pid) for pid in only) else 1)
     subir = "--subir" in args
-    hechas = pendientes = 0
+    hechas = pendientes = sin_foto = 0
     for card in CARDS:
         pid, slug = card["product_id"], card["slug"]
         if only and pid not in only:
+            continue
+        if not card.get("scene"):  # todavía no tiene la foto generada: no hay placa que subir
+            sin_foto += 1
             continue
         imgs = gallery(pid)
         tag = f"placa-decant-{slug}-"
@@ -149,6 +152,7 @@ def main():
             sys.exit(1)
         hechas += 1
     print(f"\n{'Reemplazadas' if subir else 'Para reemplazar'}: {hechas if subir else pendientes} placa(s)."
+          + (f"  Sin foto todavía: {sin_foto}." if sin_foto else "")
           + ("" if subir else "  Nada se cambió: agregar --subir."))
 
 
