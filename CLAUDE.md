@@ -228,6 +228,29 @@ luz suave (superior izquierda), sombra de contacto realista, sin props
 agregados. Flujo de trabajo: recorte en Canva → composición → Runway para
 resolver luz/sombra/realismo final.
 
+## Etiquetas térmicas (stickers para los paquetes)
+
+- Impresora Xprinter XP-470B con rollo de etiquetas de 100 x 150 mm ("10 x 15
+  cm"), 203 dpi, blanco y negro. Bautista había pedido "30 x 40 cm": la medida
+  real salió de la foto del rollo que mandó.
+- Carpeta `etiquetas/`: cada pieza es un HTML en milímetros que arma su
+  `build.py`. `render.js` saca el PNG y otro a 203 dpi (para ver cómo lo recibe
+  la impresora y avisar si un texto se sale), `print.js` el PDF de 100 x 150
+  que se le manda. `out/` no se versiona.
+- Para que imprima bien: solo negro pleno y blanco (sin grises ni degradés),
+  líneas de 0,35 mm o más, texto de 8 pt o más y nada de letra chica en blanco
+  sobre negro.
+- En los stickers la marca firma **"Cenzia Fragancias"** (logo CENZIA /
+  FRAGANCIAS y "— Bautista, Cenzia Fragancias"), pedido de Bautista del
+  2026-11-22. El sitio, el dominio y el Instagram siguen como Cenzia Decants.
+- Piezas hechas: `gracias-preventa/` (eligió el estilo A, dos stickers por
+  etiqueta), `gracias-compra/` (el mismo diseño con mensaje general, para
+  cualquier compra) y `logos/` (hoja de 4 logos para recortar).
+- Los dos stickers de gracias imprimen el cupón `5OFFVIRTUAL` (5% en la
+  próxima compra). Al 2026-11-22 ese cupón no existe en la tienda
+  (`GET /coupons?q=5OFFVIRTUAL` vuelve vacío): hay que crearlo antes de
+  repartirlos. No crearlo sin que Bautista diga las condiciones.
+
 ## Integraciones técnicas
 
 - **API Tienda Nube:** REST v1, autenticación vía Network secret del entorno
