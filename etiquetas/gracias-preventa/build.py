@@ -15,6 +15,8 @@ import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CODE = "5OFFVIRTUAL"
+MARCA = "Cenzia Fragancias"   # así firma el sticker (pedido de Bautista); el sitio y el Instagram no cambian
+BAJADA = "FRAGANCIAS"         # renglón chico debajo de CENZIA en el logo
 WEB = "cenziadecants.com"
 IG = "@cenziadecants"
 
@@ -61,7 +63,7 @@ A = {
 .brand{position:absolute;left:0;right:0;top:8mm;display:flex;justify-content:center;align-items:center;gap:3.2mm}
 .brand img{height:15.5mm;width:auto;display:block}
 .brand .w{font-weight:700;font-size:25pt;letter-spacing:.2em;line-height:1;text-align:left}
-.brand .w small{display:block;font-size:13.4pt;letter-spacing:.5em;font-weight:600;margin-top:2mm}
+.brand .w small{display:block;font-size:13pt;letter-spacing:.27em;font-weight:600;margin-top:2mm;white-space:nowrap}
 .rule{position:absolute;left:8mm;right:8mm;top:27.6mm;height:.9mm;background:#000}
 .h1{position:absolute;left:0;right:0;top:31.6mm;font-weight:800;font-size:44pt;line-height:1;white-space:nowrap;text-align:center}
 .sub{position:absolute;left:0;right:0;top:48.8mm;font-weight:600;font-size:18.5pt;line-height:1.16;text-align:center;white-space:nowrap}
@@ -76,12 +78,12 @@ A = {
 .cup .how{position:absolute;left:0;right:0;bottom:2.5mm;font-weight:500;font-size:8pt;line-height:1;white-space:nowrap}
 .foot{position:absolute;left:0;right:0;bottom:4.3mm;font-weight:600;font-size:9.6pt;letter-spacing:.04em;line-height:1;text-align:center}
 """,
-  "html": f"""  <div class="brand"><img src="../assets/isotipo-negro.png" alt=""><div class="w">CENZIA<small>DECANTS</small></div></div>
+  "html": f"""  <div class="brand"><img src="../assets/isotipo-negro.png" alt=""><div class="w">CENZIA<small>{BAJADA}</small></div></div>
   <div class="rule"></div>
   <div class="h1">¡GRACIAS!</div>
   <div class="sub">por esperar la preventa<br>y por elegirnos.</div>
   <div class="msg">Confiaste en nosotros antes de que llegara el stock, y eso vale muchísimo. Ojalá lo disfrutes tanto como nosotros disfrutamos prepararlo.</div>
-  <div class="sign">— Bautista, Cenzia Decants</div>
+  <div class="sign">— Bautista, {MARCA}</div>
   <div class="cup">
     <div class="off"><b>5% OFF</b><span>en tu próxima compra</span></div>
     <div class="lbl">CÓDIGO DE DESCUENTO</div>
@@ -96,7 +98,7 @@ A = {
 .brand{position:absolute;left:0;right:0;top:4.6mm;display:flex;justify-content:center;align-items:center;gap:2.2mm}
 .brand img{height:10mm;width:auto;display:block}
 .brand .w{font-weight:700;font-size:16.5pt;letter-spacing:.2em;line-height:1;text-align:left}
-.brand .w small{display:block;font-size:9pt;letter-spacing:.48em;font-weight:600;margin-top:1.3mm}
+.brand .w small{display:block;font-size:8.6pt;letter-spacing:.27em;font-weight:600;margin-top:1.3mm;white-space:nowrap}
 .rule{position:absolute;left:6mm;right:6mm;top:17mm;height:.7mm;background:#000}
 .h1{position:absolute;left:0;right:0;top:19.5mm;font-weight:800;font-size:30pt;line-height:1;text-align:center;white-space:nowrap}
 .sub{position:absolute;left:0;right:0;top:31.3mm;font-weight:600;font-size:11.6pt;line-height:1;text-align:center;white-space:nowrap}
@@ -110,11 +112,11 @@ A = {
 .cup .r .lbl{font-weight:700;font-size:7.6pt;letter-spacing:.3em;text-indent:.3em;line-height:1;margin-top:2.7mm}
 .cup .r .code{font-weight:700;font-size:20pt;letter-spacing:.03em;line-height:1;margin-top:1.4mm;white-space:nowrap}
 """,
-  "html": f"""  <div class="brand"><img src="../assets/isotipo-negro.png" alt=""><div class="w">CENZIA<small>DECANTS</small></div></div>
+  "html": f"""  <div class="brand"><img src="../assets/isotipo-negro.png" alt=""><div class="w">CENZIA<small>{BAJADA}</small></div></div>
   <div class="rule"></div>
   <div class="h1">¡GRACIAS!</div>
   <div class="sub">por esperar la preventa y por elegirnos.</div>
-  <div class="sign">— Bautista, Cenzia Decants</div>
+  <div class="sign">— Bautista, {MARCA}</div>
   <div class="cup">
     <div class="l"><b>5%</b><i>OFF</i></div>
     <div class="r"><div class="when">en tu próxima compra</div><div class="lbl">CÓDIGO</div><div class="code">{CODE}</div></div>
@@ -202,7 +204,7 @@ C = {
   <div class="tag">PREVENTA</div>
   <div class="note">Gracias por esperar<br>y por elegirnos.</div>
   <div class="msg">Sabemos que esperar no es fácil. Confiaste en nosotros antes de que llegara el stock, y por eso armamos este pedido con muchísimo cuidado. Ojalá lo disfrutes.</div>
-  <div class="sign">— Bautista<small>CENZIA DECANTS</small></div>
+  <div class="sign">— Bautista<small>{MARCA.upper()}</small></div>
   <div class="cup">
     <div class="l"><b>5%</b><i>OFF</i></div>
     <div class="r"><i>en tu próxima compra</i><b>{CODE}</b><u>Usalo al finalizar tu compra</u></div>
@@ -229,7 +231,7 @@ C = {
   "html": f"""  <div class="brand"><img src="../assets/isotipo-negro.png" alt=""><span>CENZIA</span></div>
   <div class="tag">PREVENTA</div>
   <div class="note">Gracias por esperar<br>y por elegirnos.</div>
-  <div class="sign">— Bautista, Cenzia Decants</div>
+  <div class="sign">— Bautista, {MARCA}</div>
   <div class="cup">
     <div class="l"><b>5%</b><i>OFF</i></div>
     <div class="r"><i>en tu próxima compra</i><b>{CODE}</b></div>
