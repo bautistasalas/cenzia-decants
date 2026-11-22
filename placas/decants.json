@@ -577,7 +577,9 @@
         "en": "pieces of golden amber resin"
       }
     ],
-    "bottle": "src/costa-azzurra-parfum.webp"
+    "bottle": "src/costa-azzurra-parfum.webp",
+    "scene": "scenes/costa-azzurra-parfum.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "9am-dive",
@@ -659,7 +661,9 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/9pm.webp"
+    "bottle": "src/9pm.webp",
+    "scene": "scenes/9pm.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "9pm-rebel",
@@ -699,7 +703,9 @@
         "en": "a few pieces of soft golden caramel"
       }
     ],
-    "bottle": "src/9pm-rebel.webp"
+    "bottle": "src/9pm-rebel.webp",
+    "scene": "scenes/9pm-rebel.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "acqua-di-gio-profondo-parfum",
@@ -739,7 +745,9 @@
         "en": "a small pile of coarse sea salt crystals"
       }
     ],
-    "bottle": "src/acqua-di-gio-profondo-parfum.webp"
+    "bottle": "src/acqua-di-gio-profondo-parfum.webp",
+    "scene": "scenes/acqua-di-gio-profondo-parfum.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "acqua-di-gio-parfum",
@@ -779,7 +787,9 @@
         "en": "small pieces of frankincense resin"
       }
     ],
-    "bottle": "src/acqua-di-gio-parfum.webp"
+    "bottle": "src/acqua-di-gio-parfum.webp",
+    "scene": "scenes/acqua-di-gio-parfum.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "amber-oud-dubai-night",
@@ -819,7 +829,9 @@
         "en": "pieces of golden amber resin"
       }
     ],
-    "bottle": "src/amber-oud-dubai-night.webp"
+    "bottle": "src/amber-oud-dubai-night.webp",
+    "scene": "scenes/amber-oud-dubai-night.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "amber-oud-aqua-dubai",
@@ -859,7 +871,9 @@
         "en": "a small cluster of blackcurrants"
       }
     ],
-    "bottle": "src/amber-oud-aqua-dubai.webp"
+    "bottle": "src/amber-oud-aqua-dubai.webp",
+    "scene": "scenes/amber-oud-aqua-dubai.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "armani-code-eau-de-parfum",
@@ -895,7 +909,9 @@
         "en": "dark tonka beans"
       }
     ],
-    "bottle": "src/armani-code-eau-de-parfum.webp"
+    "bottle": "src/armani-code-eau-de-parfum.webp",
+    "scene": "scenes/armani-code-eau-de-parfum.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "man-in-black",
@@ -935,7 +951,9 @@
         "en": "a small rolled strip of dark brown leather"
       }
     ],
-    "bottle": "src/man-in-black.webp"
+    "bottle": "src/man-in-black.webp",
+    "scene": "scenes/man-in-black.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "odyssey-dubai-chocolat",
@@ -975,7 +993,9 @@
         "en": "roasted coffee beans"
       }
     ],
-    "bottle": "src/odyssey-dubai-chocolat.webp"
+    "bottle": "src/odyssey-dubai-chocolat.webp",
+    "scene": "scenes/odyssey-dubai-chocolat.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "divine-le-parfum",
@@ -1015,7 +1035,9 @@
         "en": "pieces of golden benzoin resin"
       }
     ],
-    "bottle": "src/divine-le-parfum.webp"
+    "bottle": "src/divine-le-parfum.webp",
+    "scene": "scenes/divine-le-parfum.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "dylan-blue",
@@ -1056,7 +1078,9 @@
         "en": "dark tonka beans"
       }
     ],
-    "bottle": "src/dylan-blue.webp"
+    "bottle": "src/dylan-blue.webp",
+    "scene": "scenes/dylan-blue.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "eros-eau-de-parfum",
@@ -1138,7 +1162,9 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/eros-eau-de-toilette.webp"
+    "bottle": "src/eros-eau-de-toilette.webp",
+    "scene": "scenes/eros-eau-de-toilette.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "fakhar-black",
@@ -1178,7 +1204,9 @@
         "en": "fresh sage leaves"
       }
     ],
-    "bottle": "src/fakhar-black.webp"
+    "bottle": "src/fakhar-black.webp",
+    "scene": "scenes/fakhar-black.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "fakhar-rose",
@@ -1218,7 +1246,9 @@
         "en": "white jasmine flowers"
       }
     ],
-    "bottle": "src/fakhar-rose.webp"
+    "bottle": "src/fakhar-rose.webp",
+    "scene": "scenes/fakhar-rose.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "fame",
@@ -1258,7 +1288,9 @@
         "en": "small pieces of sandalwood"
       }
     ],
-    "bottle": "src/fame.webp"
+    "bottle": "src/fame.webp",
+    "scene": "scenes/fame.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "good-girl-blush",
