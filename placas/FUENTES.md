@@ -52,6 +52,87 @@ que él había generado en Runway también se reemplazó.
 | Sauvage Elixir | `MAHbd9Ht6bo` |
 | Bleu de Chanel | `MAHbdwJClls` |
 
+## Fotos de los Decants Originales (2026-11-21 a 23)
+
+Los 66 decants en stock llevan la misma placa (`decants.json`, variante
+`linea: "decant"` de `card.html`). 13 reusan la foto de su Esencia Privé (es el
+mismo perfume de marca); para los otros 53 se generó una foto nueva en el Canva
+de Bautista con el mismo texto de más abajo, tomando como referencia el frasco
+recortado de la foto del decant en la tienda (`prep_assets.py --decant`; el de
+Chocolate Dubai se recortó a mano).
+
+Las notas de estas 53 placas no salen de la descripción del producto sino de
+la pirámide publicada por la marca o por Fragrantica/Parfumo, porque varias
+descripciones de decants tienen notas que no son de ese perfume.
+
+| Perfume | Identificador en Canva | Estado |
+|---|---|---|
+| Costa Azzurra Parfum | `MAHbp5HyXRo` | en `scenes/` |
+| 9AM Dive | `MAHbgGuvbNE` | en `scenes/` |
+| 9PM | `MAHbp0TFlFU` | en `scenes/` |
+| 9PM Rebel | `MAHbp9JUGMg` | en `scenes/` |
+| Acqua di Giò Profondo Parfum | `MAHbp1Yur4Y` | en `scenes/` |
+| Acqua di Giò Parfum | `MAHbp1Vnx6Y` | en `scenes/` |
+| Amber Oud Dubai Night | `MAHbp60XwsY` | en `scenes/` |
+| Amber Oud Aqua Dubai | `MAHbpybw2sc` | en `scenes/` |
+| Armani Code | `MAHbp_Re5pA` | en `scenes/` |
+| Man In Black | `MAHbpx7oG-o` | en `scenes/` |
+| Odyssey Dubai Chocolat | `MAHbp2W6tdg` | en `scenes/` |
+| Divine Le Parfum | `MAHbp3jqSIA` | en `scenes/` |
+| Dylan Blue | `MAHbp5FFZYY` | en `scenes/` |
+| Eros Eau de Parfum | `MAHbgDY9cQE` | en `scenes/` |
+| Eros Eau de Toilette | `MAHbp3fFs8k` | en `scenes/` |
+| Fakhar Black | `MAHbp4ptzMo` | en `scenes/` |
+| Fakhar Rose | `MAHbp7qMF34` | en `scenes/` |
+| Fame | `MAHbp-2GEXg` | en `scenes/` |
+| Good Girl Blush | `MAHbpz0y8Zc` | falta bajarla |
+| Hawas Ice | `MAHbh7PL-HI` | en `scenes/` |
+| Hawas Malibu | `MAHbp619XsI` | falta bajarla |
+| Hawas | `MAHbhwVYYPE` | en `scenes/` |
+| Hawas Tropical | `MAHbp3pMgSQ` | falta bajarla |
+| His Confession | `MAHbp07S_Ao` | falta bajarla |
+| Honor & Glory | `MAHbh7S95Ww` | en `scenes/` |
+| Intense Café | `MAHbqEB4FAI` | falta bajarla |
+| Jean Lowe Immortel | `MAHbqIkYyfY` | falta bajarla |
+| Khamrah | `MAHbqNXTLjE` | falta bajarla |
+| Khamrah Qahwa | `MAHbqOk2FwI` | falta bajarla |
+| Layton | `MAHbgL_PnlY` | en `scenes/` |
+| Le Beau Le Parfum | `MAHbh0tvtMk` | en `scenes/` |
+| Le Male Elixir Absolu | `MAHbqLREgzs` | falta bajarla |
+| Libre | `MAHbqMAcPxk` | falta bajarla |
+| Liquid Brun | `MAHbqCwhXjA` | falta bajarla |
+| Odyssey Mandarin Sky | `MAHbqNUSfgE` | falta bajarla |
+| MYSLF | `MAHbqChb8DU` | falta bajarla |
+| Naxos | `MAHbgLrG08g` | en `scenes/` |
+| Odyssey Aqua | `MAHbqKqSLME` | falta bajarla |
+| Oud For Glory | `MAHbqHDWiHw` | falta bajarla |
+| Qaed Al Fursan | `MAHbqEZXCmc` | falta bajarla |
+| Roses Musk | `MAHbqMywu-w` | falta bajarla |
+| Scandal Pour Homme Le Parfum | `MAHbqNWyY0M` | falta bajarla |
+| Stallion 53 | `MAHbqAv2BwU` | falta bajarla |
+| The Most Wanted Intense | `MAHbqBQkSBI` | falta bajarla |
+| The Most Wanted Parfum | `MAHbqCHOI3k` | falta bajarla |
+| Torino21 | `MAHbqFEAiWo` | falta bajarla |
+| Uomo Born In Roma Coral Fantasy | `MAHbqJvKPTE` | falta bajarla |
+| Uomo Born In Roma | `MAHbqKbQnOI` | falta bajarla |
+| Uomo Born In Roma Extradose | `MAHbqNFQwdE` | falta bajarla |
+| Vulcan Feu | `MAHbqAT43Ak` | falta bajarla |
+| Yara Candy | `MAHbqHWc9G4` | falta bajarla |
+| Yara | `MAHbqKdgs0E` | falta bajarla |
+
+Falta **Spicebomb Extreme**: el generador de Canva rechazó la imagen (el
+frasco tiene forma de granada y lo frena su filtro de contenido). No se volvió
+a intentar cambiando el texto para esquivar el filtro; ese producto conserva
+su placa de acordes hasta que Bautista decida cómo resolverlo.
+
+Las que dicen "falta bajarla" están generadas y guardadas en su Canva, pero
+todavía no pasaron por el diseño de trabajo: para eso hacen falta tres
+aprobaciones suyas seguidas (sumar páginas, colocar fotos, guardar) y si no
+contesta alguna en unos minutos la sesión se reinicia y hay que empezar de
+nuevo ese paso.
+
+## Cómo se bajan y con qué texto se generaron
+
 Para bajarlas en tamaño completo no alcanza con el identificador (Canva solo
 devuelve una miniatura de 149 x 200): hay que colocar cada foto en una página
 de 1500 x 2000 de un diseño, guardar y exportar esas páginas como PNG. Se usa
