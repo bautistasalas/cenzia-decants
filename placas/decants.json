@@ -1330,7 +1330,9 @@
         "en": "yellow ylang-ylang flowers"
       }
     ],
-    "bottle": "src/good-girl-blush.webp"
+    "bottle": "src/good-girl-blush.webp",
+    "scene": "scenes/good-girl-blush.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "hawas-ice",
@@ -1412,7 +1414,9 @@
         "en": "fresh lavender sprigs"
       }
     ],
-    "bottle": "src/hawas-malibu.webp"
+    "bottle": "src/hawas-malibu.webp",
+    "scene": "scenes/hawas-malibu.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "hawas",
@@ -1494,7 +1498,9 @@
         "en": "fresh ginger root"
       }
     ],
-    "bottle": "src/hawas-tropical.webp"
+    "bottle": "src/hawas-tropical.webp",
+    "scene": "scenes/hawas-tropical.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "his-confession",
@@ -1534,7 +1540,9 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/his-confession.webp"
+    "bottle": "src/his-confession.webp",
+    "scene": "scenes/his-confession.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "honor-and-glory",
@@ -1611,7 +1619,9 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/intense-cafe.webp"
+    "bottle": "src/intense-cafe.webp",
+    "scene": "scenes/intense-cafe.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "jean-lowe-immortel",
@@ -1651,7 +1661,9 @@
         "en": "fresh sage leaves"
       }
     ],
-    "bottle": "src/jean-lowe-immortel.webp"
+    "bottle": "src/jean-lowe-immortel.webp",
+    "scene": "scenes/jean-lowe-immortel.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "khamrah",
@@ -1691,7 +1703,9 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/khamrah.webp"
+    "bottle": "src/khamrah.webp",
+    "scene": "scenes/khamrah.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "khamrah-qahwa",
@@ -1731,7 +1745,9 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/khamrah-qahwa.webp"
+    "bottle": "src/khamrah-qahwa.webp",
+    "scene": "scenes/khamrah-qahwa.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "layton",
@@ -1855,7 +1871,9 @@
         "en": "dark tonka beans"
       }
     ],
-    "bottle": "src/le-male-elixir-absolu.webp"
+    "bottle": "src/le-male-elixir-absolu.webp",
+    "scene": "scenes/le-male-elixir-absolu.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "libre",
@@ -1896,7 +1914,9 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/libre.webp"
+    "bottle": "src/libre.webp",
+    "scene": "scenes/libre.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "liquid-brun",
@@ -1936,7 +1956,9 @@
         "en": "a few caramelized praline almonds"
       }
     ],
-    "bottle": "src/liquid-brun.webp"
+    "bottle": "src/liquid-brun.webp",
+    "scene": "scenes/liquid-brun.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "odyssey-mandarin-sky",
@@ -1976,7 +1998,9 @@
         "en": "fresh sage leaves"
       }
     ],
-    "bottle": "src/odyssey-mandarin-sky.webp"
+    "bottle": "src/odyssey-mandarin-sky.webp",
+    "scene": "scenes/odyssey-mandarin-sky.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "myslf",
@@ -2012,7 +2036,9 @@
         "en": "dried patchouli leaves"
       }
     ],
-    "bottle": "src/myslf.webp"
+    "bottle": "src/myslf.webp",
+    "scene": "scenes/myslf.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "naxos",
@@ -2094,7 +2120,9 @@
         "en": "fresh lavender sprigs"
       }
     ],
-    "bottle": "src/odyssey-aqua.webp"
+    "bottle": "src/odyssey-aqua.webp",
+    "scene": "scenes/odyssey-aqua.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "oud-for-glory",
@@ -2134,7 +2162,9 @@
         "en": "dark agarwood chips"
       }
     ],
-    "bottle": "src/oud-for-glory.webp"
+    "bottle": "src/oud-for-glory.webp",
+    "scene": "scenes/oud-for-glory.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "qaed-al-fursan",
@@ -2174,7 +2204,9 @@
         "en": "a few small pieces of cedar wood"
       }
     ],
-    "bottle": "src/qaed-al-fursan.webp"
+    "bottle": "src/qaed-al-fursan.webp",
+    "scene": "scenes/qaed-al-fursan.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "roses-musk",
@@ -2209,7 +2241,9 @@
         "en": "a lemon wedge"
       }
     ],
-    "bottle": "src/roses-musk.webp"
+    "bottle": "src/roses-musk.webp",
+    "scene": "scenes/roses-musk.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "scandal-pour-homme-le-parfum",
@@ -2244,7 +2278,9 @@
         "en": "small pieces of sandalwood"
       }
     ],
-    "bottle": "src/scandal-pour-homme-le-parfum.webp"
+    "bottle": "src/scandal-pour-homme-le-parfum.webp",
+    "scene": "scenes/scandal-pour-homme-le-parfum.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "spicebomb-extreme",
@@ -2324,7 +2360,9 @@
         "en": "a small rolled strip of dark brown leather"
       }
     ],
-    "bottle": "src/stallion-53.webp"
+    "bottle": "src/stallion-53.webp",
+    "scene": "scenes/stallion-53.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "the-most-wanted-intense",
@@ -2359,7 +2397,9 @@
         "en": "small pieces of dark wood"
       }
     ],
-    "bottle": "src/the-most-wanted-intense.webp"
+    "bottle": "src/the-most-wanted-intense.webp",
+    "scene": "scenes/the-most-wanted-intense.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "the-most-wanted-parfum",
@@ -2394,7 +2434,9 @@
         "en": "small pieces of dark wood"
       }
     ],
-    "bottle": "src/the-most-wanted-parfum.webp"
+    "bottle": "src/the-most-wanted-parfum.webp",
+    "scene": "scenes/the-most-wanted-parfum.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "torino21",
@@ -2434,7 +2476,9 @@
         "en": "fresh lavender sprigs"
       }
     ],
-    "bottle": "src/torino21.webp"
+    "bottle": "src/torino21.webp",
+    "scene": "scenes/torino21.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "born-in-roma-coral-fantasy",
@@ -2475,7 +2519,9 @@
         "en": "green cardamom pods"
       }
     ],
-    "bottle": "src/born-in-roma-coral-fantasy.webp"
+    "bottle": "src/born-in-roma-coral-fantasy.webp",
+    "scene": "scenes/born-in-roma-coral-fantasy.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "uomo-born-in-roma",
@@ -2516,7 +2562,9 @@
         "en": "a small pile of coarse sea salt crystals"
       }
     ],
-    "bottle": "src/uomo-born-in-roma.webp"
+    "bottle": "src/uomo-born-in-roma.webp",
+    "scene": "scenes/uomo-born-in-roma.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "uomo-born-in-roma-extradose",
@@ -2557,7 +2605,9 @@
         "en": "a small pile of black peppercorns"
       }
     ],
-    "bottle": "src/uomo-born-in-roma-extradose.webp"
+    "bottle": "src/uomo-born-in-roma-extradose.webp",
+    "scene": "scenes/uomo-born-in-roma-extradose.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "vulcan-feu",
@@ -2597,7 +2647,9 @@
         "en": "white jasmine flowers"
       }
     ],
-    "bottle": "src/vulcan-feu.webp"
+    "bottle": "src/vulcan-feu.webp",
+    "scene": "scenes/vulcan-feu.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "yara-candy",
@@ -2637,7 +2689,9 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/yara-candy.webp"
+    "bottle": "src/yara-candy.webp",
+    "scene": "scenes/yara-candy.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "yara",
@@ -2677,6 +2731,8 @@
         "en": "small pieces of sandalwood"
       }
     ],
-    "bottle": "src/yara.webp"
+    "bottle": "src/yara.webp",
+    "scene": "scenes/yara.jpg",
+    "scene_bg": "white"
   }
 ]
