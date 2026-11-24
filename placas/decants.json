@@ -2320,7 +2320,9 @@
         "en": "cinnamon sticks"
       }
     ],
-    "bottle": "src/spicebomb-extreme.webp"
+    "bottle": "src/spicebomb-extreme.webp",
+    "scene": "scenes/spicebomb-extreme.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "stallion-53",
