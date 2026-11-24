@@ -2734,5 +2734,215 @@
     "bottle": "src/yara.webp",
     "scene": "scenes/yara.jpg",
     "scene_bg": "white"
+  },
+  {
+    "slug": "arabians-tonka",
+    "product_id": 290214119,
+    "linea": "decant",
+    "name": "Arabians Tonka",
+    "brand": "Montale",
+    "sizes": "5 y 10 ml",
+    "reco": "Salidas de noche y días de frío. Es potente y deja huella: no pasa inadvertida.",
+    "salida": "Azafrán · Bergamota",
+    "salida_txt": "Especiada y luminosa al arrancar.",
+    "corazon": "Rosa búlgara · Oud",
+    "corazon_txt": "Rosa intensa sobre madera de oud.",
+    "fondo": "Haba tonka · Ámbar · Musgo de roble",
+    "fondo_txt": "Dulce, cálido y amaderado; dura horas.",
+    "familia": "Oriental · Amaderada",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Rosa",
+        "detalle": "flor",
+        "en": "a pink Bulgarian rose with a few loose petals"
+      },
+      {
+        "nombre": "Oud",
+        "detalle": "madera",
+        "en": "small pieces of dark oud wood"
+      },
+      {
+        "nombre": "Azafrán",
+        "detalle": "hebras",
+        "en": "a small pile of red saffron threads"
+      },
+      {
+        "nombre": "Haba tonka",
+        "detalle": "habas",
+        "en": "dark tonka beans"
+      }
+    ],
+    "bottle": "src/arabians-tonka.webp",
+    "scene": "scenes/arabians-tonka.jpg",
+    "scene_bg": "white"
+  },
+  {
+    "slug": "bharara-king",
+    "product_id": 299288215,
+    "linea": "decant",
+    "name": "Bharara King",
+    "brand": "",
+    "sizes": "5 y 10 ml",
+    "reco": "Salidas de noche y días de frío. Cítrica al principio y dulce al final.",
+    "salida": "Bergamota · Naranja · Limón",
+    "salida_txt": "Cítrica y fresca al arrancar.",
+    "corazon": "Notas frutales",
+    "corazon_txt": "Frutal y jugosa.",
+    "fondo": "Ámbar · Almizcle · Vainilla",
+    "fondo_txt": "Vainilla y ámbar: cálido y dulce.",
+    "familia": "Cítrica · Ambarada",
+    "intensidad": "Alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Naranja",
+        "detalle": "en mitades",
+        "en": "a halved orange"
+      },
+      {
+        "nombre": "Limón",
+        "detalle": "entero",
+        "en": "a fresh lemon"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      },
+      {
+        "nombre": "Ámbar",
+        "detalle": "piedras",
+        "en": "a few translucent amber resin stones"
+      }
+    ],
+    "bottle": "src/bharara-king.webp",
+    "scene": "scenes/bharara-king.jpg",
+    "scene_bg": "white"
+  },
+  {
+    "slug": "erba-pura",
+    "product_id": 283331522,
+    "linea": "decant",
+    "name": "Erba Pura",
+    "brand": "Xerjoff",
+    "sizes": "5 y 10 ml",
+    "reco": "Uso diario y días de calor. Fresca y frutal al principio, dulce al final: gusta a casi todos.",
+    "salida": "Naranja · Limón · Bergamota",
+    "salida_txt": "Cítrica y fresca desde el primer momento.",
+    "corazon": "Frutas mediterráneas",
+    "corazon_txt": "Jugosa y frutal.",
+    "fondo": "Vainilla de Madagascar · Almizcle blanco · Ámbar",
+    "fondo_txt": "Dulce, suave y envolvente.",
+    "familia": "Afrutada · Gourmand",
+    "intensidad": "Media-alta · estela dulce",
+    "materias": [
+      {
+        "nombre": "Naranja",
+        "detalle": "en mitades",
+        "en": "a halved orange"
+      },
+      {
+        "nombre": "Limón",
+        "detalle": "entero",
+        "en": "a fresh lemon"
+      },
+      {
+        "nombre": "Bergamota",
+        "detalle": "en mitades",
+        "en": "a halved green bergamot"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/erba-pura.webp",
+    "scene": "scenes/erba-pura.jpg",
+    "scene_bg": "white"
+  },
+  {
+    "slug": "ombre-leather",
+    "product_id": 330477597,
+    "linea": "decant",
+    "name": "Ombré Leather",
+    "brand": "Tom Ford",
+    "sizes": "5 y 10 ml",
+    "reco": "Looks elegantes, de día o de noche. Es un cuero seco y moderno, distinto a lo dulce de siempre.",
+    "salida": "Cardamomo",
+    "salida_txt": "Especiado y fresco.",
+    "corazon": "Cuero · Jazmín sambac",
+    "corazon_txt": "Cuero suave con un toque floral.",
+    "fondo": "Ámbar · Musgo · Pachulí",
+    "fondo_txt": "Seco, amaderado y elegante.",
+    "familia": "Floral · Cuero",
+    "intensidad": "Media-alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Jazmín",
+        "detalle": "flores",
+        "en": "white jasmine sambac flowers"
+      },
+      {
+        "nombre": "Cuero",
+        "detalle": "tira",
+        "en": "a rolled strip of dark brown leather"
+      },
+      {
+        "nombre": "Cardamomo",
+        "detalle": "vainas",
+        "en": "green cardamom pods"
+      },
+      {
+        "nombre": "Musgo",
+        "detalle": "verde",
+        "en": "a small patch of green moss"
+      }
+    ],
+    "bottle": "src/ombre-leather.webp",
+    "scene": "scenes/ombre-leather.jpg",
+    "scene_bg": "white"
+  },
+  {
+    "slug": "sauvage-elixir",
+    "product_id": 293012538,
+    "linea": "decant",
+    "name": "Sauvage Elixir",
+    "brand": "Dior",
+    "sizes": "5 y 10 ml",
+    "reco": "Salidas de noche y días de frío. Especiada e intensa: de las que más estela dejan.",
+    "salida": "Pomelo · Canela · Nuez moscada · Cardamomo",
+    "salida_txt": "Especiada, con un toque cítrico.",
+    "corazon": "Lavanda",
+    "corazon_txt": "Aromática y limpia.",
+    "fondo": "Regaliz · Ámbar · Vetiver · Pachulí · Sándalo",
+    "fondo_txt": "Regaliz y maderas: denso y duradero.",
+    "familia": "Amaderada · Especiada",
+    "intensidad": "Muy alta · estela muy fuerte",
+    "materias": [
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Canela",
+        "detalle": "ramas",
+        "en": "cinnamon sticks"
+      },
+      {
+        "nombre": "Pomelo",
+        "detalle": "en mitades",
+        "en": "a halved pink grapefruit"
+      },
+      {
+        "nombre": "Regaliz",
+        "detalle": "raíces",
+        "en": "a few licorice root sticks"
+      }
+    ],
+    "bottle": "src/sauvage-elixir.webp",
+    "scene": "scenes/sauvage-elixir.jpg",
+    "scene_bg": "white"
   }
 ]
