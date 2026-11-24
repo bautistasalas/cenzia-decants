@@ -222,25 +222,31 @@ vía API con el scope actual del token — falta `write_scripts`).
 ## Placas de los Decants Originales
 
 - Bautista pidió la misma placa para los decants individuales ("seguí con los
-  demás perfumes que tenemos en el catálogo individuales", 2026-11-20). Son
-  los 66 decants en stock: datos en `placas/decants.json`, mismo `card.html`
-  (variante `linea: "decant"`: dice "Decant de…", pill "Original" y
-  "Decant original · 5 y 10 ml"). Se generan con
-  `cd placas && node render.js [slug] final --datos decants.json` y salen como
-  `out/decant-{slug}-final.png`.
+  demás perfumes que tenemos en el catálogo individuales", 2026-11-20, y lo
+  repitió el 2026-11-24 para los que faltaban). Son **105 decants
+  publicados**: los 66 que tenían stock y los 39 sin stock. Datos en
+  `placas/decants.json`, mismo `card.html` (variante `linea: "decant"`: dice
+  "Decant de…", pill "Original" y "Decant original · 5 y 10 ml"). Se generan
+  con `cd placas && node render.js [slug] final --datos decants.json` y salen
+  como `out/decant-{slug}-final.png`.
+- No se les hizo placa a los 6 decants duplicados que están sin publicar ni a
+  los 11 "Perfumes Enteros" (categoría oculta): no se pidió.
 - En cada decant la placa nueva **reemplaza a la vieja placa de "acordes
   principales"** y queda en su mismo lugar de la galería. Antes de borrar nada
-  se guardó una copia de las 66: `placas/respaldo-acordes/{id}.{ext}` y
+  se guardó una copia de las 105: `placas/respaldo-acordes/{id}.{ext}` y
   `placas/acordes-respaldo.json` (qué foto era y en qué posición).
 - `scripts/upload-placas-decants.py`: sin argumentos muestra el plan; con
   `--subir [ids]` sube la placa, borra solo la foto anotada en el respaldo y
   la deja en la misma posición; `--restaurar <id>` vuelve a subir la placa de
-  acordes guardada.
-- Al 2026-11-24 están subidas **65 de 66**. Falta **Spicebomb Extreme**: el
-  generador de Canva rechazó la foto (frasco con forma de granada) y no se
-  insistió cambiando el texto; ese producto conserva su placa de acordes hasta
-  que Bautista decida cómo resolverlo.
-- 13 decants reusan la foto de su Esencia Privé; para los otros se generó una
+  acordes guardada. Saltea las que todavía no tienen foto (`scene`).
+- Al 2026-11-24: las **66 con stock están subidas** y de las 39 sin stock van
+  **17** (5 que reusan foto y 12 con foto nueva). Las otras 22 esperan su foto:
+  Canva limita cuántas se generan por hora (ver `placas/FUENTES.md`, que
+  tiene la lista al día y qué falta de cada una).
+- **Spicebomb Extreme** es la única sin materias primas: el generador de Canva
+  rechazó la foto (frasco con forma de granada) y no se insistió cambiando el
+  texto. Su placa lleva la foto real del frasco sobre blanco.
+- 18 decants reusan la foto de su Esencia Privé; para los otros se generó una
   foto nueva en su Canva (detalle, identificadores y cómo destrabar los
   permisos de Canva en `placas/FUENTES.md`).
 - **Las notas de las placas nuevas salen de la pirámide publicada** (marca,
@@ -250,9 +256,17 @@ vía API con el scope actual del token — falta `write_scripts`).
   EDP, Stronger With You Intensely, Y, The Most Wanted Parfum, Uomo Born In
   Roma Extradose, Divine Le Parfum, Acqua di Giò Profondo Parfum, Vulcan Feu y
   Yara. Las descripciones no se tocaron: se le avisó a Bautista y decide él.
-- "Roses Musk – Montale": la foto principal de la tienda (y por eso la de la
-  placa) muestra el frasco de **Intense** Roses Musk (extrait). El nombre del
-  producto no se cambió; falta que Bautista diga cuál de los dos vende.
+- Fotos principales de la tienda que no coinciden con el nombre del producto
+  (no se cambió nada; falta que Bautista diga cuál vende):
+  - "Roses Musk – Montale" muestra el frasco de **Intense** Roses Musk
+    (extrait), y por eso también la placa.
+  - "Sauvage" Eau de Toilette muestra un frasco que dice "Eau de Parfum". En
+    la placa se borró ese renglón de la etiqueta y las notas son las del EDT.
+  - "Radio Vintage – Lattafa": el frasco dice "Vintage Radio". La placa usa el
+    nombre de la tienda.
+- Versiones que se eligieron cuando el perfume tiene más de una: The One for
+  Men, la del frasco oscuro (EDP 2015); Dior Homme Parfum, la de 2025 (frasco
+  con la parte de arriba negra), que es la de la foto de la tienda.
 
 ## Fotografía de producto
 

@@ -120,10 +120,13 @@ descripciones de decants tienen notas que no son de ese perfume.
 | Yara Candy | `MAHbqHWc9G4` |
 | Yara | `MAHbqKdgs0E` |
 
-Falta **Spicebomb Extreme**: el generador de Canva rechazó la imagen (el
-frasco tiene forma de granada y lo frena su filtro de contenido). No se volvió
-a intentar cambiando el texto para esquivar el filtro; ese producto conserva
-su placa de acordes hasta que Bautista decida cómo resolverlo.
+**Spicebomb Extreme** es la única sin foto generada: el generador de Canva
+rechazó la imagen (el frasco tiene forma de granada y lo frena su filtro de
+contenido) y no se volvió a intentar cambiando el texto para esquivar el
+filtro. Su placa usa la foto real del frasco sobre blanco, sin materias primas
+(`scenes/spicebomb-extreme.jpg`, armada con el recorte de `src/`). Si Bautista
+quiere las materias primas, la salida es generar solo los ingredientes y
+montar encima el frasco real.
 
 Las 52 están en `scenes/` (bajadas entre el 2026-11-21 y el 2026-11-24).
 
@@ -205,6 +208,17 @@ celular cada vez; generar, leer y exportar no. Lo que se aprendió:
   (`PushNotification`) justo antes de pedir el permiso y aprobó los dos al
   rato. No se sabe si entró por el aviso o por su cuenta, pero es lo único
   que se hizo distinto.
+- Las páginas de trabajo se pueden volver a usar las veces que haga falta: la
+  tanda del 2026-11-24 (decants sin stock) se colocó otra vez de la página 30
+  en adelante. Para bajar solo lo de una exportación, y no la foto vieja de
+  esa misma página, se filtra por el identificador de la exportación.
+- **Canva limita el ritmo.** Subir las fotos de referencia: después de unas 20
+  seguidas responde "Too many requests" por unos minutos (se siguió de a 4).
+  Generar: después de unas 5 seguidas responde `quota_cooldown` ("Your credit
+  usage is cooling down") y de ahí en más acepta más o menos una cada varios
+  minutos. Un pedido rechazado no deja trabajo pendiente: se vuelve a pedir
+  más tarde con el mismo texto. Las 34 fotos de los decants sin stock llevaron
+  por eso varias horas.
 
 Texto que se usó para generarlas (las materias salen del campo `en` de cada
 materia en `placas.json`):
