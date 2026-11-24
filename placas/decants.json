@@ -3469,7 +3469,9 @@
         "en": "a small pile of small brown ambrette seeds"
       }
     ],
-    "bottle": "src/dior-homme-intense.webp"
+    "bottle": "src/dior-homme-intense.webp",
+    "scene": "scenes/dior-homme-intense.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "the-one-for-men",
@@ -3510,7 +3512,9 @@
         "en": "small pieces of sandalwood"
       }
     ],
-    "bottle": "src/the-one-for-men.webp"
+    "bottle": "src/the-one-for-men.webp",
+    "scene": "scenes/the-one-for-men.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "212-vip-rose",
@@ -3546,7 +3550,9 @@
         "en": "a small pile of pink peppercorns"
       }
     ],
-    "bottle": "src/212-vip-rose.webp"
+    "bottle": "src/212-vip-rose.webp",
+    "scene": "scenes/212-vip-rose.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "9pm-night-out",
@@ -3587,7 +3593,9 @@
         "en": "a few pieces of toffee caramel"
       }
     ],
-    "bottle": "src/9pm-night-out.webp"
+    "bottle": "src/9pm-night-out.webp",
+    "scene": "scenes/9pm-night-out.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "acqua-di-gio-profondo",
@@ -3628,7 +3636,9 @@
         "en": "a small pile of coarse sea salt crystals"
       }
     ],
-    "bottle": "src/acqua-di-gio-profondo.webp"
+    "bottle": "src/acqua-di-gio-profondo.webp",
+    "scene": "scenes/acqua-di-gio-profondo.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "alexandria-ii",
@@ -3669,7 +3679,9 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/alexandria-ii.webp"
+    "bottle": "src/alexandria-ii.webp",
+    "scene": "scenes/alexandria-ii.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "asad",
@@ -3709,7 +3721,9 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/asad.webp"
+    "bottle": "src/asad.webp",
+    "scene": "scenes/asad.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "asad-bourbon",
@@ -3749,7 +3763,9 @@
         "en": "dark vanilla pods"
       }
     ],
-    "bottle": "src/asad-bourbon.webp"
+    "bottle": "src/asad-bourbon.webp",
+    "scene": "scenes/asad-bourbon.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "bad-boy-le-parfum",
@@ -3789,7 +3805,9 @@
         "en": "a small rolled strip of dark brown leather"
       }
     ],
-    "bottle": "src/bad-boy-le-parfum.webp"
+    "bottle": "src/bad-boy-le-parfum.webp",
+    "scene": "scenes/bad-boy-le-parfum.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "cedrat-boise",

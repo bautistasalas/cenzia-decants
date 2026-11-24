@@ -240,7 +240,7 @@ vía API con el scope actual del token — falta `write_scripts`).
   la deja en la misma posición; `--restaurar <id>` vuelve a subir la placa de
   acordes guardada. Saltea las que todavía no tienen foto (`scene`).
 - Al 2026-11-24: las **66 con stock están subidas** y de las 39 sin stock van
-  **17** (5 que reusan foto y 12 con foto nueva). Las otras 22 esperan su foto:
+  **26** (5 que reusan foto y 21 con foto nueva). Las otras 13 esperan su foto:
   Canva limita cuántas se generan por hora (ver `placas/FUENTES.md`, que
   tiene la lista al día y qué falta de cada una).
 - **Spicebomb Extreme** es la única sin materias primas: el generador de Canva

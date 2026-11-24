@@ -143,17 +143,17 @@ Erba Pura, Ombré Leather, Sauvage Elixir) y 34 llevan foto nueva:
 | Perfume | Identificador en Canva | Estado |
 |---|---|---|
 | Aventus | `MAHbzbQpaS0` | en `scenes/` |
-| Dior Homme Intense (Eau de Parfum) | `MAHbzTLf_Co` | falta bajarla |
-| The One for Men (Eau de Parfum) | — | falta generarla |
-| 212 VIP Rosé (Eau de Parfum) | — | falta generarla |
-| 9PM Night Out (Extrait de Parfum) | — | falta generarla |
-| Acqua di Giò Profondo (Eau de Parfum) | — | falta generarla |
-| Alexandria II (Parfum) | — | falta generarla |
-| Asad | — | falta generarla |
-| Asad Bourbon | — | falta generarla |
-| Bad Boy Le Parfum | — | falta generarla |
-| Cedrat Boisé | — | falta generarla |
-| Dark Vanilla | — | falta generarla |
+| Dior Homme Intense (Eau de Parfum) | `MAHbzTLf_Co` | en `scenes/` |
+| The One for Men (Eau de Parfum) | `MAHbzVWiWLQ` | en `scenes/` |
+| 212 VIP Rosé (Eau de Parfum) | `MAHbzS5shvE` | en `scenes/` |
+| 9PM Night Out (Extrait de Parfum) | `MAHbzUeRXgc` | en `scenes/` |
+| Acqua di Giò Profondo (Eau de Parfum) | `MAHbze96ilA` | en `scenes/` |
+| Alexandria II (Parfum) | `MAHbzeNXtis` | en `scenes/` |
+| Asad | `MAHbzXUkTQA` | en `scenes/` |
+| Asad Bourbon | `MAHbzcupD_k` | en `scenes/` |
+| Bad Boy Le Parfum | `MAHbzq2st8A` | en `scenes/` |
+| Cedrat Boisé | `MAHbzvzcYxA` | falta bajarla |
+| Dark Vanilla | `MAHbzuLt0GY` | falta bajarla |
 | Dior Homme Parfum | — | falta generarla |
 | Eros Flame | — | falta generarla |
 | Gentleman Réserve Privée | — | falta generarla |
