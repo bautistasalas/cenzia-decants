@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Banner Cenzia Privé + 4x3 en toda la web</title>
+<!-- Banner del carrusel de la portada para la línea Cenzia Privé. Dos formatos con el mismo contenido:
+       banner.html              -> computadora, 1920 x 736
+       banner.html?f=celular    -> celular, 1920 x 1440 (4:3)
+       ...&promo=0              -> sin el aviso del 4x3
+     Se generan con:  cd banners && node render.js prive-4x3/banner.html
+     La foto (assets/prive-grupo.png) la arma grupo.py: nuestro envase adelante y tres perfumes de diseñador.
+     Texto según la guía de marca: "Cenzia Privé" es la línea, "inspiradas en" va en la bajada y la
+     aclaración de que no son los originales va siempre, en chico. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../base.css">
+<style>
+/* lo propio de este banner */
+.bajada{font-family:"Manrope",system-ui,sans-serif;font-weight:600;line-height:1.3;white-space:nowrap}
+.bajada b{font-weight:800}
+.aclara{font-family:"Manrope",system-ui,sans-serif;font-weight:500;color:#7a8694}
+.grupo{position:absolute;display:block}
+
+/* computadora */
+.txt{width:860px}
+.h1{font-size:112px;margin-bottom:8px}
+.bajada{font-size:29px;margin-bottom:36px}
+.feats{width:848px}
+.f svg{width:64px;height:64px;margin-bottom:12px}
+.f span{font-size:22.5px;line-height:1.34}
+.aclara{font-size:15.5px;margin-top:24px}
+.grupo{left:1034px;top:20px;height:694px}
+
+/* celular: el texto arriba a todo el ancho; abajo, las cuatro ventajas y la foto */
+.celular .txt{width:1640px;justify-content:flex-start;padding-top:104px}
+.celular .promo{display:flex;align-items:center;gap:44px;margin-bottom:36px}
+.celular .sub{margin:0}
+.celular .h1{font-size:186px;margin-bottom:4px}
+.celular .bajada{font-size:50px;margin-bottom:60px}
+.celular .feats{width:800px}
+.celular .f{padding:24px 8px 20px}
+.celular .f svg{width:96px;height:96px;margin-bottom:16px}
+.celular .f span{font-size:46px;line-height:1.28}
+.celular .aclara{font-size:33px;line-height:1.35;margin-top:44px;width:800px}
+.celular .grupo{left:958px;top:592px;height:784px}
+.sin-promo.celular .txt{padding-top:186px}   /* sin el aviso, el texto baja para quedar centrado con la foto */
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="txt">
+    <div class="promo">
+      <div class="pill"><b>4x3</b><i></i><span>EN TODA LA WEB</span></div>
+      <div class="sub">Llevás 4, pagás 3</div>
+    </div>
+    <div class="h1">Cenzia Privé</div>
+    <div class="bajada">Esencias de 60 ml <b>inspiradas en tus perfumes favoritos</b></div>
+    <div class="feats">
+      <div class="f">
+        <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M24 13.5V24l7 4.5"/></svg>
+        <span>8 a 10 horas<br>de duración</span>
+      </div>
+      <div class="f">
+        <svg viewBox="0 0 48 48"><path d="M24 5.5C19 12.5 11 21.6 11 29.5a13 13 0 0 0 26 0C37 21.6 29 12.5 24 5.5z"/><path d="M17.5 30.5a6.5 6.5 0 0 0 5.5 6"/></svg>
+        <span>Alta<br>concentración</span>
+      </div>
+      <div class="f">
+        <svg viewBox="0 0 48 48"><path d="M19 6h10M21 6v12.5L10.8 36.8A4 4 0 0 0 14.3 43h19.4a4 4 0 0 0 3.5-6.2L27 18.5V6"/><path d="M15.5 31h17"/></svg>
+        <span>Desarrolladas<br>en laboratorio</span>
+      </div>
+      <div class="f">
+        <svg viewBox="0 0 48 48"><rect x="18.5" y="5" width="11" height="6.5" rx="1.5"/><path d="M21.5 11.5V16M26.5 11.5V16"/><rect x="11" y="16" width="26" height="27" rx="5"/><path d="M24 24.5v10M19 29.5h10"/></svg>
+        <span>Más de 20<br>fragancias</span>
+      </div>
+    </div>
+    <div class="aclara">No son los perfumes originales ni productos oficiales de las marcas.</div>
+  </div>
+  <img class="grupo" src="../assets/prive-grupo.png" alt="">
+</div>
+<script>
+// ?f=celular arma la versión de celular; ?promo=0 saca el aviso del 4x3
+const q = new URLSearchParams(location.search);
+if (q.get('promo') === '0') document.documentElement.classList.add('sin-promo');
+if (q.get('f') === 'celular') document.documentElement.classList.add('celular');
+</script>
+</body>
+</html>

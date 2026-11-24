@@ -274,18 +274,36 @@ vía API con el scope actual del token — falta `write_scripts`).
   1920 x 736; celular en 4:3 (se entregan en 1920 x 1440). Son dos carruseles
   separados y Bautista los carga a mano desde el panel: la API no llega al
   diseño del tema.
-- Carpeta `banners/`: cada banner es un HTML (con `?f=celular` arma la versión
-  de celular) y `render.js` saca los dos PNG a `out/`, que no se versiona.
-  Uso: `cd banners && node render.js unico-4x3/banner.html`.
+- Carpeta `banners/`: `base.css` (lo común: pastilla de promoción, título,
+  fila de ventajas con íconos, los dos formatos), un HTML por banner y
+  `render.js`, que saca los PNG a `out/` (no se versiona). Uso:
+  `cd banners && node render.js unico-4x3/banner.html prive-4x3/banner.html`.
+  En el HTML, `?f=celular` arma la versión de celular y `?promo=0` saca el
+  aviso del 4x3 (`node render.js ... --sin-promo`), para cuando termine la
+  promoción.
 - `unico-4x3/` (pedido de Bautista, 2026-11-24): el banner "Único en el país"
   que ya estaba en la tienda, rehecho con la tipografía y el color de la marca
   y con el aviso "4x3 en toda la web". El frasco es el de ese mismo banner
   (`assets/decant-negro-inclinado.png`, recortado de la versión de celular).
   Dos cambios de texto propios, avisados: "Resistencia de caídas" pasó a
   "Resistente a caídas" y se sumó "Llevás 4, pagás 3" al lado del 4x3.
-- Avisado y sin resolver: el primer banner del carrusel de celular ("Extractos
-  Cenzia · La Fórmula Más Fiel del País") dice "Extractos", "Misma esencia que
-  el original" y "no imitación", que desde el 2026-11-16 no se usan.
+- `prive-4x3/` (mismo día: "uno para los extractos, mostrando nuestro envase
+  y 2-3 perfumes de diseñador"): título "Cenzia Privé", bajada con la frase
+  ya aprobada para redes ("Esencias de 60 ml inspiradas en tus perfumes
+  favoritos"), cuatro ventajas tomadas de la descripción de producto (8 a 10
+  horas, alta concentración, desarrolladas en laboratorio, más de 20
+  fragancias) y la aclaración en chico. La foto la arma `prive-4x3/grupo.py`:
+  nuestro envase adelante y, de `placas/src/`, Sauvage EDP, Stronger With You
+  Intensely y Born In Roma Intense (los tres están en la línea).
+- **Nuestro envase tiene dos versiones en las fotos de la tienda:** el de los
+  combos (vidrio con el isotipo y líquido) y el de las Esencias individuales
+  (transparente, con tapa blanca). En el banner va el de los combos:
+  `assets/envase-prive.png`, con transparencia, recortado de la foto del
+  Combo Intenso (sirve para otras piezas).
+- Este banner reemplaza al viejo del carrusel de celular ("Extractos Cenzia ·
+  La Fórmula Más Fiel del País"), que dice "Extractos", "Misma esencia que el
+  original" y "no imitación": desde el 2026-11-16 no se usan. Falta que
+  Bautista lo cambie en el panel.
 
 ## Fotografía de producto
 
