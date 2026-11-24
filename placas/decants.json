@@ -2946,5 +2946,1337 @@
     "bottle": "src/sauvage-elixir.webp",
     "scene": "scenes/sauvage-elixir.jpg",
     "scene_bg": "white"
+  },
+  {
+    "slug": "odyssey-mega",
+    "product_id": 327278854,
+    "linea": "decant",
+    "name": "Odyssey Mega",
+    "brand": "Armaf",
+    "sizes": "5 y 10 ml",
+    "reco": "Días de calor y uso diario. Cítrica y frutal, con fondo amaderado.",
+    "salida": "Jengibre · Bergamota · Naranja · Limón · Menta",
+    "salida_txt": "Cítrica, fresca y chispeante.",
+    "corazon": "Piña · Salvia · Enebro · Geranio",
+    "corazon_txt": "Frutal y aromático.",
+    "fondo": "Almizcle · Cedro · Vetiver · Haba tonka",
+    "fondo_txt": "Amaderado y limpio.",
+    "familia": "Amaderada · Aromática",
+    "intensidad": "Alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Naranja",
+        "detalle": "en mitades",
+        "en": "a halved orange"
+      },
+      {
+        "nombre": "Jengibre",
+        "detalle": "raíz",
+        "en": "fresh ginger root"
+      },
+      {
+        "nombre": "Piña",
+        "detalle": "en trozos",
+        "en": "fresh pineapple wedges"
+      },
+      {
+        "nombre": "Menta",
+        "detalle": "hojas",
+        "en": "fresh mint leaves"
+      }
+    ],
+    "bottle": "src/odyssey-mega.webp"
+  },
+  {
+    "slug": "one-million-parfum",
+    "product_id": 330478315,
+    "linea": "decant",
+    "name": "One Million Parfum",
+    "brand": "Rabanne",
+    "sizes": "5 y 10 ml",
+    "reco": "Salidas de noche y ocasiones especiales. Tuberosa salada y cuero: con mucha presencia.",
+    "salida": "Pomelo · Monoï · Acorde de sal marina",
+    "salida_txt": "Cítrica, solar y salada.",
+    "corazon": "Tuberosa salada · Pino · Cashmeran · Canela",
+    "corazon_txt": "Floral blanco, cremoso y cálido.",
+    "fondo": "Cuero solar · Labdanum · Ámbar amaderado · Vainilla · Haba tonka",
+    "fondo_txt": "Cuero suave, cálido y avainillado.",
+    "familia": "Cuero · Floral blanca",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Pomelo",
+        "detalle": "en mitades",
+        "en": "a halved pink grapefruit"
+      },
+      {
+        "nombre": "Tuberosa",
+        "detalle": "flores",
+        "en": "white tuberose flowers"
+      },
+      {
+        "nombre": "Sal marina",
+        "detalle": "cristales",
+        "en": "a small pile of coarse sea salt crystals"
+      },
+      {
+        "nombre": "Cuero",
+        "detalle": "tira",
+        "en": "a small rolled strip of tan leather"
+      }
+    ],
+    "bottle": "src/one-million-parfum.webp"
+  },
+  {
+    "slug": "paradise-garden",
+    "product_id": 293018576,
+    "linea": "decant",
+    "name": "Le Beau Paradise Garden",
+    "brand": "Jean Paul Gaultier",
+    "sizes": "5 y 10 ml",
+    "conc": "Eau de Parfum",
+    "reco": "Días de calor y vacaciones. Coco e higo verde: tropical, fresca y con personalidad.",
+    "salida": "Agua de coco",
+    "salida_txt": "Fresca, verde y acuática.",
+    "corazon": "Higo verde",
+    "corazon_txt": "Frutal y cremoso: es lo que más se siente.",
+    "fondo": "Sándalo",
+    "fondo_txt": "Cremoso y amaderado.",
+    "familia": "Verde · Amaderada",
+    "intensidad": "Alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Coco",
+        "detalle": "en mitades",
+        "en": "a halved coconut"
+      },
+      {
+        "nombre": "Higo verde",
+        "detalle": "en mitades",
+        "en": "fresh green figs, one cut in half"
+      },
+      {
+        "nombre": "Sándalo",
+        "detalle": "madera",
+        "en": "small pieces of sandalwood"
+      }
+    ],
+    "bottle": "src/paradise-garden.webp"
+  },
+  {
+    "slug": "radio-vintage",
+    "product_id": 293015910,
+    "linea": "decant",
+    "name": "Radio Vintage",
+    "brand": "Lattafa",
+    "sizes": "5 y 10 ml",
+    "reco": "De día o de noche, todo el año. Ciruela y maderas: cálida, elegante y distinta.",
+    "salida": "Lavanda · Salvia · Bergamota",
+    "salida_txt": "Aromática y fresca.",
+    "corazon": "Ciruela · Palo santo · Pimienta negra",
+    "corazon_txt": "Frutal y amaderado, con un toque especiado.",
+    "fondo": "Sándalo · Madera de ámbar",
+    "fondo_txt": "Cremoso, cálido y amaderado.",
+    "familia": "Amaderada · Aromática",
+    "intensidad": "Alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Ciruela",
+        "detalle": "madura",
+        "en": "a ripe purple plum"
+      },
+      {
+        "nombre": "Sándalo",
+        "detalle": "madera",
+        "en": "small pieces of sandalwood"
+      },
+      {
+        "nombre": "Pimienta negra",
+        "detalle": "granos",
+        "en": "a small pile of black peppercorns"
+      }
+    ],
+    "bottle": "src/radio-vintage.webp"
+  },
+  {
+    "slug": "sauvage-eau-de-toilette",
+    "product_id": 349023428,
+    "linea": "decant",
+    "name": "Sauvage",
+    "brand": "Dior",
+    "sizes": "5 y 10 ml",
+    "conc": "Eau de Toilette",
+    "reco": "Todo el año, de día o de noche. Fresca, especiada y muy versátil.",
+    "salida": "Bergamota de Calabria · Pimienta",
+    "salida_txt": "Cítrica, fresca y picante.",
+    "corazon": "Pimienta de Sichuan · Lavanda · Geranio · Elemí",
+    "corazon_txt": "Especiado y aromático.",
+    "fondo": "Ambroxan · Cedro · Labdanum",
+    "fondo_txt": "Ambarado, limpio y amaderado.",
+    "familia": "Aromática · Fougère",
+    "intensidad": "Alta · gran proyección",
+    "materias": [
+      {
+        "nombre": "Bergamota",
+        "detalle": "en mitades",
+        "en": "a halved green bergamot"
+      },
+      {
+        "nombre": "Pimienta de Sichuan",
+        "detalle": "granos",
+        "en": "a small pile of reddish Sichuan peppercorns"
+      },
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Cedro",
+        "detalle": "madera",
+        "en": "a few small pieces of cedar wood"
+      }
+    ],
+    "bottle": "src/sauvage-eau-de-toilette.webp"
+  },
+  {
+    "slug": "sauvage-parfum",
+    "product_id": 355036780,
+    "linea": "decant",
+    "name": "Sauvage Parfum",
+    "brand": "Dior",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches y días de frío. Cítrica al arrancar, cálida y avainillada al final.",
+    "salida": "Mandarina · Bergamota",
+    "salida_txt": "Cítrica, jugosa y luminosa.",
+    "corazon": "Sándalo · Cedro",
+    "corazon_txt": "Amaderado, suave y cremoso.",
+    "fondo": "Vainilla · Haba tonka",
+    "fondo_txt": "Cálido y envolvente.",
+    "familia": "Ambarada · Fougère",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Mandarina",
+        "detalle": "en gajos",
+        "en": "a peeled mandarin with a few loose segments"
+      },
+      {
+        "nombre": "Sándalo",
+        "detalle": "madera",
+        "en": "small pieces of sandalwood"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      },
+      {
+        "nombre": "Haba tonka",
+        "detalle": "habas",
+        "en": "dark tonka beans"
+      }
+    ],
+    "bottle": "src/sauvage-parfum.webp"
+  },
+  {
+    "slug": "scandal",
+    "product_id": 324225159,
+    "linea": "decant",
+    "name": "Scandal",
+    "brand": "Jean Paul Gaultier",
+    "sizes": "5 y 10 ml",
+    "conc": "Eau de Parfum",
+    "reco": "Noches, salidas y ocasiones especiales. Miel y gardenia: dulce, atrevida y femenina.",
+    "salida": "Gardenia",
+    "salida_txt": "Floral blanca y luminosa.",
+    "corazon": "Miel",
+    "corazon_txt": "Golosa y envolvente: es lo que más se siente.",
+    "fondo": "Pachulí",
+    "fondo_txt": "Terroso y elegante.",
+    "familia": "Chipre · Gourmand",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Gardenia",
+        "detalle": "flor",
+        "en": "a white gardenia flower"
+      },
+      {
+        "nombre": "Miel",
+        "detalle": "panal",
+        "en": "a small piece of honeycomb with honey"
+      },
+      {
+        "nombre": "Pachulí",
+        "detalle": "hojas",
+        "en": "dried patchouli leaves"
+      }
+    ],
+    "bottle": "src/scandal.webp"
+  },
+  {
+    "slug": "scandal-absolu",
+    "product_id": 293016151,
+    "linea": "decant",
+    "name": "Scandal Pour Homme Absolu",
+    "brand": "Jean Paul Gaultier",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches y días de frío. Castaña, sándalo y ciruela: golosa, cálida y con presencia.",
+    "salida": "Castaña",
+    "salida_txt": "Golosa y tostada.",
+    "corazon": "Sándalo",
+    "corazon_txt": "Cremoso y amaderado.",
+    "fondo": "Ciruela mirabel",
+    "fondo_txt": "Frutal, madura y envolvente.",
+    "familia": "Amaderada · Gourmand",
+    "intensidad": "Muy alta · estela fuerte",
+    "materias": [
+      {
+        "nombre": "Castaña",
+        "detalle": "enteras",
+        "en": "a few glossy chestnuts, one peeled"
+      },
+      {
+        "nombre": "Sándalo",
+        "detalle": "madera",
+        "en": "small pieces of sandalwood"
+      },
+      {
+        "nombre": "Ciruela mirabel",
+        "detalle": "enteras",
+        "en": "a few small yellow mirabelle plums"
+      }
+    ],
+    "bottle": "src/scandal-absolu.webp"
+  },
+  {
+    "slug": "stronger-with-you-absolutely",
+    "product_id": 295839634,
+    "linea": "decant",
+    "name": "Stronger With You Absolutely",
+    "brand": "Emporio Armani",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches y días de frío. Ron y vainilla: cálida, dulce y con mucha presencia.",
+    "salida": "Acorde de ron · Bergamota · Elemí",
+    "salida_txt": "Cálida y licorosa desde el arranque.",
+    "corazon": "Lavanda",
+    "corazon_txt": "Aromática y limpia.",
+    "fondo": "Vainilla · Cedro",
+    "fondo_txt": "Vainilla cálida sobre madera.",
+    "familia": "Ambarada · Fougère",
+    "intensidad": "Muy alta · estela fuerte",
+    "materias": [
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      },
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Cedro",
+        "detalle": "madera",
+        "en": "a few small pieces of cedar wood"
+      },
+      {
+        "nombre": "Bergamota",
+        "detalle": "en mitades",
+        "en": "a halved green bergamot"
+      }
+    ],
+    "bottle": "src/stronger-with-you-absolutely.webp"
+  },
+  {
+    "slug": "the-kingdom",
+    "product_id": 327282739,
+    "linea": "decant",
+    "name": "The Kingdom",
+    "brand": "Lattafa",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches y días de frío. Lavanda, vainilla y tabaco: dulce, cálida y elegante.",
+    "salida": "Lavanda · Menta · Salvia",
+    "salida_txt": "Aromática y fresca.",
+    "corazon": "Vainilla · Tabaco · Flor de azahar",
+    "corazon_txt": "Dulce y cálido, con un toque floral.",
+    "fondo": "Haba tonka · Benjuí · Labdanum",
+    "fondo_txt": "Resinoso, dulce y envolvente.",
+    "familia": "Aromática · Avainillada",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Menta",
+        "detalle": "hojas",
+        "en": "fresh mint leaves"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      },
+      {
+        "nombre": "Tabaco",
+        "detalle": "hojas",
+        "en": "dried tobacco leaves"
+      }
+    ],
+    "bottle": "src/the-kingdom.webp"
+  },
+  {
+    "slug": "wanted",
+    "product_id": 283329494,
+    "linea": "decant",
+    "name": "Wanted",
+    "brand": "Azzaro",
+    "sizes": "5 y 10 ml",
+    "conc": "Eau de Parfum",
+    "reco": "De día o de noche, todo el año. Especiada y amaderada: elegante y fácil de llevar.",
+    "salida": "Bayas de enebro",
+    "salida_txt": "Fresca, especiada y vibrante.",
+    "corazon": "Salvia",
+    "corazon_txt": "Aromático y limpio.",
+    "fondo": "Vetiver",
+    "fondo_txt": "Amaderado, seco y elegante.",
+    "familia": "Amaderada · Aromática",
+    "intensidad": "Alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Bayas de enebro",
+        "detalle": "bayas",
+        "en": "a small pile of dark blue juniper berries with a few green juniper sprigs"
+      },
+      {
+        "nombre": "Salvia",
+        "detalle": "hojas",
+        "en": "fresh sage leaves"
+      },
+      {
+        "nombre": "Vetiver",
+        "detalle": "raíces",
+        "en": "a small bundle of dried vetiver roots"
+      }
+    ],
+    "bottle": "src/wanted.webp"
+  },
+  {
+    "slug": "aventus",
+    "product_id": 335784104,
+    "linea": "decant",
+    "name": "Aventus",
+    "brand": "Creed",
+    "sizes": "5 y 10 ml",
+    "reco": "Todo el año, de día o de noche. Frutal y ahumada: elegante y con mucha presencia.",
+    "salida": "Bergamota de Calabria · Limón de Sicilia · Hoja de grosella negra",
+    "salida_txt": "Cítrica, verde y frutal.",
+    "corazon": "Piña · Pimienta rosa · Jazmín",
+    "corazon_txt": "Piña jugosa: es su sello.",
+    "fondo": "Abedul · Pachulí · Almizcle",
+    "fondo_txt": "Ahumado, amaderado y elegante.",
+    "familia": "Chipre · Frutal",
+    "intensidad": "Alta · gran proyección",
+    "materias": [
+      {
+        "nombre": "Piña",
+        "detalle": "en trozos",
+        "en": "fresh pineapple wedges"
+      },
+      {
+        "nombre": "Bergamota",
+        "detalle": "en mitades",
+        "en": "a halved green bergamot"
+      },
+      {
+        "nombre": "Grosella negra",
+        "detalle": "racimo",
+        "en": "a small cluster of blackcurrants"
+      },
+      {
+        "nombre": "Abedul",
+        "detalle": "corteza",
+        "en": "a few curls of white birch bark"
+      }
+    ],
+    "bottle": "src/aventus.webp"
+  },
+  {
+    "slug": "dior-homme-intense",
+    "product_id": 283332664,
+    "linea": "decant",
+    "name": "Dior Homme Intense",
+    "brand": "Dior",
+    "sizes": "5 y 10 ml",
+    "conc": "Eau de Parfum",
+    "reco": "Noches, citas y ocasiones especiales. Iris empolvado: sofisticada de verdad.",
+    "salida": "Iris de Toscana",
+    "salida_txt": "Empolvada y elegante.",
+    "corazon": "Ambreta",
+    "corazon_txt": "Almizclada y suave.",
+    "fondo": "Cedro de Virginia",
+    "fondo_txt": "Amaderado y seco.",
+    "familia": "Ambarada · Amaderada",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Iris",
+        "detalle": "flor",
+        "en": "a purple iris flower"
+      },
+      {
+        "nombre": "Cedro",
+        "detalle": "madera",
+        "en": "a few small pieces of cedar wood"
+      },
+      {
+        "nombre": "Ambreta",
+        "detalle": "semillas",
+        "en": "a small pile of small brown ambrette seeds"
+      }
+    ],
+    "bottle": "src/dior-homme-intense.webp"
+  },
+  {
+    "slug": "the-one-for-men",
+    "product_id": 350388499,
+    "linea": "decant",
+    "name": "The One for Men",
+    "brand": "Dolce&Gabbana",
+    "sizes": "5 y 10 ml",
+    "conc": "Eau de Parfum",
+    "reco": "Noches, citas y ocasiones especiales. Cálida, ambarada y elegante.",
+    "salida": "Naranja tarocco · Albahaca · Bergamota",
+    "salida_txt": "Cítrica y aromática.",
+    "corazon": "Salvia esclarea · Flor de azahar · Lavanda",
+    "corazon_txt": "Aromático y limpio.",
+    "fondo": "Sándalo australiano · Ámbar · Cedro",
+    "fondo_txt": "Cálido, ambarado y amaderado.",
+    "familia": "Amaderada · Especiada",
+    "intensidad": "Alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Naranja tarocco",
+        "detalle": "en mitades",
+        "en": "a halved blood orange"
+      },
+      {
+        "nombre": "Albahaca",
+        "detalle": "hojas",
+        "en": "fresh basil leaves"
+      },
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Sándalo",
+        "detalle": "madera",
+        "en": "small pieces of sandalwood"
+      }
+    ],
+    "bottle": "src/the-one-for-men.webp"
+  },
+  {
+    "slug": "212-vip-rose",
+    "product_id": 355046628,
+    "linea": "decant",
+    "name": "212 VIP Rosé",
+    "brand": "Carolina Herrera",
+    "sizes": "5 y 10 ml",
+    "conc": "Eau de Parfum",
+    "reco": "Salidas, fiestas y ocasiones especiales. Chispeante, floral y muy femenina.",
+    "salida": "Champagne rosé · Pimienta rosa",
+    "salida_txt": "Chispeante y festiva.",
+    "corazon": "Flor de durazno · Rosa",
+    "corazon_txt": "Floral, frutal y femenino.",
+    "fondo": "Queenwood · Almizcle",
+    "fondo_txt": "Amaderado suave y almizclado.",
+    "familia": "Floral · Frutal",
+    "intensidad": "Media-alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Rosa",
+        "detalle": "flor y pétalos",
+        "en": "a pink rose with a few loose petals"
+      },
+      {
+        "nombre": "Flor de durazno",
+        "detalle": "rama",
+        "en": "a small branch of pink peach blossoms"
+      },
+      {
+        "nombre": "Pimienta rosa",
+        "detalle": "granos",
+        "en": "a small pile of pink peppercorns"
+      }
+    ],
+    "bottle": "src/212-vip-rose.webp"
+  },
+  {
+    "slug": "9pm-night-out",
+    "product_id": 355038778,
+    "linea": "decant",
+    "name": "9PM Night Out",
+    "brand": "Afnan",
+    "sizes": "5 y 10 ml",
+    "conc": "Extrait de Parfum",
+    "reco": "Salidas de noche y días de frío. Frutal, dulce y especiada: se hace notar.",
+    "salida": "Pitahaya · Bergamota · Coñac · Lavanda · Manzana",
+    "salida_txt": "Frutal, licorosa y aromática.",
+    "corazon": "Cardamomo · Mahonial · Gamuza · Toffee · Cedro",
+    "corazon_txt": "Especiado y goloso, con un toque de gamuza.",
+    "fondo": "Haba tonka · Akigalawood · Ambrofix · Pachulí",
+    "fondo_txt": "Amaderado, dulce y moderno.",
+    "familia": "Amaderada · Frutal",
+    "intensidad": "Muy alta · estela fuerte",
+    "materias": [
+      {
+        "nombre": "Pitahaya",
+        "detalle": "en mitades",
+        "en": "a halved pink dragon fruit"
+      },
+      {
+        "nombre": "Manzana roja",
+        "detalle": "en mitades",
+        "en": "a red apple, one half cut"
+      },
+      {
+        "nombre": "Cardamomo",
+        "detalle": "vainas",
+        "en": "green cardamom pods"
+      },
+      {
+        "nombre": "Toffee",
+        "detalle": "trozos",
+        "en": "a few pieces of toffee caramel"
+      }
+    ],
+    "bottle": "src/9pm-night-out.webp"
+  },
+  {
+    "slug": "acqua-di-gio-profondo",
+    "product_id": 316320665,
+    "linea": "decant",
+    "name": "Acqua di Giò Profondo",
+    "brand": "Giorgio Armani",
+    "sizes": "5 y 10 ml",
+    "conc": "Eau de Parfum",
+    "reco": "Todo el año, de día o de noche. Marina, fresca y elegante.",
+    "salida": "Notas marinas · Bergamota · Mandarina verde",
+    "salida_txt": "Marina, cítrica y fresca.",
+    "corazon": "Romero · Lavanda · Ciprés · Lentisco",
+    "corazon_txt": "Aromático y verde.",
+    "fondo": "Ámbar mineral · Pachulí · Almizcle",
+    "fondo_txt": "Mineral, limpio y amaderado.",
+    "familia": "Aromática · Acuática",
+    "intensidad": "Alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Mandarina verde",
+        "detalle": "enteras",
+        "en": "green mandarins, one peeled"
+      },
+      {
+        "nombre": "Romero",
+        "detalle": "ramitas",
+        "en": "fresh rosemary sprigs"
+      },
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Sal marina",
+        "detalle": "cristales",
+        "en": "a small pile of coarse sea salt crystals"
+      }
+    ],
+    "bottle": "src/acqua-di-gio-profondo.webp"
+  },
+  {
+    "slug": "alexandria-ii",
+    "product_id": 351848878,
+    "linea": "decant",
+    "name": "Alexandria II",
+    "brand": "Xerjoff",
+    "sizes": "5 y 10 ml",
+    "conc": "Parfum",
+    "reco": "Noches y ocasiones especiales. Oud suave, vainilla y especias: elegante y con presencia.",
+    "salida": "Manzana · Canela · Lavanda · Palo de rosa",
+    "salida_txt": "Frutal y especiada.",
+    "corazon": "Cedro · Lirio de los valles · Rosa búlgara",
+    "corazon_txt": "Floral y amaderado.",
+    "fondo": "Ámbar · Oud de Laos · Almizcle · Sándalo · Vainilla",
+    "fondo_txt": "Oud cremoso, avainillado y envolvente.",
+    "familia": "Ambarada · Amaderada",
+    "intensidad": "Muy alta · estela fuerte",
+    "materias": [
+      {
+        "nombre": "Manzana roja",
+        "detalle": "en mitades",
+        "en": "a red apple, one half cut"
+      },
+      {
+        "nombre": "Canela",
+        "detalle": "ramas",
+        "en": "cinnamon sticks"
+      },
+      {
+        "nombre": "Oud",
+        "detalle": "madera",
+        "en": "dark agarwood chips"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/alexandria-ii.webp"
+  },
+  {
+    "slug": "asad",
+    "product_id": 283334922,
+    "linea": "decant",
+    "name": "Asad",
+    "brand": "Lattafa",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches y días de frío. Especiada, ambarada y avainillada: deja estela.",
+    "salida": "Pimienta negra · Tabaco · Piña",
+    "salida_txt": "Especiada, con un toque frutal.",
+    "corazon": "Pachulí · Café · Iris",
+    "corazon_txt": "Oscuro y elegante.",
+    "fondo": "Vainilla · Ámbar · Maderas secas · Benjuí · Labdanum",
+    "fondo_txt": "Avainillado, cálido y resinoso.",
+    "familia": "Ambarada · Especiada",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Pimienta negra",
+        "detalle": "granos",
+        "en": "a small pile of black peppercorns"
+      },
+      {
+        "nombre": "Tabaco",
+        "detalle": "hojas",
+        "en": "dried tobacco leaves"
+      },
+      {
+        "nombre": "Café",
+        "detalle": "granos",
+        "en": "roasted coffee beans"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/asad.webp"
+  },
+  {
+    "slug": "asad-bourbon",
+    "product_id": 283339631,
+    "linea": "decant",
+    "name": "Asad Bourbon",
+    "brand": "Lattafa",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches y días de frío. Cacao, lavanda y vainilla: dulce, cálida y adictiva.",
+    "salida": "Pimienta rosa · Lavanda · Ciruela mirabel",
+    "salida_txt": "Aromática, frutal y especiada.",
+    "corazon": "Cacao · Davana · Nuez moscada",
+    "corazon_txt": "Cacao especiado: goloso y cálido.",
+    "fondo": "Vetiver · Vainilla bourbon · Ámbar",
+    "fondo_txt": "Avainillado, cálido y envolvente.",
+    "familia": "Ambarada · Especiada",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Ciruela mirabel",
+        "detalle": "enteras",
+        "en": "a few small yellow mirabelle plums"
+      },
+      {
+        "nombre": "Cacao",
+        "detalle": "granos",
+        "en": "a small pile of roasted cacao beans"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/asad-bourbon.webp"
+  },
+  {
+    "slug": "bad-boy-le-parfum",
+    "product_id": 350388887,
+    "linea": "decant",
+    "name": "Bad Boy Le Parfum",
+    "brand": "Carolina Herrera",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches y salidas. Cuero, pimienta y pomelo: intensa y con actitud.",
+    "salida": "Pomelo · Cáñamo",
+    "salida_txt": "Cítrica y verde.",
+    "corazon": "Pimienta negra · Geranio",
+    "corazon_txt": "Especiado y aromático.",
+    "fondo": "Cuero · Vetiver",
+    "fondo_txt": "Cuero amaderado, seco y elegante.",
+    "familia": "Cuero · Aromática",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Pomelo",
+        "detalle": "en mitades",
+        "en": "a halved pink grapefruit"
+      },
+      {
+        "nombre": "Pimienta negra",
+        "detalle": "granos",
+        "en": "a small pile of black peppercorns"
+      },
+      {
+        "nombre": "Geranio",
+        "detalle": "flores y hojas",
+        "en": "pink geranium flowers with green leaves"
+      },
+      {
+        "nombre": "Cuero",
+        "detalle": "tira",
+        "en": "a small rolled strip of dark brown leather"
+      }
+    ],
+    "bottle": "src/bad-boy-le-parfum.webp"
+  },
+  {
+    "slug": "cedrat-boise",
+    "product_id": 330479094,
+    "linea": "decant",
+    "name": "Cedrat Boisé",
+    "brand": "Mancera",
+    "sizes": "5 y 10 ml",
+    "reco": "Todo el año, de día o de noche. Cítrica, frutal y amaderada: fresca pero con carácter.",
+    "salida": "Cítricos de Sicilia · Grosella negra · Especias frías",
+    "salida_txt": "Cítrica, frutal y chispeante.",
+    "corazon": "Jazmín acuático · Hojas de pachulí",
+    "corazon_txt": "Floral, fresco y limpio.",
+    "fondo": "Maderas · Cuero · Musgo de roble · Vainilla",
+    "fondo_txt": "Amaderado, con cuero suave y vainilla.",
+    "familia": "Cítrica · Aromática",
+    "intensidad": "Alta · gran proyección",
+    "materias": [
+      {
+        "nombre": "Limón",
+        "detalle": "en mitades",
+        "en": "a halved lemon"
+      },
+      {
+        "nombre": "Grosella negra",
+        "detalle": "racimo",
+        "en": "a small cluster of blackcurrants"
+      },
+      {
+        "nombre": "Jazmín",
+        "detalle": "flores",
+        "en": "white jasmine flowers"
+      },
+      {
+        "nombre": "Cuero",
+        "detalle": "tira",
+        "en": "a small rolled strip of dark brown leather"
+      }
+    ],
+    "bottle": "src/cedrat-boise.webp"
+  },
+  {
+    "slug": "dark-vanilla",
+    "product_id": 362729287,
+    "linea": "decant",
+    "name": "Dark Vanilla",
+    "brand": "Montale",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches y días de frío. Vainilla oscura con oud y especias: nada empalagosa.",
+    "salida": "Pimienta rosa · Azafrán · Comino · Cardamomo · Limón · Cilantro",
+    "salida_txt": "Especiada e intensa.",
+    "corazon": "Sándalo · Cuero · Oud · Pachulí",
+    "corazon_txt": "Amaderado, oscuro y con cuero.",
+    "fondo": "Vainilla · Ámbar",
+    "fondo_txt": "Vainilla oscura y envolvente.",
+    "familia": "Ambarada · Avainillada",
+    "intensidad": "Muy alta · estela fuerte",
+    "materias": [
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      },
+      {
+        "nombre": "Azafrán",
+        "detalle": "hebras",
+        "en": "a small pile of red saffron threads"
+      },
+      {
+        "nombre": "Cardamomo",
+        "detalle": "vainas",
+        "en": "green cardamom pods"
+      },
+      {
+        "nombre": "Oud",
+        "detalle": "madera",
+        "en": "dark agarwood chips"
+      }
+    ],
+    "bottle": "src/dark-vanilla.webp"
+  },
+  {
+    "slug": "dior-homme-parfum",
+    "product_id": 350389091,
+    "linea": "decant",
+    "name": "Dior Homme Parfum",
+    "brand": "Dior",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches y ocasiones especiales. Iris y ámbar: densa, elegante y con mucha presencia.",
+    "salida": "Iris",
+    "salida_txt": "Empolvada y elegante.",
+    "corazon": "Ámbar",
+    "corazon_txt": "Ambarado, cálido y envolvente.",
+    "fondo": "Pachulí · Vetiver",
+    "fondo_txt": "Terroso, amaderado y profundo.",
+    "familia": "Ambarada · Amaderada",
+    "intensidad": "Muy alta · estela fuerte",
+    "materias": [
+      {
+        "nombre": "Iris",
+        "detalle": "flor",
+        "en": "a purple iris flower"
+      },
+      {
+        "nombre": "Ámbar",
+        "detalle": "resina",
+        "en": "pieces of golden amber resin"
+      },
+      {
+        "nombre": "Pachulí",
+        "detalle": "hojas",
+        "en": "dried patchouli leaves"
+      },
+      {
+        "nombre": "Vetiver",
+        "detalle": "raíces",
+        "en": "a small bundle of dried vetiver roots"
+      }
+    ],
+    "bottle": "src/dior-homme-parfum.webp"
+  },
+  {
+    "slug": "eros-flame",
+    "product_id": 282036231,
+    "linea": "decant",
+    "name": "Eros Flame",
+    "brand": "Versace",
+    "sizes": "5 y 10 ml",
+    "reco": "Salidas de noche y días frescos. Cítrica y especiada, con fondo avainillado.",
+    "salida": "Chinotto · Pimienta negra de Madagascar",
+    "salida_txt": "Cítrica, amarga y picante.",
+    "corazon": "Romero silvestre · Pepperwood",
+    "corazon_txt": "Aromático y especiado.",
+    "fondo": "Pachulí · Vetiver de Haití · Vainilla",
+    "fondo_txt": "Amaderado, con vainilla cálida.",
+    "familia": "Amaderada · Especiada",
+    "intensidad": "Alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Chinotto",
+        "detalle": "enteros",
+        "en": "a few small bitter chinotto oranges, one cut in half"
+      },
+      {
+        "nombre": "Pimienta negra",
+        "detalle": "granos",
+        "en": "a small pile of black peppercorns"
+      },
+      {
+        "nombre": "Romero",
+        "detalle": "ramitas",
+        "en": "fresh rosemary sprigs"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/eros-flame.webp"
+  },
+  {
+    "slug": "gentleman-reserve-privee",
+    "product_id": 283340186,
+    "linea": "decant",
+    "name": "Gentleman Réserve Privée",
+    "brand": "Givenchy",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches, citas y días de frío. Whisky, castaña e iris: cálida y muy elegante.",
+    "salida": "Bergamota · Absoluto de whisky",
+    "salida_txt": "Cítrica y licorosa.",
+    "corazon": "Castaña · Iris · Benjuí",
+    "corazon_txt": "Empolvado, cálido y goloso.",
+    "fondo": "Cedro · Vetiver · Pachulí",
+    "fondo_txt": "Amaderado y elegante.",
+    "familia": "Ambarada · Amaderada",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Castaña",
+        "detalle": "enteras",
+        "en": "a few glossy chestnuts, one peeled"
+      },
+      {
+        "nombre": "Iris",
+        "detalle": "flor",
+        "en": "a purple iris flower"
+      },
+      {
+        "nombre": "Bergamota",
+        "detalle": "en mitades",
+        "en": "a halved green bergamot"
+      },
+      {
+        "nombre": "Benjuí",
+        "detalle": "resina",
+        "en": "pieces of golden benzoin resin"
+      }
+    ],
+    "bottle": "src/gentleman-reserve-privee.webp"
+  },
+  {
+    "slug": "gentleman-society",
+    "product_id": 327277957,
+    "linea": "decant",
+    "name": "Gentleman Society",
+    "brand": "Givenchy",
+    "sizes": "5 y 10 ml",
+    "reco": "De día o de noche, todo el año. Elegante y moderna, con un narciso que la hace distinta.",
+    "salida": "Salvia · Cardamomo",
+    "salida_txt": "Aromática y especiada.",
+    "corazon": "Narciso · Vetiver",
+    "corazon_txt": "Floral verde, con carácter.",
+    "fondo": "Cedro · Sándalo · Vainilla",
+    "fondo_txt": "Amaderado, cremoso y avainillado.",
+    "familia": "Amaderada · Aromática",
+    "intensidad": "Alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Salvia",
+        "detalle": "hojas",
+        "en": "fresh sage leaves"
+      },
+      {
+        "nombre": "Cardamomo",
+        "detalle": "vainas",
+        "en": "green cardamom pods"
+      },
+      {
+        "nombre": "Narciso",
+        "detalle": "flores",
+        "en": "white narcissus flowers with yellow centers"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/gentleman-society.webp"
+  },
+  {
+    "slug": "hawas-black",
+    "product_id": 327281803,
+    "linea": "decant",
+    "name": "Hawas Black",
+    "brand": "Rasasi",
+    "sizes": "5 y 10 ml",
+    "reco": "Salidas y uso diario. Frutal al arrancar, amaderada y oscura al final.",
+    "salida": "Bergamota · Piña · Pomelo",
+    "salida_txt": "Frutal, cítrica y jugosa.",
+    "corazon": "Pachulí · Cedro · Jazmín",
+    "corazon_txt": "Amaderado, con un toque floral.",
+    "fondo": "Musgo de roble · Maderas · Ámbar",
+    "fondo_txt": "Amaderado, oscuro y elegante.",
+    "familia": "Aromática · Frutal",
+    "intensidad": "Alta · gran proyección",
+    "materias": [
+      {
+        "nombre": "Piña",
+        "detalle": "en trozos",
+        "en": "fresh pineapple wedges"
+      },
+      {
+        "nombre": "Pomelo",
+        "detalle": "en mitades",
+        "en": "a halved pink grapefruit"
+      },
+      {
+        "nombre": "Bergamota",
+        "detalle": "en mitades",
+        "en": "a halved green bergamot"
+      },
+      {
+        "nombre": "Jazmín",
+        "detalle": "flores",
+        "en": "white jasmine flowers"
+      }
+    ],
+    "bottle": "src/hawas-black.webp"
+  },
+  {
+    "slug": "hawas-fire",
+    "product_id": 327280346,
+    "linea": "decant",
+    "name": "Hawas Fire",
+    "brand": "Rasasi",
+    "sizes": "5 y 10 ml",
+    "reco": "Salidas y días de calor. Marina y ambarada: fresca, pero con cuerpo.",
+    "salida": "Salvia esclarea",
+    "salida_txt": "Aromática y fresca.",
+    "corazon": "Jazmín egipcio · Notas marinas",
+    "corazon_txt": "Floral, limpio y marino.",
+    "fondo": "Ámbar gris · Ámbar mineral",
+    "fondo_txt": "Salado, mineral y cálido.",
+    "familia": "Aromática · Acuática",
+    "intensidad": "Alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Salvia",
+        "detalle": "hojas",
+        "en": "fresh sage leaves"
+      },
+      {
+        "nombre": "Jazmín",
+        "detalle": "flores",
+        "en": "white jasmine flowers"
+      },
+      {
+        "nombre": "Sal marina",
+        "detalle": "cristales",
+        "en": "a small pile of coarse sea salt crystals"
+      },
+      {
+        "nombre": "Ámbar",
+        "detalle": "resina",
+        "en": "pieces of golden amber resin"
+      }
+    ],
+    "bottle": "src/hawas-fire.webp"
+  },
+  {
+    "slug": "invictus-victory-elixir",
+    "product_id": 293015436,
+    "linea": "decant",
+    "name": "Invictus Victory Elixir",
+    "brand": "Rabanne",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches y días de frío. Tonka, incienso y maderas: intensa y adictiva.",
+    "salida": "Haba tonka",
+    "salida_txt": "Cálida y dulce, con un toque de almendra.",
+    "corazon": "Incienso",
+    "corazon_txt": "Ahumado y resinoso.",
+    "fondo": "Maderas opulentas",
+    "fondo_txt": "Amaderado, denso y envolvente.",
+    "familia": "Ambarada · Amaderada",
+    "intensidad": "Muy alta · estela fuerte",
+    "materias": [
+      {
+        "nombre": "Haba tonka",
+        "detalle": "habas",
+        "en": "dark tonka beans"
+      },
+      {
+        "nombre": "Incienso",
+        "detalle": "resina",
+        "en": "small pieces of frankincense resin"
+      },
+      {
+        "nombre": "Madera",
+        "detalle": "trozos",
+        "en": "small pieces of dark wood"
+      }
+    ],
+    "bottle": "src/invictus-victory-elixir.webp"
+  },
+  {
+    "slug": "la-nuit-de-l-homme",
+    "product_id": 342046596,
+    "linea": "decant",
+    "name": "La Nuit de l'Homme",
+    "brand": "Yves Saint Laurent",
+    "sizes": "5 y 10 ml",
+    "conc": "Eau de Toilette",
+    "reco": "Noches, citas y ocasiones especiales. Cardamomo y lavanda: seductora y elegante.",
+    "salida": "Cardamomo",
+    "salida_txt": "Especiada y fresca.",
+    "corazon": "Lavanda · Cedro de Virginia · Bergamota",
+    "corazon_txt": "Aromático y elegante.",
+    "fondo": "Vetiver · Alcaravea",
+    "fondo_txt": "Amaderado y suave.",
+    "familia": "Amaderada · Especiada",
+    "intensidad": "Media · estela suave",
+    "materias": [
+      {
+        "nombre": "Cardamomo",
+        "detalle": "vainas",
+        "en": "green cardamom pods"
+      },
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Bergamota",
+        "detalle": "en mitades",
+        "en": "a halved green bergamot"
+      },
+      {
+        "nombre": "Cedro",
+        "detalle": "madera",
+        "en": "a few small pieces of cedar wood"
+      }
+    ],
+    "bottle": "src/la-nuit-de-l-homme.webp"
+  },
+  {
+    "slug": "layton-exclusif",
+    "product_id": 344669870,
+    "linea": "decant",
+    "name": "Layton Exclusif",
+    "brand": "Parfums de Marly",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches y ocasiones especiales. Oud, cuero y lavanda: oscura, elegante y con presencia.",
+    "salida": "Bergamota · Pimienta rosa · Cardamomo",
+    "salida_txt": "Cítrica y especiada.",
+    "corazon": "Geranio · Lavanda · Lavandín",
+    "corazon_txt": "Aromático y elegante.",
+    "fondo": "Oud · Sándalo · Pachulí · Cuero",
+    "fondo_txt": "Oud y cuero: oscuro, amaderado y profundo.",
+    "familia": "Ambarada · Amaderada",
+    "intensidad": "Muy alta · estela fuerte",
+    "materias": [
+      {
+        "nombre": "Bergamota",
+        "detalle": "en mitades",
+        "en": "a halved green bergamot"
+      },
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Oud",
+        "detalle": "madera",
+        "en": "dark agarwood chips"
+      },
+      {
+        "nombre": "Cuero",
+        "detalle": "tira",
+        "en": "a small rolled strip of dark brown leather"
+      }
+    ],
+    "bottle": "src/layton-exclusif.webp"
+  },
+  {
+    "slug": "le-beau",
+    "product_id": 344667717,
+    "linea": "decant",
+    "name": "Le Beau",
+    "brand": "Jean Paul Gaultier",
+    "sizes": "5 y 10 ml",
+    "conc": "Eau de Toilette",
+    "reco": "Días de calor, playa y vacaciones. Coco y tonka: fresca, dulce y tropical.",
+    "salida": "Bergamota",
+    "salida_txt": "Cítrica y luminosa.",
+    "corazon": "Madera de coco",
+    "corazon_txt": "Coco cremoso: es lo que más se siente.",
+    "fondo": "Haba tonka",
+    "fondo_txt": "Dulce, cálida y envolvente.",
+    "familia": "Amaderada · Aromática",
+    "intensidad": "Media-alta · buena duración",
+    "materias": [
+      {
+        "nombre": "Bergamota",
+        "detalle": "en mitades",
+        "en": "a halved green bergamot"
+      },
+      {
+        "nombre": "Coco",
+        "detalle": "en mitades",
+        "en": "a halved coconut"
+      },
+      {
+        "nombre": "Haba tonka",
+        "detalle": "habas",
+        "en": "dark tonka beans"
+      }
+    ],
+    "bottle": "src/le-beau.webp"
+  },
+  {
+    "slug": "le-male-le-parfum",
+    "product_id": 283340992,
+    "linea": "decant",
+    "name": "Le Male Le Parfum",
+    "brand": "Jean Paul Gaultier",
+    "sizes": "5 y 10 ml",
+    "reco": "Noches, citas y días de frío. Cardamomo, lavanda y vainilla: elegante y muy rendidora.",
+    "salida": "Cardamomo",
+    "salida_txt": "Especiada e intensa.",
+    "corazon": "Lavanda · Iris",
+    "corazon_txt": "Aromático y empolvado.",
+    "fondo": "Vainilla",
+    "fondo_txt": "Vainilla cálida y envolvente.",
+    "familia": "Ambarada · Amaderada",
+    "intensidad": "Alta · muy duradero",
+    "materias": [
+      {
+        "nombre": "Cardamomo",
+        "detalle": "vainas",
+        "en": "green cardamom pods"
+      },
+      {
+        "nombre": "Lavanda",
+        "detalle": "ramitos",
+        "en": "fresh lavender sprigs"
+      },
+      {
+        "nombre": "Iris",
+        "detalle": "flor",
+        "en": "a purple iris flower"
+      },
+      {
+        "nombre": "Vainilla",
+        "detalle": "vainas",
+        "en": "dark vanilla pods"
+      }
+    ],
+    "bottle": "src/le-male-le-parfum.webp"
   }
 ]
