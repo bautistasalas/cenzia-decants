@@ -219,6 +219,41 @@ vía API con el scope actual del token — falta `write_scripts`).
 - La página pública tarda unos minutos en mostrar una foto recién subida (la
   API ya la devuelve, pero el HTML de la tienda sale de caché).
 
+## Placas de los Decants Originales
+
+- Bautista pidió la misma placa para los decants individuales ("seguí con los
+  demás perfumes que tenemos en el catálogo individuales", 2026-11-20). Son
+  los 66 decants en stock: datos en `placas/decants.json`, mismo `card.html`
+  (variante `linea: "decant"`: dice "Decant de…", pill "Original" y
+  "Decant original · 5 y 10 ml"). Se generan con
+  `cd placas && node render.js [slug] final --datos decants.json` y salen como
+  `out/decant-{slug}-final.png`.
+- En cada decant la placa nueva **reemplaza a la vieja placa de "acordes
+  principales"** y queda en su mismo lugar de la galería. Antes de borrar nada
+  se guardó una copia de las 66: `placas/respaldo-acordes/{id}.{ext}` y
+  `placas/acordes-respaldo.json` (qué foto era y en qué posición).
+- `scripts/upload-placas-decants.py`: sin argumentos muestra el plan; con
+  `--subir [ids]` sube la placa, borra solo la foto anotada en el respaldo y
+  la deja en la misma posición; `--restaurar <id>` vuelve a subir la placa de
+  acordes guardada.
+- Al 2026-11-24 están subidas **65 de 66**. Falta **Spicebomb Extreme**: el
+  generador de Canva rechazó la foto (frasco con forma de granada) y no se
+  insistió cambiando el texto; ese producto conserva su placa de acordes hasta
+  que Bautista decida cómo resolverlo.
+- 13 decants reusan la foto de su Esencia Privé; para los otros se generó una
+  foto nueva en su Canva (detalle, identificadores y cómo destrabar los
+  permisos de Canva en `placas/FUENTES.md`).
+- **Las notas de las placas nuevas salen de la pirámide publicada** (marca,
+  Fragrantica, Parfumo), no de la descripción del producto, porque varias
+  descripciones de decants tienen notas que no son de ese perfume: Chocolate
+  Dubai, Aqua Dubai, His Confession, Le Male Elixir Absolu, Eros EDT, Sauvage
+  EDP, Stronger With You Intensely, Y, The Most Wanted Parfum, Uomo Born In
+  Roma Extradose, Divine Le Parfum, Acqua di Giò Profondo Parfum, Vulcan Feu y
+  Yara. Las descripciones no se tocaron: se le avisó a Bautista y decide él.
+- "Roses Musk – Montale": la foto principal de la tienda (y por eso la de la
+  placa) muestra el frasco de **Intense** Roses Musk (extrait). El nombre del
+  producto no se cambió; falta que Bautista diga cuál de los dos vende.
+
 ## Fotografía de producto
 
 Estilo de imagen principal establecido en este proyecto (ver

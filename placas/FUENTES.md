@@ -52,7 +52,7 @@ que él había generado en Runway también se reemplazó.
 | Sauvage Elixir | `MAHbd9Ht6bo` |
 | Bleu de Chanel | `MAHbdwJClls` |
 
-## Fotos de los Decants Originales (2026-11-21 a 23)
+## Fotos de los Decants Originales (2026-11-21 a 24)
 
 Los 66 decants en stock llevan la misma placa (`decants.json`, variante
 `linea: "decant"` de `card.html`). 13 reusan la foto de su Esencia Privé (es el
@@ -65,71 +65,70 @@ Las notas de estas 53 placas no salen de la descripción del producto sino de
 la pirámide publicada por la marca o por Fragrantica/Parfumo, porque varias
 descripciones de decants tienen notas que no son de ese perfume.
 
-| Perfume | Identificador en Canva | Estado |
-|---|---|---|
-| Costa Azzurra Parfum | `MAHbp5HyXRo` | en `scenes/` |
-| 9AM Dive | `MAHbgGuvbNE` | en `scenes/` |
-| 9PM | `MAHbp0TFlFU` | en `scenes/` |
-| 9PM Rebel | `MAHbp9JUGMg` | en `scenes/` |
-| Acqua di Giò Profondo Parfum | `MAHbp1Yur4Y` | en `scenes/` |
-| Acqua di Giò Parfum | `MAHbp1Vnx6Y` | en `scenes/` |
-| Amber Oud Dubai Night | `MAHbp60XwsY` | en `scenes/` |
-| Amber Oud Aqua Dubai | `MAHbpybw2sc` | en `scenes/` |
-| Armani Code | `MAHbp_Re5pA` | en `scenes/` |
-| Man In Black | `MAHbpx7oG-o` | en `scenes/` |
-| Odyssey Dubai Chocolat | `MAHbp2W6tdg` | en `scenes/` |
-| Divine Le Parfum | `MAHbp3jqSIA` | en `scenes/` |
-| Dylan Blue | `MAHbp5FFZYY` | en `scenes/` |
-| Eros Eau de Parfum | `MAHbgDY9cQE` | en `scenes/` |
-| Eros Eau de Toilette | `MAHbp3fFs8k` | en `scenes/` |
-| Fakhar Black | `MAHbp4ptzMo` | en `scenes/` |
-| Fakhar Rose | `MAHbp7qMF34` | en `scenes/` |
-| Fame | `MAHbp-2GEXg` | en `scenes/` |
-| Good Girl Blush | `MAHbpz0y8Zc` | falta bajarla |
-| Hawas Ice | `MAHbh7PL-HI` | en `scenes/` |
-| Hawas Malibu | `MAHbp619XsI` | falta bajarla |
-| Hawas | `MAHbhwVYYPE` | en `scenes/` |
-| Hawas Tropical | `MAHbp3pMgSQ` | falta bajarla |
-| His Confession | `MAHbp07S_Ao` | falta bajarla |
-| Honor & Glory | `MAHbh7S95Ww` | en `scenes/` |
-| Intense Café | `MAHbqEB4FAI` | falta bajarla |
-| Jean Lowe Immortel | `MAHbqIkYyfY` | falta bajarla |
-| Khamrah | `MAHbqNXTLjE` | falta bajarla |
-| Khamrah Qahwa | `MAHbqOk2FwI` | falta bajarla |
-| Layton | `MAHbgL_PnlY` | en `scenes/` |
-| Le Beau Le Parfum | `MAHbh0tvtMk` | en `scenes/` |
-| Le Male Elixir Absolu | `MAHbqLREgzs` | falta bajarla |
-| Libre | `MAHbqMAcPxk` | falta bajarla |
-| Liquid Brun | `MAHbqCwhXjA` | falta bajarla |
-| Odyssey Mandarin Sky | `MAHbqNUSfgE` | falta bajarla |
-| MYSLF | `MAHbqChb8DU` | falta bajarla |
-| Naxos | `MAHbgLrG08g` | en `scenes/` |
-| Odyssey Aqua | `MAHbqKqSLME` | falta bajarla |
-| Oud For Glory | `MAHbqHDWiHw` | falta bajarla |
-| Qaed Al Fursan | `MAHbqEZXCmc` | falta bajarla |
-| Roses Musk | `MAHbqMywu-w` | falta bajarla |
-| Scandal Pour Homme Le Parfum | `MAHbqNWyY0M` | falta bajarla |
-| Stallion 53 | `MAHbqAv2BwU` | falta bajarla |
-| The Most Wanted Intense | `MAHbqBQkSBI` | falta bajarla |
-| The Most Wanted Parfum | `MAHbqCHOI3k` | falta bajarla |
-| Torino21 | `MAHbqFEAiWo` | falta bajarla |
-| Uomo Born In Roma Coral Fantasy | `MAHbqJvKPTE` | falta bajarla |
-| Uomo Born In Roma | `MAHbqKbQnOI` | falta bajarla |
-| Uomo Born In Roma Extradose | `MAHbqNFQwdE` | falta bajarla |
-| Vulcan Feu | `MAHbqAT43Ak` | falta bajarla |
-| Yara Candy | `MAHbqHWc9G4` | falta bajarla |
-| Yara | `MAHbqKdgs0E` | falta bajarla |
+| Perfume | Identificador en Canva |
+|---|---|
+| Costa Azzurra Parfum | `MAHbp5HyXRo` |
+| 9AM Dive | `MAHbgGuvbNE` |
+| 9PM | `MAHbp0TFlFU` |
+| 9PM Rebel | `MAHbp9JUGMg` |
+| Acqua di Giò Profondo Parfum | `MAHbp1Yur4Y` |
+| Acqua di Giò Parfum | `MAHbp1Vnx6Y` |
+| Amber Oud Dubai Night | `MAHbp60XwsY` |
+| Amber Oud Aqua Dubai | `MAHbpybw2sc` |
+| Armani Code | `MAHbp_Re5pA` |
+| Man In Black | `MAHbpx7oG-o` |
+| Odyssey Dubai Chocolat | `MAHbp2W6tdg` |
+| Divine Le Parfum | `MAHbp3jqSIA` |
+| Dylan Blue | `MAHbp5FFZYY` |
+| Eros Eau de Parfum | `MAHbgDY9cQE` |
+| Eros Eau de Toilette | `MAHbp3fFs8k` |
+| Fakhar Black | `MAHbp4ptzMo` |
+| Fakhar Rose | `MAHbp7qMF34` |
+| Fame | `MAHbp-2GEXg` |
+| Good Girl Blush | `MAHbpz0y8Zc` |
+| Hawas Ice | `MAHbh7PL-HI` |
+| Hawas Malibu | `MAHbp619XsI` |
+| Hawas | `MAHbhwVYYPE` |
+| Hawas Tropical | `MAHbp3pMgSQ` |
+| His Confession | `MAHbp07S_Ao` |
+| Honor & Glory | `MAHbh7S95Ww` |
+| Intense Café | `MAHbqEB4FAI` |
+| Jean Lowe Immortel | `MAHbqIkYyfY` |
+| Khamrah | `MAHbqNXTLjE` |
+| Khamrah Qahwa | `MAHbqOk2FwI` |
+| Layton | `MAHbgL_PnlY` |
+| Le Beau Le Parfum | `MAHbh0tvtMk` |
+| Le Male Elixir Absolu | `MAHbqLREgzs` |
+| Libre | `MAHbqMAcPxk` |
+| Liquid Brun | `MAHbqCwhXjA` |
+| Odyssey Mandarin Sky | `MAHbqNUSfgE` |
+| MYSLF | `MAHbqChb8DU` |
+| Naxos | `MAHbgLrG08g` |
+| Odyssey Aqua | `MAHbqKqSLME` |
+| Oud For Glory | `MAHbqHDWiHw` |
+| Qaed Al Fursan | `MAHbqEZXCmc` |
+| Roses Musk | `MAHbqMywu-w` |
+| Scandal Pour Homme Le Parfum | `MAHbqNWyY0M` |
+| Stallion 53 | `MAHbqAv2BwU` |
+| The Most Wanted Intense | `MAHbqBQkSBI` |
+| The Most Wanted Parfum | `MAHbqCHOI3k` |
+| Torino21 | `MAHbqFEAiWo` |
+| Uomo Born In Roma Coral Fantasy | `MAHbqJvKPTE` |
+| Uomo Born In Roma | `MAHbqKbQnOI` |
+| Uomo Born In Roma Extradose | `MAHbqNFQwdE` |
+| Vulcan Feu | `MAHbqAT43Ak` |
+| Yara Candy | `MAHbqHWc9G4` |
+| Yara | `MAHbqKdgs0E` |
 
 Falta **Spicebomb Extreme**: el generador de Canva rechazó la imagen (el
 frasco tiene forma de granada y lo frena su filtro de contenido). No se volvió
 a intentar cambiando el texto para esquivar el filtro; ese producto conserva
 su placa de acordes hasta que Bautista decida cómo resolverlo.
 
-Las que dicen "falta bajarla" están generadas y guardadas en su Canva, pero
-todavía no pasaron por el diseño de trabajo: para eso hacen falta tres
-aprobaciones suyas seguidas (sumar páginas, colocar fotos, guardar) y si no
-contesta alguna en unos minutos la sesión se reinicia y hay que empezar de
-nuevo ese paso.
+Las 52 están en `scenes/` (bajadas entre el 2026-11-21 y el 2026-11-24).
+
+En la foto de **Fame** los trozos de sándalo parecen ramas de canela: es
+candidata a rehacer si Bautista lo pide.
 
 ## Cómo se bajan y con qué texto se generaron
 
@@ -140,9 +139,27 @@ el diseño de trabajo "Publicación cuadrada con foto a sangre" (`DAHbGZCniAo`).
 Después, `add_scene.py --blanco` las deja en `scenes/` a 1200 x 1600, con el
 fondo llevado a blanco puro y los bordes fundidos.
 
-Cada llamada a Canva le pide permiso a Bautista en el celular. Lanzar más de
-cuatro o cinco juntas terminó dos veces en un permiso rechazado sin querer o
-en un corte de la sesión: conviene ir de a tandas chicas.
+Colocar fotos en el diseño (`edit-design`) le pide permiso a Bautista en el
+celular cada vez; generar, leer y exportar no. Lo que se aprendió:
+
+- Un pedido de permiso sin contestar deja la sesión esperando. Cuando la
+  sesión se reinicia, el pedido se pierde y también la edición abierta (Canva
+  responde "transaction not found"): hay que abrir otra y volver a pedirlo.
+- Por eso conviene que sean **dos permisos seguidos y nada en el medio**:
+  colocar todas las fotos en una sola llamada y guardar en la siguiente. Sumar
+  páginas nuevas agrega un tercer permiso y medio minuto de espera entre uno y
+  otro; así se perdieron tres intentos entre el 22 y el 23 de noviembre.
+- Para evitar ese tercer permiso, la última tanda (28 fotos) se colocó encima
+  de páginas de trabajo que ya estaban exportadas, de la 35 a la 62. En esas
+  páginas el título no coincide con la foto que se ve y la foto vieja queda
+  tapada debajo de la nueva: no se borró nada.
+- Las fotos generadas que no se consultan enseguida se pierden (el trabajo
+  vence a las pocas horas y después no hay forma de recuperarlo): pedir el
+  resultado apenas se lanza.
+- La última tanda se destrabó el 2026-11-24: se le mandó un aviso al celular
+  (`PushNotification`) justo antes de pedir el permiso y aprobó los dos al
+  rato. No se sabe si entró por el aviso o por su cuenta, pero es lo único
+  que se hizo distinto.
 
 Texto que se usó para generarlas (las materias salen del campo `en` de cada
 materia en `placas.json`):
