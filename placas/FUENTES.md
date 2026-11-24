@@ -130,6 +130,51 @@ Las 52 están en `scenes/` (bajadas entre el 2026-11-21 y el 2026-11-24).
 En la foto de **Fame** los trozos de sándalo parecen ramas de canela: es
 candidata a rehacer si Bautista lo pide.
 
+<!-- sin-stock:inicio -->
+### Decants sin stock (2026-11-24)
+
+Bautista pidió seguir con el resto de los perfumes individuales: son los 39 decants publicados
+que hoy no tienen stock. 5 reusan la foto de su Esencia Privé (Arabians Tonka, Bharara King,
+Erba Pura, Ombré Leather, Sauvage Elixir) y 34 llevan foto nueva:
+
+| Perfume | Identificador en Canva | Estado |
+|---|---|---|
+| Aventus | — | falta generarla |
+| Dior Homme Intense (Eau de Parfum) | — | falta generarla |
+| The One for Men (Eau de Parfum) | — | falta generarla |
+| 212 VIP Rosé (Eau de Parfum) | — | falta generarla |
+| 9PM Night Out (Extrait de Parfum) | — | falta generarla |
+| Acqua di Giò Profondo (Eau de Parfum) | — | falta generarla |
+| Alexandria II (Parfum) | — | falta generarla |
+| Asad | — | falta generarla |
+| Asad Bourbon | — | falta generarla |
+| Bad Boy Le Parfum | — | falta generarla |
+| Cedrat Boisé | — | falta generarla |
+| Dark Vanilla | — | falta generarla |
+| Dior Homme Parfum | — | falta generarla |
+| Eros Flame | — | falta generarla |
+| Gentleman Réserve Privée | — | falta generarla |
+| Gentleman Society | — | falta generarla |
+| Hawas Black | — | falta generarla |
+| Hawas Fire | — | falta generarla |
+| Invictus Victory Elixir | — | falta generarla |
+| La Nuit de l'Homme (Eau de Toilette) | — | falta generarla |
+| Layton Exclusif | — | falta generarla |
+| Le Beau (Eau de Toilette) | — | falta generarla |
+| Le Male Le Parfum | — | falta generarla |
+| Odyssey Mega | `MAHbzFsW0W8` | falta bajarla |
+| One Million Parfum | `MAHbzBNUEsg` | falta bajarla |
+| Le Beau Paradise Garden (Eau de Parfum) | `MAHbzKzUX1A` | falta bajarla |
+| Radio Vintage | `MAHbzDlZ7cU` | falta bajarla |
+| Sauvage (Eau de Toilette) | `MAHbzDp10v8` | falta bajarla |
+| Sauvage Parfum | `MAHbzFj_B98` | falta bajarla |
+| Scandal (Eau de Parfum) | `MAHbzMXs1Mk` | falta bajarla |
+| Scandal Pour Homme Absolu | `MAHbzIul5BY` | falta bajarla |
+| Stronger With You Absolutely | `MAHbzOt2VR4` | falta bajarla |
+| The Kingdom | — | falta generarla |
+| Wanted (Eau de Parfum) | — | falta generarla |
+<!-- sin-stock:fin -->
+
 ## Cómo se bajan y con qué texto se generaron
 
 Para bajarlas en tamaño completo no alcanza con el identificador (Canva solo
