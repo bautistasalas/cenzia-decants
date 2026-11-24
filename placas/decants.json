@@ -2985,7 +2985,9 @@
         "en": "fresh mint leaves"
       }
     ],
-    "bottle": "src/odyssey-mega.webp"
+    "bottle": "src/odyssey-mega.webp",
+    "scene": "scenes/odyssey-mega.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "one-million-parfum",
@@ -3025,7 +3027,9 @@
         "en": "a small rolled strip of tan leather"
       }
     ],
-    "bottle": "src/one-million-parfum.webp"
+    "bottle": "src/one-million-parfum.webp",
+    "scene": "scenes/one-million-parfum.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "paradise-garden",
@@ -3061,7 +3065,9 @@
         "en": "small pieces of sandalwood"
       }
     ],
-    "bottle": "src/paradise-garden.webp"
+    "bottle": "src/paradise-garden.webp",
+    "scene": "scenes/paradise-garden.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "radio-vintage",
@@ -3101,7 +3107,9 @@
         "en": "a small pile of black peppercorns"
       }
     ],
-    "bottle": "src/radio-vintage.webp"
+    "bottle": "src/radio-vintage.webp",
+    "scene": "scenes/radio-vintage.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "sauvage-eau-de-toilette",
@@ -3142,7 +3150,9 @@
         "en": "a few small pieces of cedar wood"
       }
     ],
-    "bottle": "src/sauvage-eau-de-toilette.webp"
+    "bottle": "src/sauvage-eau-de-toilette.webp",
+    "scene": "scenes/sauvage-eau-de-toilette.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "sauvage-parfum",
@@ -3182,7 +3192,9 @@
         "en": "dark tonka beans"
       }
     ],
-    "bottle": "src/sauvage-parfum.webp"
+    "bottle": "src/sauvage-parfum.webp",
+    "scene": "scenes/sauvage-parfum.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "scandal",
@@ -3218,7 +3230,9 @@
         "en": "dried patchouli leaves"
       }
     ],
-    "bottle": "src/scandal.webp"
+    "bottle": "src/scandal.webp",
+    "scene": "scenes/scandal.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "scandal-absolu",
@@ -3253,7 +3267,9 @@
         "en": "a few small yellow mirabelle plums"
       }
     ],
-    "bottle": "src/scandal-absolu.webp"
+    "bottle": "src/scandal-absolu.webp",
+    "scene": "scenes/scandal-absolu.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "stronger-with-you-absolutely",
@@ -3293,7 +3309,9 @@
         "en": "a halved green bergamot"
       }
     ],
-    "bottle": "src/stronger-with-you-absolutely.webp"
+    "bottle": "src/stronger-with-you-absolutely.webp",
+    "scene": "scenes/stronger-with-you-absolutely.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "the-kingdom",
@@ -3333,7 +3351,9 @@
         "en": "dried tobacco leaves"
       }
     ],
-    "bottle": "src/the-kingdom.webp"
+    "bottle": "src/the-kingdom.webp",
+    "scene": "scenes/the-kingdom.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "wanted",
@@ -3369,7 +3389,9 @@
         "en": "a small bundle of dried vetiver roots"
       }
     ],
-    "bottle": "src/wanted.webp"
+    "bottle": "src/wanted.webp",
+    "scene": "scenes/wanted.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "aventus",
@@ -3409,7 +3431,9 @@
         "en": "a few curls of white birch bark"
       }
     ],
-    "bottle": "src/aventus.webp"
+    "bottle": "src/aventus.webp",
+    "scene": "scenes/aventus.jpg",
+    "scene_bg": "white"
   },
   {
     "slug": "dior-homme-intense",

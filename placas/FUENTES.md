@@ -139,8 +139,8 @@ Erba Pura, Ombré Leather, Sauvage Elixir) y 34 llevan foto nueva:
 
 | Perfume | Identificador en Canva | Estado |
 |---|---|---|
-| Aventus | — | falta generarla |
-| Dior Homme Intense (Eau de Parfum) | — | falta generarla |
+| Aventus | `MAHbzbQpaS0` | en `scenes/` |
+| Dior Homme Intense (Eau de Parfum) | `MAHbzTLf_Co` | falta bajarla |
 | The One for Men (Eau de Parfum) | — | falta generarla |
 | 212 VIP Rosé (Eau de Parfum) | — | falta generarla |
 | 9PM Night Out (Extrait de Parfum) | — | falta generarla |
@@ -162,17 +162,17 @@ Erba Pura, Ombré Leather, Sauvage Elixir) y 34 llevan foto nueva:
 | Layton Exclusif | — | falta generarla |
 | Le Beau (Eau de Toilette) | — | falta generarla |
 | Le Male Le Parfum | — | falta generarla |
-| Odyssey Mega | `MAHbzFsW0W8` | falta bajarla |
-| One Million Parfum | `MAHbzBNUEsg` | falta bajarla |
-| Le Beau Paradise Garden (Eau de Parfum) | `MAHbzKzUX1A` | falta bajarla |
-| Radio Vintage | `MAHbzDlZ7cU` | falta bajarla |
-| Sauvage (Eau de Toilette) | `MAHbzDp10v8` | falta bajarla |
-| Sauvage Parfum | `MAHbzFj_B98` | falta bajarla |
-| Scandal (Eau de Parfum) | `MAHbzMXs1Mk` | falta bajarla |
-| Scandal Pour Homme Absolu | `MAHbzIul5BY` | falta bajarla |
-| Stronger With You Absolutely | `MAHbzOt2VR4` | falta bajarla |
-| The Kingdom | — | falta generarla |
-| Wanted (Eau de Parfum) | — | falta generarla |
+| Odyssey Mega | `MAHbzFsW0W8` | en `scenes/` |
+| One Million Parfum | `MAHbzBNUEsg` | en `scenes/` |
+| Le Beau Paradise Garden (Eau de Parfum) | `MAHbzKzUX1A` | en `scenes/` |
+| Radio Vintage | `MAHbzDlZ7cU` | en `scenes/` |
+| Sauvage (Eau de Toilette) | `MAHbzDp10v8` | en `scenes/` |
+| Sauvage Parfum | `MAHbzFj_B98` | en `scenes/` |
+| Scandal (Eau de Parfum) | `MAHbzMXs1Mk` | en `scenes/` |
+| Scandal Pour Homme Absolu | `MAHbzIul5BY` | en `scenes/` |
+| Stronger With You Absolutely | `MAHbzOt2VR4` | en `scenes/` |
+| The Kingdom | `MAHbzNw0h5Y` | en `scenes/` |
+| Wanted (Eau de Parfum) | `MAHbzCmozfo` | en `scenes/` |
 <!-- sin-stock:fin -->
 
 ## Cómo se bajan y con qué texto se generaron
