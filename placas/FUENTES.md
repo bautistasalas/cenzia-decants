@@ -155,10 +155,10 @@ Erba Pura, Ombré Leather, Sauvage Elixir) y 34 llevan foto nueva:
 | Cedrat Boisé | `MAHbzvzcYxA` | falta bajarla |
 | Dark Vanilla | `MAHbzuLt0GY` | falta bajarla |
 | Dior Homme Parfum | `MAHbzhN_z4M` | falta bajarla |
-| Eros Flame | — | falta generarla |
-| Gentleman Réserve Privée | — | falta generarla |
-| Gentleman Society | — | falta generarla |
-| Hawas Black | — | falta generarla |
+| Eros Flame | `MAHb0Fww2oo` | falta bajarla |
+| Gentleman Réserve Privée | `MAHb0H-ZNAc` | falta bajarla |
+| Gentleman Society | `MAHb0RVFvug` | falta bajarla |
+| Hawas Black | `MAHb0QuUsIs` | falta bajarla |
 | Hawas Fire | — | falta generarla |
 | Invictus Victory Elixir | — | falta generarla |
 | La Nuit de l'Homme (Eau de Toilette) | — | falta generarla |
