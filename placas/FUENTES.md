@@ -159,12 +159,12 @@ Erba Pura, Ombré Leather, Sauvage Elixir) y 34 llevan foto nueva:
 | Gentleman Réserve Privée | `MAHb0H-ZNAc` | falta bajarla |
 | Gentleman Society | `MAHb0RVFvug` | falta bajarla |
 | Hawas Black | `MAHb0QuUsIs` | falta bajarla |
-| Hawas Fire | — | falta generarla |
-| Invictus Victory Elixir | — | falta generarla |
-| La Nuit de l'Homme (Eau de Toilette) | — | falta generarla |
-| Layton Exclusif | — | falta generarla |
-| Le Beau (Eau de Toilette) | — | falta generarla |
-| Le Male Le Parfum | — | falta generarla |
+| Hawas Fire | `MAHb0b3H5Uc` | falta bajarla |
+| Invictus Victory Elixir | `MAHb7GXPkVk` | falta bajarla |
+| La Nuit de l'Homme (Eau de Toilette) | `MAHb7GgVVAM` | falta bajarla |
+| Layton Exclusif | `MAHb7M0TC40` | falta bajarla |
+| Le Beau (Eau de Toilette) | `MAHb7BLvCSQ` | falta bajarla |
+| Le Male Le Parfum | `MAHb7BIC4Mw` | falta bajarla |
 | Odyssey Mega | `MAHbzFsW0W8` | en `scenes/` |
 | One Million Parfum | `MAHbzBNUEsg` | en `scenes/` |
 | Le Beau Paradise Garden (Eau de Parfum) | `MAHbzKzUX1A` | en `scenes/` |
